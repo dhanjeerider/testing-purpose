@@ -1,6 +1,10 @@
 <?php 
-$theme_opts = get_option('nx_options'); 
-if(!is_array($theme_opts)) $theme_opts = array();
+$theme_opts = get_option('dhanjee_options', array(
+    'site_logo' => get_template_directory_uri().'/assets/logo.png',
+    'favicon_icon' => '',
+    'header_code' => '',
+    'custom_css' => '',
+));
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -9,19 +13,23 @@ if(!is_array($theme_opts)) $theme_opts = array();
     <meta name="theme-color" content="#f57f26">
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <?php if(isset($theme_opts['favicon_icon']) && !empty($theme_opts['favicon_icon'])): ?>
-        <link rel="shortcut icon" href="<?php echo $theme_opts['favicon_icon']; ?>" />
+    <?php if(!empty($theme_opts['favicon_icon'])): ?>
+        <link rel="shortcut icon" href="<?php echo esc_url($theme_opts['favicon_icon']); ?>" />
     <?php endif; ?>
 <?php wp_head(); ?>
 <?php 
 
 // custom css
-if(isset($theme_opts['custom_css']) && !empty($theme_opts['custom_css'])){
+if(!empty($theme_opts['custom_css'])){
     echo '<style type="text/css">';
         echo $theme_opts['custom_css'];
     echo '</style>';
 }
 
+// header code
+if(!empty($theme_opts['header_code'])){
+    echo $theme_opts['header_code'];
+}
 
 ?>
 </head>
@@ -49,7 +57,7 @@ if(isset($theme_opts['custom_css']) && !empty($theme_opts['custom_css'])){
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/">
-                   <img src="<?php echo isset($theme_opts['site_logo']) ? $theme_opts['site_logo'] : ''; ?>" alt="Site Main Logo">
+                   <img src="<?php echo $theme_opts['site_logo']; ?>" alt="Site Main Logo">
                 </a>
            </div>
 
@@ -90,11 +98,11 @@ if(isset($theme_opts['custom_css']) && !empty($theme_opts['custom_css'])){
 
 <?php get_template_part('template-parts/notice', 'layout'); ?>
 
-    <?php if(isset($theme_opts['header_code']) && !empty($theme_opts['header_code']) && !wp_is_mobile()): ?>
+    <?php if($theme_opts['header_code'] && !wp_is_mobile()): ?>
       <div class="header-adcode">  
         <?php echo stripslashes(htmlspecialchars_decode($theme_opts['header_code'])); ?>
       </div>  
-    <?php elseif(isset($theme_opts['header_code_mobile']) && !empty($theme_opts['header_code_mobile']) && wp_is_mobile()): ?>
+    <?php elseif($theme_opts['header_code_mobile'] && wp_is_mobile()): ?>
         <div class="header-adcode">  
         <?php echo stripslashes(htmlspecialchars_decode($theme_opts['header_code_mobile'])); ?>
       </div>  

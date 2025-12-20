@@ -131,7 +131,7 @@ $split_count = 0;
 
   <div class="clearfix"></div>
   <div class="col-md-12 text-center pagination-wrapper">
-        <?php nx_pagination(); ?>
+        <?php dhanjee_pagination(); ?>
    </div>
 
 <?php else: ?> 
