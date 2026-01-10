@@ -1,0 +1,24 @@
+{
+  "name": "AJAX News Theme",
+  "short_name": "News",
+  "description": "Modern news theme with AJAX navigation and dark mode",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/wp-content/themes/wp-theme-ajax-news/assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/wp-content/themes/wp-theme-ajax-news/assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

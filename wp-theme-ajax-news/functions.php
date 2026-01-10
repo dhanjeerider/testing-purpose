@@ -13,7 +13,8 @@ function ajax_news_theme_setup() {
     
     // Register navigation menus
     register_nav_menus(array(
-        'primary' => __('Primary Menu', 'ajax-news-theme'),
+        'custom-header' => __('Custom Header Menu', 'ajax-news-theme'),
+        'primary' => __('Main Mobile Menu', 'ajax-news-theme'),
         'footer' => __('Footer Menu', 'ajax-news-theme'),
     ));
     
@@ -54,6 +55,12 @@ function ajax_news_theme_scripts() {
     // Dark Mode Script
     wp_enqueue_script('dark-mode', get_template_directory_uri() . '/assets/js/dark-mode.js', array('jquery'), '1.0.0', true);
     
+    // Header Enhancements
+    wp_enqueue_script('header-enhancements', get_template_directory_uri() . '/assets/js/header-enhancements.js', array('jquery'), '1.0.0', true);
+    
+    // Load More
+    wp_enqueue_script('load-more', get_template_directory_uri() . '/assets/js/load-more.js', array('jquery'), '1.0.0', true);
+    
     // Localize script for AJAX
     wp_localize_script('ajax-navigation', 'ajaxNewsTheme', array(
         'ajax_url' => admin_url('admin-ajax.php'),
@@ -78,44 +85,63 @@ function ajax_load_content() {
         wp_send_json_error('Invalid URL');
     }
     
+    // Parse URL to get query
+    $url_parts = parse_url($url);
+    $path = isset($url_parts['path']) ? $url_parts['path'] : '';
+    
     // Get post ID from URL
     $post_id = url_to_postid($url);
     
+    ob_start();
+    
     if ($post_id) {
-        // Single post
-        $post = get_post($post_id);
-        setup_postdata($post);
-        
-        ob_start();
-        get_template_part('template-parts/content', 'single');
-        $content = ob_get_clean();
-        
-        wp_reset_postdata();
+        // Single post - load actual template
+        query_posts(array('p' => $post_id));
+        if (have_posts()) {
+            while (have_posts()) {
+                the_post();
+                get_template_part('template-parts/content', 'single-ajax');
+            }
+        }
+        wp_reset_query();
     } else {
         // Archive or home page
-        ob_start();
-        if (is_home() || is_front_page()) {
-            get_template_part('template-parts/content', 'archive');
+        $paged = isset($_POST['paged']) ? intval($_POST['paged']) : 1;
+        query_posts(array('paged' => $paged));
+        
+        if (have_posts()) {
+            while (have_posts()) {
+                the_post();
+                get_template_part('template-parts/content', 'loop');
+            }
         }
-        $content = ob_get_clean();
+        wp_reset_query();
     }
+    
+    $content = ob_get_clean();
     
     wp_send_json_success(array(
         'content' => $content,
-        'title' => get_the_title($post_id),
+        'title' => $post_id ? get_the_title($post_id) : get_bloginfo('name'),
     ));
 }
 add_action('wp_ajax_load_content', 'ajax_load_content');
 add_action('wp_ajax_nopriv_load_content', 'ajax_load_content');
 
 // Include Bootstrap Nav Walker
-require_once get_template_directory() . '/inc/bootstrap-navwalker.php';
+if (file_exists(get_template_directory() . '/inc/bootstrap-navwalker.php')) {
+    require_once get_template_directory() . '/inc/bootstrap-navwalker.php';
+}
 
 // Include Shortcodes
-require_once get_template_directory() . '/inc/shortcodes.php';
+if (file_exists(get_template_directory() . '/inc/shortcodes.php')) {
+    require_once get_template_directory() . '/inc/shortcodes.php';
+}
 
 // Include Reactions Functions
-require_once get_template_directory() . '/inc/reactions.php';
+if (file_exists(get_template_directory() . '/inc/reactions.php')) {
+    require_once get_template_directory() . '/inc/reactions.php';
+}
 
 // Register Widget Areas
 function ajax_news_widgets_init() {
@@ -152,3 +178,157 @@ function ajax_news_excerpt_more($more) {
     return '...';
 }
 add_filter('excerpt_more', 'ajax_news_excerpt_more');
+
+// Add Schema Markup
+function ajax_news_schema_markup() {
+    if (is_single()) {
+        global $post;
+        $schema = array(
+            '@context' => 'https://schema.org',
+            '@type' => 'NewsArticle',
+            'headline' => get_the_title(),
+            'image' => get_the_post_thumbnail_url($post->ID, 'full'),
+            'datePublished' => get_the_date('c'),
+            'dateModified' => get_the_modified_date('c'),
+            'author' => array(
+                '@type' => 'Person',
+                'name' => get_the_author(),
+            ),
+            'publisher' => array(
+                '@type' => 'Organization',
+                'name' => get_bloginfo('name'),
+                'logo' => array(
+                    '@type' => 'ImageObject',
+                    'url' => get_site_icon_url(),
+                ),
+            ),
+            'description' => get_the_excerpt(),
+        );
+        echo '<script type="application/ld+json">' . json_encode($schema) . '</script>';
+    }
+}
+add_action('wp_head', 'ajax_news_schema_markup');
+
+// Add Open Graph Tags
+function ajax_news_og_tags() {
+    if (is_single()) {
+        global $post;
+        echo '<meta property="og:type" content="article" />';
+        echo '<meta property="og:title" content="' . esc_attr(get_the_title()) . '" />';
+        echo '<meta property="og:description" content="' . esc_attr(get_the_excerpt()) . '" />';
+        echo '<meta property="og:url" content="' . esc_url(get_permalink()) . '" />';
+        echo '<meta property="og:site_name" content="' . esc_attr(get_bloginfo('name')) . '" />';
+        
+        if (has_post_thumbnail()) {
+            $thumbnail = get_the_post_thumbnail_url($post->ID, 'large');
+            echo '<meta property="og:image" content="' . esc_url($thumbnail) . '" />';
+            echo '<meta property="og:image:width" content="1200" />';
+            echo '<meta property="og:image:height" content="630" />';
+        }
+        
+        // Twitter Cards
+        echo '<meta name="twitter:card" content="summary_large_image" />';
+        echo '<meta name="twitter:title" content="' . esc_attr(get_the_title()) . '" />';
+        echo '<meta name="twitter:description" content="' . esc_attr(get_the_excerpt()) . '" />';
+        if (has_post_thumbnail()) {
+            echo '<meta name="twitter:image" content="' . esc_url($thumbnail) . '" />';
+        }
+    }
+}
+add_action('wp_head', 'ajax_news_og_tags');
+
+// Load More Posts AJAX
+function ajax_news_load_more_posts() {
+    check_ajax_referer('ajax_news_nonce', 'nonce');
+    
+    $paged = isset($_POST['paged']) ? intval($_POST['paged']) : 1;
+    $layout = isset($_POST['layout']) ? sanitize_text_field($_POST['layout']) : 'grid';
+    
+    $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => 6,
+        'paged' => $paged,
+        'post_status' => 'publish',
+    );
+    
+    $query = new WP_Query($args);
+    
+    ob_start();
+    
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            get_template_part('template-parts/content', $layout);
+        }
+    }
+    
+    $content = ob_get_clean();
+    wp_reset_postdata();
+    
+    wp_send_json_success(array(
+        'content' => $content,
+        'has_more' => $paged < $query->max_num_pages,
+    ));
+}
+add_action('wp_ajax_load_more_posts', 'ajax_news_load_more_posts');
+add_action('wp_ajax_nopriv_load_more_posts', 'ajax_news_load_more_posts');
+
+// Register Custom Gutenberg Blocks
+function ajax_news_register_blocks() {
+    // Register block category
+    add_filter('block_categories_all', function($categories) {
+        return array_merge(
+            $categories,
+            array(
+                array(
+                    'slug' => 'ajax-news-blocks',
+                    'title' => 'News Layouts',
+                ),
+            )
+        );
+    });
+}
+add_action('init', 'ajax_news_register_blocks');\n\n// Live Search AJAX Handler\nfunction ajax_news_live_search() {\n    check_ajax_referer('ajax_news_nonce', 'nonce');\n    \n    $query = isset($_POST['query']) ? sanitize_text_field($_POST['query']) : '';\n    \n    if (empty($query)) {\n        wp_send_json_error();\n    }\n    \n    $args = array(\n        's' => $query,\n        'posts_per_page' => 5,\n        'post_status' => 'publish',\n    );\n    \n    $search_query = new WP_Query($args);\n    \n    $html = '';\n    \n    if ($search_query->have_posts()) {\n        $html .= '<div class=\"search-results-list\">';\n        while ($search_query->have_posts()) {\n            $search_query->the_post();\n            $html .= '<a href=\"' . get_permalink() . '\" class=\"search-result-item ajax-link\">';\n            if (has_post_thumbnail()) {\n                $html .= get_the_post_thumbnail(get_the_ID(), 'thumbnail', array('class' => 'search-result-thumb'));\n            }\n            $html .= '<div class=\"search-result-content\">';\n            $html .= '<h6>' . get_the_title() . '</h6>';\n            $html .= '<small>' . get_the_date() . '</small>';\n            $html .= '</div>';\n            $html .= '</a>';\n        }\n        $html .= '</div>';\n    } else {\n        $html = '<p class=\"text-center p-3 text-muted\">No results found</p>';\n    }\n    \n    wp_reset_postdata();\n    \n    wp_send_json_success(array('html' => $html));\n}\nadd_action('wp_ajax_live_search', 'ajax_news_live_search');\nadd_action('wp_ajax_nopriv_live_search', 'ajax_news_live_search');\n\n// Register Service Worker for PWA\nfunction ajax_news_register_service_worker() {\n    if (is_front_page() || is_home()) {\n        ?>\n        <script>\n        if ('serviceWorker' in navigator) {\n            window.addEventListener('load', function() {\n                navigator.serviceWorker.register('<?php echo get_template_directory_uri(); ?>/service-worker.js')\n                .then(function(registration) {\n                    console.log('ServiceWorker registration successful');\n                })\n                .catch(function(err) {\n                    console.log('ServiceWorker registration failed: ', err);\n                });\n            });\n        }\n        </script>\n        <?php\n    }\n}\nadd_action('wp_footer', 'ajax_news_register_service_worker');
+
+// Theme Customizer
+function ajax_news_customize_register($wp_customize) {
+    // Hero Section
+    $wp_customize->add_section('hero_section', array(
+        'title' => __('Hero Section', 'ajax-news-theme'),
+        'priority' => 30,
+    ));
+    
+    // Hero Title
+    $wp_customize->add_setting('hero_title', array(
+        'default' => 'Breaking News & Latest Updates',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    $wp_customize->add_control('hero_title', array(
+        'label' => __('Hero Title', 'ajax-news-theme'),
+        'section' => 'hero_section',
+        'type' => 'text',
+    ));
+    
+    // Hero Subtitle
+    $wp_customize->add_setting('hero_subtitle', array(
+        'default' => 'Stay informed with real-time news coverage',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    $wp_customize->add_control('hero_subtitle', array(
+        'label' => __('Hero Subtitle', 'ajax-news-theme'),
+        'section' => 'hero_section',
+        'type' => 'text',
+    ));
+    
+    // Show Hero Section
+    $wp_customize->add_setting('show_hero', array(
+        'default' => true,
+        'sanitize_callback' => 'wp_validate_boolean',
+    ));
+    $wp_customize->add_control('show_hero', array(
+        'label' => __('Show Hero Section', 'ajax-news-theme'),
+        'section' => 'hero_section',
+        'type' => 'checkbox',
+    ));
+}
+add_action('customize_register', 'ajax_news_customize_register');
