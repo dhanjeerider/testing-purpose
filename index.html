@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmyFly Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">FilmyFly Clone</div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search movies...">
+            <button id="searchBtn">Search</button>
+        </div>
+        <nav>
+            <button class="nav-btn active" data-section="home">Home</button>
+            <button class="nav-btn" data-section="tmdb">TMDB Stream</button>
+            <button class="nav-btn" data-section="livetv">Live TV</button>
+        </nav>
+    </header>
+
+    <div id="categories" class="categories-container">
+        <!-- Categories will be injected here -->
+    </div>
+
+    <main id="mainContent">
+        <div id="contentGrid" class="grid-container">
+            <!-- Content will be injected here -->
+        </div>
+        <div id="loading" class="loading">Loading...</div>
+    </main>
+
+    <!-- Modal for Details -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody">
+                <!-- Detail content will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

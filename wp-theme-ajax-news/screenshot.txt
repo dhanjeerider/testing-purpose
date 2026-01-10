@@ -1,0 +1,5 @@
+/*
+ * Screenshot placeholder
+ * This file is required for WordPress theme directory
+ * Create an actual screenshot.png (1200x900px) with your theme preview
+ */
