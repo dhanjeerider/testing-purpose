@@ -1,6 +1,6 @@
 /**
- * Layout Switcher - Grid/List view toggle
- * Works with archive.php, search.php and other listing pages
+ * Layout Switcher - Grid view only (simplified)
+ * Normal page navigation (no AJAX)
  */
 
 (function($) {
@@ -8,114 +8,102 @@
     
     $(document).ready(function() {
         
-        // Get saved layout preference
-        const savedLayout = localStorage.getItem('postLayout') || 'grid';
+        // Grid layout is default and only option
+        const defaultLayout = 'grid';
         
-        // Apply saved layout
-        applyLayout(savedLayout);
+        // Apply grid layout
+        applyGridLayout();
         
-        // Handle layout button clicks
-        $('.layout-btn').on('click', function() {
-            const layout = $(this).data('layout');
-            
-            // Update button states
-            $('.layout-btn').removeClass('active');
-            $(this).addClass('active');
-            
-            // Apply layout
-            applyLayout(layout);
-            
-            // Save preference
-            localStorage.setItem('postLayout', layout);
-            
-            // Smooth transition
-            $('.posts-container').css('opacity', '0.5');
-            setTimeout(function() {
-                $('.posts-container').css('opacity', '1');
-            }, 300);
-        });
-        
-        function applyLayout(layout) {
+        function applyGridLayout() {
             const $container = $('.posts-container');
-            const $mainContent = $('#main-content');
+            const $mainContent = $('#main-content, .posts-container .row');
             
-            // Update button state
-            $('.layout-btn').removeClass('active');
-            $(`.layout-btn[data-layout="${layout}"]`).addClass('active');
+            // Ensure grid layout
+            $container.addClass('grid-layout');
+            $mainContent.addClass('row');
             
-            if (layout === 'list') {
-                // List layout
-                $container.removeClass('grid-layout').addClass('list-layout');
-                $mainContent.removeClass('row');
-                
-                // Convert grid items to list
-                $mainContent.find('.col-md-6').each(function() {
-                    $(this).removeClass('col-md-6').addClass('col-12');
-                });
-                
-                // Adjust card structure for list view
-                $mainContent.find('.material-card').each(function() {
-                    const $card = $(this);
-                    $card.addClass('d-flex flex-row');
-                    
-                    const $thumbnail = $card.find('.post-thumbnail');
-                    if ($thumbnail.length) {
-                        $thumbnail.css({
-                            'flex': '0 0 300px',
-                            'max-width': '300px'
-                        });
-                    }
-                });
-                
-            } else {
-                // Grid layout
-                $container.removeClass('list-layout').addClass('grid-layout');
-                $mainContent.addClass('row');
-                
-                // Convert list items to grid
-                $mainContent.find('.col-12').each(function() {
-                    if (!$(this).find('.pagination-wrapper').length && 
-                        !$(this).find('.no-posts-found').length &&
-                        !$(this).find('.no-results').length) {
-                        $(this).removeClass('col-12').addClass('col-md-6');
-                    }
-                });
-                
-                // Reset card structure for grid view
-                $mainContent.find('.material-card').each(function() {
-                    const $card = $(this);
-                    $card.removeClass('d-flex flex-row');
-                    $card.addClass('d-flex flex-column');
-                    
-                    const $thumbnail = $card.find('.post-thumbnail');
-                    if ($thumbnail.length) {
-                        $thumbnail.css({
-                            'flex': '',
-                            'max-width': ''
-                        });
-                    }
-                });
-            }
+            // Ensure proper column classes
+            $mainContent.find('.col-12').each(function() {
+                if (!$(this).find('.pagination-wrapper').length && 
+                    !$(this).find('.no-posts-found').length &&
+                    !$(this).find('.no-results').length) {
+                    $(this).removeClass('col-12').addClass('col-md-6');
+                }
+            });
+            
+            // Ensure material cards are flex columns
+            $('.material-card').each(function() {
+                $(this).addClass('d-flex flex-column');
+            });
         }
         
-        // Smooth scroll for read more buttons
-        $('.btn-primary').on('click', function(e) {
-            if ($(this).attr('href').indexOf('#') === 0) {
-                e.preventDefault();
-                const target = $(this).attr('href');
-                $('html, body').animate({
-                    scrollTop: $(target).offset().top - 100
-                }, 500);
+        // Like Button Functionality
+        $(document).on('click', '.like-btn', function(e) {
+            e.preventDefault();
+            const $btn = $(this);
+            const postId = $btn.data('post-id');
+            const $count = $btn.find('.like-count');
+            const $icon = $btn.find('i');
+            
+            // Toggle liked state
+            if ($btn.hasClass('liked')) {
+                $btn.removeClass('liked');
+                $icon.removeClass('fas').addClass('far');
+                let currentCount = parseInt($count.text()) || 0;
+                $count.text(Math.max(0, currentCount - 1));
+                
+                // Save to localStorage
+                let likes = JSON.parse(localStorage.getItem('likedPosts') || '[]');
+                likes = likes.filter(id => id !== postId);
+                localStorage.setItem('likedPosts', JSON.stringify(likes));
+            } else {
+                $btn.addClass('liked');
+                $icon.removeClass('far').addClass('fas');
+                let currentCount = parseInt($count.text()) || 0;
+                $count.text(currentCount + 1);
+                
+                // Save to localStorage
+                let likes = JSON.parse(localStorage.getItem('likedPosts') || '[]');
+                if (!likes.includes(postId)) {
+                    likes.push(postId);
+                }
+                localStorage.setItem('likedPosts', JSON.stringify(likes));
+                
+                // Animation
+                $btn.addClass('pulse');
+                setTimeout(() => $btn.removeClass('pulse'), 300);
             }
         });
         
-        // Add loading animation for social share buttons
-        $('.social-share-buttons a, .quick-share a').on('click', function() {
-            const $btn = $(this);
-            $btn.addClass('sharing');
-            setTimeout(function() {
-                $btn.removeClass('sharing');
-            }, 1000);
+        // Load saved likes on page load
+        function loadSavedLikes() {
+            const likedPosts = JSON.parse(localStorage.getItem('likedPosts') || '[]');
+            likedPosts.forEach(postId => {
+                const $btn = $(`.like-btn[data-post-id="${postId}"]`);
+                if ($btn.length) {
+                    $btn.addClass('liked');
+                    $btn.find('i').removeClass('far').addClass('fas');
+                    const $count = $btn.find('.like-count');
+                    let currentCount = parseInt($count.text()) || 0;
+                    if (!$btn.data('loaded')) {
+                        $count.text(currentCount + 1);
+                        $btn.data('loaded', true);
+                    }
+                }
+            });
+        }
+        
+        loadSavedLikes();
+        
+        // Smooth scroll for anchor links only
+        $('a[href^="#"]').on('click', function(e) {
+            const href = $(this).attr('href');
+            if (href !== '#' && $(href).length) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $(href).offset().top - 100
+                }, 600);
+            }
         });
         
     });
