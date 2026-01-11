@@ -11,32 +11,28 @@
             const $count = $btn.find('.like-count');
             const $icon = $btn.find('i');
             
-            if ($btn.hasClass('liked')) {
+            let likes = JSON.parse(localStorage.getItem('likes') || '{}');
+            
+            if (likes[postId]) {
+                delete likes[postId];
                 $btn.removeClass('liked');
                 $icon.removeClass('fas').addClass('far');
                 let count = parseInt($count.text()) || 0;
                 $count.text(Math.max(0, count - 1));
-                
-                let likes = JSON.parse(localStorage.getItem('likedPosts') || '[]');
-                likes = likes.filter(id => id != postId);
-                localStorage.setItem('likedPosts', JSON.stringify(likes));
             } else {
+                likes[postId] = true;
                 $btn.addClass('liked');
                 $icon.removeClass('far').addClass('fas');
                 let count = parseInt($count.text()) || 0;
                 $count.text(count + 1);
-                
-                let likes = JSON.parse(localStorage.getItem('likedPosts') || '[]');
-                if (!likes.includes(postId)) {
-                    likes.push(postId);
-                }
-                localStorage.setItem('likedPosts', JSON.stringify(likes));
             }
+            
+            localStorage.setItem('likes', JSON.stringify(likes));
         });
         
         // Load saved likes
-        const likedPosts = JSON.parse(localStorage.getItem('likedPosts') || '[]');
-        likedPosts.forEach(postId => {
+        const likes = JSON.parse(localStorage.getItem('likes') || '{}');
+        Object.keys(likes).forEach(postId => {
             const $btn = $('.like-btn[data-post-id="' + postId + '"]');
             if ($btn.length && !$btn.data('loaded')) {
                 $btn.addClass('liked');

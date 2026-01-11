@@ -10,38 +10,14 @@
 
 <header class="site-header">
     <div class="container">
-        <div class="header-main">
-            <div class="site-branding">
-                <?php if (has_custom_logo()) : ?>
-                    <?php the_custom_logo(); ?>
-                <?php else : ?>
-                    <h1 class="site-title">
-                        <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
-                    </h1>
-                <?php endif; ?>
+        <div class="header-content">
+            <div class="site-logo">
+                <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
             </div>
-            
-            <nav class="main-navigation">
-                <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'primary',
-                    'menu_class' => 'nav-menu',
-                    'container' => false,
-                    'fallback_cb' => 'default_menu'
-                ));
-                
-                function default_menu() {
-                    echo '<ul class="nav-menu">';
-                    echo '<li><a href="' . home_url('/') . '">Home</a></li>';
-                    wp_list_categories(array(
-                        'title_li' => '',
-                        'depth' => 1,
-                        'number' => 5
-                    ));
-                    echo '</ul>';
-                }
-                ?>
+            <nav>
+                <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'nav-menu', 'fallback_cb' => false)); ?>
             </nav>
+            <a href="<?php echo home_url('/contact'); ?>" class="header-btn">Contact</a>
         </div>
     </div>
 </header>
