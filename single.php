@@ -39,8 +39,17 @@
                         <?php endif; ?>
                    
                         <!-- Post Content -->
-                        <div class="entry-content">
-                            <?php the_content(); ?>
+                        <div class="entry-content" style="font-size: 16px; line-height: 1.8; color: var(--text-color);">
+                            <?php 
+                            the_content();
+                            
+                            wp_link_pages(array(
+                                'before' => '<div class="page-links"><span class="page-links-title">' . __('Pages:', 'ajax-news-theme') . '</span>',
+                                'after'  => '</div>',
+                                'link_before' => '<span>',
+                                'link_after'  => '</span>',
+                            ));
+                            ?>
                         </div>
                         
                         <!-- Tags -->

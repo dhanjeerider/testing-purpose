@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Hero Section with Search -->
-<?php if (get_theme_mod('show_hero', true) && (is_home() || is_front_page())) : ?>
+<?php if (get_theme_mod('show_hero', true) && (is_home() || is_front_page()) && !is_search() && !is_category() && !is_archive()) : ?>
 <section class="hero-section" style="background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%); padding: 40px 0;">
     <div class="container">
         <div class="row justify-content-center">
@@ -33,8 +33,7 @@
 <main class="site-main">
     <div class="container py-3">
         
-        <!-- Story Posts Section -->
-        <div class="story-posts-section mb-3">
+        <!-- Story Posts Section -->        <?php if (is_home() || is_front_page()) : ?>        <div class="story-posts-section mb-3">
             <div class="story-posts-container" style="display:flex; overflow:auto;gap: 12px; padding: 15px 0;">
                 <?php
                 $story_posts = new WP_Query(array(
@@ -58,6 +57,7 @@
                 ?>
             </div>
         </div>
+        <?php endif; ?>
         
         <div class="row">
             <!-- Main Content -->
@@ -65,12 +65,12 @@
                 <div id="posts-container">
 
 <?php if ( is_category() ) : ?>
-    <h1 class="entry-title text-3xl font-bold mb-4">
+    <h1 class="entry-title mb-4" style="font-size: 1.75rem; font-weight: 700;">
         <?php single_cat_title(); ?>
     </h1>
 
 <?php elseif ( is_search() ) : ?>
-    <h1 class="entry-title text-3xl font-bold mb-4">
+    <h1 class="entry-title mb-4" style="font-size: 1.75rem; font-weight: 700;">
         Search Results for: <?php echo esc_html( get_search_query() ); ?>
     </h1>
 
@@ -79,7 +79,6 @@
                         <?php if (have_posts()) : ?>
                             <?php while (have_posts()) : the_post(); ?>
                                 <?php get_template_part('template-parts/content', 'loop'); ?>
-                                ?>
                             <?php endwhile; ?>
                         <?php else : ?>
                             <div class="col-12">

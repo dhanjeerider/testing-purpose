@@ -97,8 +97,20 @@
     padding: 8px 12px;
 }
 
-.navbar-brand img {
-    max-height: 40px;
+.navbar-brand img,
+.custom-logo-link img {
+    max-height: 50px;
+    width: auto;
+}
+
+body .custom-logo-link {
+    display: inline-block;
+}
+
+body .custom-logo {
+    max-height: 50px !important;
+    height: auto !important;
+    width: auto !important;
 }
 
 /* Tighter spacing */
