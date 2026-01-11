@@ -1,8 +1,7 @@
-<aside id="secondary" class="widget-area">
-    <?php if (is_active_sidebar('sidebar-1')) : ?>
-        <?php dynamic_sidebar('sidebar-1'); ?>
+<aside class="sidebar">
+    <?php if (is_active_sidebar('main-sidebar')) : ?>
+        <?php dynamic_sidebar('main-sidebar'); ?>
     <?php else : ?>
-        
         <!-- Search Widget -->
         <section class="widget widget_search">
             <?php get_search_form(); ?>
