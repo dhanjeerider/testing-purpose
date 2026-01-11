@@ -108,11 +108,6 @@
                     ));
                 }
                 ?>
-<!-- AJAX Loader -->
-<div class="ajax-loader" id="ajaxLoader">
-    <div class="spinner"></div>
-    <p class="mt-3">Loading...</p>
-</div>
 
 <!-- Main Content Wrapper -->
-<div id="page-content" class="page-transition">
+<div id="page-content">

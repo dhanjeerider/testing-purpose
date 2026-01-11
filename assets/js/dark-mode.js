@@ -1,42 +1,47 @@
 /**
- * Dark Mode Toggle - Fixed and Optimized
+ * Dark Mode Toggle - Simple & Fast
  */
 
-(function($) {
-    'use strict';
-    
-    // Apply dark mode immediately to prevent flash
+// Apply dark mode immediately (before page load to prevent flash)
+(function() {
     const isDarkMode = localStorage.getItem('darkMode') === 'true';
     if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-    
-    $(document).ready(function() {
-        
-        // Update icon based on current state
-        updateIcon(isDarkMode);
-        
-        // Toggle dark mode
-        $('#darkModeToggle').on('click', function() {
-            $('body').toggleClass('dark-mode');
-            
-            const isNowDark = $('body').hasClass('dark-mode');
-            localStorage.setItem('darkMode', isNowDark);
-            updateIcon(isNowDark);
-        });
-        
-        // Update icon
-        function updateIcon(isDark) {
-            const $icon = $('#darkModeToggle i');
-            if (isDark) {
-                $icon.removeClass('fa-moon').addClass('fa-sun');
-                $('#darkModeToggle').attr('title', 'Switch to Light Mode');
-            } else {
-                $icon.removeClass('fa-sun').addClass('fa-moon');
-                $('#darkModeToggle').attr('title', 'Switch to Dark Mode');
-            }
+        document.documentElement.classList.add('dark-mode');
+        if (document.body) {
+            document.body.classList.add('dark-mode');
         }
-        
+    }
+})();
+
+// Toggle functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtn = document.getElementById('darkModeToggle');
+    if (!toggleBtn) return;
+    
+    // Update icon based on current state
+    updateIcon();
+    
+    // Toggle dark mode on click
+    toggleBtn.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        const isNowDark = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isNowDark);
+        updateIcon();
     });
     
-})(jQuery);
+    function updateIcon() {
+        const isDark = document.body.classList.contains('dark-mode');
+        const icon = toggleBtn.querySelector('i');
+        if (!icon) return;
+        
+        if (isDark) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+            toggleBtn.setAttribute('title', 'Light Mode');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+            toggleBtn.setAttribute('title', 'Dark Mode');
+        }
+    }
+});

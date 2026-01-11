@@ -20,7 +20,7 @@
                 foreach ($recent_posts as $post) :
                 ?>
                     <li>
-                        <a href="<?php echo get_permalink($post['ID']); ?>" class="ajax-link">
+                        <a href="<?php echo get_permalink($post['ID']); ?>">
                             <?php echo $post['post_title']; ?>
                         </a>
                     </li>

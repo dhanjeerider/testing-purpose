@@ -43,7 +43,7 @@
                 if ($story_posts->have_posts()) :
                     while ($story_posts->have_posts()) : $story_posts->the_post();
                 ?>
-                    <a href="<?php the_permalink(); ?>" class="story-item ajax-link">
+                    <a href="<?php the_permalink(); ?>" class="story-item">
                         <?php if (has_post_thumbnail()) : ?>
                             <?php the_post_thumbnail('thumbnail', array('class' => 'story-avatar')); ?>
                         <?php else : ?>
@@ -89,10 +89,12 @@
                 </div>
                 
                 <!-- Load More Button -->
-                <?php if (have_posts()) : ?>
-                    <button id="loadMoreBtn" class="btn btn-primary" data-layout="grid" data-container="#main-content">
-                        Load More <i class="fas fa-chevron-down"></i>
+                <?php if ($GLOBALS['wp_query']->max_num_pages > 1) : ?>
+                <div class="text-center mt-4 mb-4">
+                    <button id="loadMoreBtn" class="btn btn-primary btn-lg" data-container="#main-content">
+                        Load More Posts <i class="fas fa-chevron-down"></i>
                     </button>
+                </div>
                 <?php endif; ?>
                 
                 <!-- Recent Posts Section -->
@@ -110,13 +112,13 @@
                         ?>
                             <div class="recent-post-item">
                                 <?php if (has_post_thumbnail()) : ?>
-                                    <a href="<?php the_permalink(); ?>" class="ajax-link">
+                                    <a href="<?php the_permalink(); ?>">
                                         <?php the_post_thumbnail('thumbnail', array('class' => 'recent-post-thumb')); ?>
                                     </a>
                                 <?php endif; ?>
                                 <div class="recent-post-content flex-grow-1">
                                     <h6>
-                                        <a href="<?php the_permalink(); ?>" class="ajax-link text-decoration-none" style="color: var(--text-color);">
+                                        <a href="<?php the_permalink(); ?>" class="text-decoration-none" style="color: var(--text-color);">
                                             <?php the_title(); ?>
                                         </a>
                                     </h6>

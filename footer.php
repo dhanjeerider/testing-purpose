@@ -50,36 +50,7 @@
         </div>
     </div>
 </footer>
-<!--<<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const currentDomain = window.location.origin;
 
-    document.querySelectorAll('a[href]').forEach(link => {
-        const href = link.getAttribute('href');
-
-        if (!href) return;
-
-        // Ignore anchors, javascript, mailto, tel
-        if (
-            href.startsWith('#') ||
-            href.startsWith('javascript:') ||
-            href.startsWith('mailto:') ||
-            href.startsWith('tel:')
-        ) return;
-
-        // Convert relative URLs to absolute
-        const fullUrl = new URL(href, currentDomain);
-
-        // Check internal link
-        if (fullUrl.origin === currentDomain) {
-            link.classList.add('ajax-link');
-        }
-    });
-});
-</script>-->
 <?php wp_footer(); ?>
 </body>
-
-
-
 </html>

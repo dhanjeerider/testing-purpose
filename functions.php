@@ -42,20 +42,17 @@ function ajax_news_theme_scripts() {
     // Bootstrap JS (defer for performance)
     wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js', array(), '5.3.0', array('strategy' => 'defer'));
     
-    // AJAX Navigation Script
-    wp_enqueue_script('ajax-navigation', get_template_directory_uri() . '/assets/js/ajax-navigation.js', array('jquery'), '1.0.0', true);
-    
-    // Dark Mode Script
-    wp_enqueue_script('dark-mode', get_template_directory_uri() . '/assets/js/dark-mode.js', array('jquery'), '1.0.0', true);
+    // Dark Mode Script (load first, in head to prevent flash)
+    wp_enqueue_script('dark-mode', get_template_directory_uri() . '/assets/js/dark-mode.js', array(), '1.0.1', false);
     
     // Header Enhancements
-    wp_enqueue_script('header-enhancements', get_template_directory_uri() . '/assets/js/header-enhancements.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('header-enhancements', get_template_directory_uri() . '/assets/js/header-enhancements.js', array('jquery'), '1.0.1', true);
     
     // Load More
-    wp_enqueue_script('load-more', get_template_directory_uri() . '/assets/js/load-more.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('load-more', get_template_directory_uri() . '/assets/js/load-more.js', array('jquery'), '1.0.1', true);
     
     // Localize script for AJAX
-    wp_localize_script('ajax-navigation', 'ajaxNewsTheme', array(
+    wp_localize_script('header-enhancements', 'ajaxNewsTheme', array(
         'ajax_url' => admin_url('admin-ajax.php'),
         'nonce' => wp_create_nonce('ajax_news_nonce'),
         'home_url' => home_url('/'),
@@ -225,7 +222,6 @@ function ajax_news_load_more_posts() {
     check_ajax_referer('ajax_news_nonce', 'nonce');
     
     $paged = isset($_POST['paged']) ? intval($_POST['paged']) : 1;
-    $layout = isset($_POST['layout']) ? sanitize_text_field($_POST['layout']) : 'grid';
     
     $args = array(
         'post_type' => 'post',
@@ -241,7 +237,7 @@ function ajax_news_load_more_posts() {
     if ($query->have_posts()) {
         while ($query->have_posts()) {
             $query->the_post();
-            get_template_part('template-parts/content', $layout);
+            get_template_part('template-parts/content', 'loop');
         }
     }
     
@@ -297,7 +293,7 @@ function ajax_news_live_search() {
         $html .= '<div class="search-results-list">';
         while ($search_query->have_posts()) {
             $search_query->the_post();
-            $html .= '<a href="' . get_permalink() . '" class="search-result-item ajax-link">';
+            $html .= '<a href="' . get_permalink() . '" class="search-result-item">';
             if (has_post_thumbnail()) {
                 $html .= get_the_post_thumbnail(get_the_ID(), 'thumbnail', array('class' => 'search-result-thumb'));
             }

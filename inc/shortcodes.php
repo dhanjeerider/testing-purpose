@@ -114,7 +114,7 @@ function ajax_news_also_read_shortcode($atts) {
     
     while ($query->have_posts()) {
         $query->the_post();
-        $output .= '<li><a href="' . get_permalink() . '" class="ajax-link">' . get_the_title() . '</a></li>';
+        $output .= '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
     }
     
     $output .= '</ul>';

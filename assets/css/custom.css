@@ -22,6 +22,41 @@
 .share-action .btn {
     font-size: 12px;
     padding: 6px 12px;
+    transition: all 0.3s ease;
+}
+
+.share-action .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.share-action .gap-1 {
+    gap: 0.5rem !important;
+}
+
+/* Related Posts Section */
+.related-posts {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 25px;
+}
+
+body.dark-mode .related-posts {
+    background: #1a1a1a;
+    border-color: #333;
+}
+
+/* Load More Button */
+#loadMoreBtn,
+#loadMoreRelated {
+    transition: all 0.3s ease;
+}
+
+#loadMoreBtn:hover,
+#loadMoreRelated:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
 }
 
 /* Custom Header Menu */
