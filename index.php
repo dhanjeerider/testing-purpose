@@ -35,7 +35,7 @@
         
         <!-- Story Posts Section -->
         <div class="story-posts-section mb-3">
-            <div class="story-posts-container" style="gap: 12px; padding: 15px 0;">
+            <div class="story-posts-container" style="display:flex; overflow:auto;gap: 12px; padding: 15px 0;">
                 <?php
                 $story_posts = new WP_Query(array(
                     'posts_per_page' => 10,
@@ -64,7 +64,19 @@
             <!-- Main Content -->
             <div class="col-lg-8">
                 <div id="posts-container">
-                    <div class="row" id="main-content">
+
+<?php if ( is_category() ) : ?>
+    <h1 class="entry-title text-3xl font-bold mb-4">
+        <?php single_cat_title(); ?>
+    </h1>
+
+<?php elseif ( is_search() ) : ?>
+    <h1 class="entry-title text-3xl font-bold mb-4">
+        Search Results for: <?php echo esc_html( get_search_query() ); ?>
+    </h1>
+
+<?php endif; ?>
+					<div class="row" id="main-content">
                         <?php if (have_posts()) : $counter = 0; ?>
                             <?php while (have_posts()) : the_post(); $counter++; ?>
                                 <?php

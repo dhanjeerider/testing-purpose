@@ -11,7 +11,7 @@
 <?php wp_body_open(); ?>
 
 <!-- Search Popup -->
-<div class="search-popup" id="searchPopup">
+<div class="search-popup" style="display:none;" id="searchPopup">
     <div class="search-popup-content">
         <button class="search-close" id="searchClose">&times;</button>
         <form role="search" method="get" class="search-form-popup" action="<?php echo esc_url(home_url('/')); ?>">
@@ -35,17 +35,7 @@
             </div>
             <div class="header-top-right d-flex gap-2">
                 <!-- Custom Header Menu -->
-                <?php
-                if (has_nav_menu('custom-header')) {
-                    wp_nav_menu(array(
-                        'theme_location' => 'custom-header',
-                        'container' => false,
-                        'menu_class' => 'custom-header-menu',
-                        'depth' => 1,
-                        'fallback_cb' => false,
-                    ));
-                }
-                ?>
+               
                 
                 <!-- Notification Bell -->
                 <button class="btn btn-sm btn-outline-secondary p-1" id="notificationBell" title="Notifications" style="font-size: 12px;">
@@ -113,7 +103,17 @@
         </div>
     </nav>
 </header>
-
+ <?php
+                if (has_nav_menu('custom-header')) {
+                    wp_nav_menu(array(
+                        'theme_location' => 'custom-header',
+                        'container' => false,
+                        'menu_class' => 'custom-header-menu',
+                        'depth' => 1,
+                        'fallback_cb' => false,
+                    ));
+                }
+                ?>
 <!-- AJAX Loader -->
 <div class="ajax-loader" id="ajaxLoader">
     <div class="spinner"></div>

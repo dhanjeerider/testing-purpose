@@ -6,14 +6,7 @@
             <!-- Main Content -->
             <div class="col-lg-8">
                 <?php while (have_posts()) : the_post(); ?>
-                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                        <!-- Featured Image -->
-                        <?php if (has_post_thumbnail()) : ?>
-                            <div class="post-thumbnail mb-4">
-                                <?php the_post_thumbnail('large', array('class' => 'img-fluid rounded')); ?>
-                            </div>
-                        <?php endif; ?>
-                        
+                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>     
                         <!-- Post Header -->
                         <header class="entry-header mb-4">
                             <h1 class="entry-title"><?php the_title(); ?></h1>
@@ -38,6 +31,13 @@
                             </div>
                         </header>
                         
+                        <!-- Featured Image -->
+                        <?php if (has_post_thumbnail()) : ?>
+                            <div class="post-thumbnail mb-4">
+                                <?php the_post_thumbnail('large', array('class' => 'img-fluid rounded')); ?>
+                            </div>
+                        <?php endif; ?>
+                   
                         <!-- Post Content -->
                         <div class="entry-content">
                             <?php the_content(); ?>

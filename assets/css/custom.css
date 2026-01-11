@@ -693,3 +693,325 @@ body.dark-mode .text-muted {
 .border-light {
     border-color: var(--border-color) !important;
 }
+/* Wrapper scroll smooth */
+.story-posts-container{
+  scrollbar-width: none; /* Firefox */
+}
+.story-posts-container::-webkit-scrollbar{
+  display:none; /* Chrome */
+}
+
+/* Story item */
+.story-item{
+  flex: 0 0 auto;
+  width: 80px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/* Gradient ring (Instagram style) */
+.story-avatar{
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+.story-avatar img{padding:3px;}
+/* Inner image fix */
+.story-avatar{
+  background-origin: border-box;
+}
+.story-avatar{
+  box-shadow: 0 0 0 3px #000 inset;
+}
+
+/* Title under story */
+.story-title{
+  margin-top: 6px;
+  font-size: 11px;
+  line-height: 1.2;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Hover effect */
+.story-item:hover .story-avatar{
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}/* Flex pill menu */
+.custom-header-menu{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; Width:100%;overflow:auto;list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Pill item */
+.custom-header-menu li a{
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff; white-space:nowrap;
+  /* Half opacity + half solid border trick */
+  border: 1.5px solid rgba(255,255,255,0.4);
+  box-shadow: inset 0 0 0 1.5px #fff;
+
+  transition: all 0.25s ease;
+}
+
+/* Hover = full solid */
+.custom-header-menu li a:hover{
+  border-color: #fff;
+  box-shadow: none;
+  background: rgba(255,255,255,0.08);
+}
+
+/* Active / current category */
+.custom-header-menu .current-menu-item a,
+.custom-header-menu .current-menu-ancestor a{
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+  box-shadow: none;
+}
+
+/* Reactions Card Styles */
+.reactions-card {
+    display: flex;
+    gap: 10px;
+    padding: 12px 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: 12px;
+}
+
+.btn-reaction {
+    flex: 1;
+    background: var(--light-bg);
+    border: 2px solid var(--border-color);
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-reaction i {
+    font-size: 16px;
+}
+
+.btn-reaction .count {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* Like Button */
+.btn-reaction.like-btn:hover {
+    background: #ff4757;
+    border-color: #ff4757;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-reaction.like-btn.active {
+    background: #ff4757;
+    border-color: #ff4757;
+    color: white;
+}
+
+.btn-reaction.like-btn.active i {
+    animation: heartBeat 0.5s ease;
+}
+
+/* Save Button */
+.btn-reaction.save-btn:hover {
+    background: #ffa502;
+    border-color: #ffa502;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-reaction.save-btn.active {
+    background: #ffa502;
+    border-color: #ffa502;
+    color: white;
+}
+
+.btn-reaction.save-btn.active i {
+    animation: bounce 0.5s ease;
+}
+
+/* Share Button */
+.btn-reaction.share-btn:hover {
+    background: #1e90ff;
+    border-color: #1e90ff;
+    color: white;
+    transform: scale(1.05);
+}
+
+@keyframes heartBeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.3); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Saved Posts Popup */
+.saved-posts-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 10000;
+    backdrop-filter: blur(5px);
+}
+
+.saved-posts-content {
+    position: relative;
+    max-width: 700px;
+    max-height: 80vh;
+    margin: 50px auto;
+    padding: 30px;
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+}
+
+.saved-posts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.saved-posts-header h3 {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.saved-close {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: var(--text-color);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.saved-close:hover {
+    background: var(--border-color);
+    transform: rotate(90deg);
+}
+
+.saved-post-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.saved-post-item:hover {
+    border-color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.saved-post-thumb {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.saved-post-info {
+    flex: 1;
+}
+
+.saved-post-info h4 {
+    font-size: 15px;
+    margin: 0 0 8px 0;
+    color: var(--text-color);
+}
+
+.saved-post-info h4 a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.saved-post-info h4 a:hover {
+    color: var(--primary-color);
+}
+
+.saved-post-info p {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.remove-saved {
+    background: #ff4757;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.remove-saved:hover {
+    background: #e84118;
+    transform: scale(1.05);
+}
+
+.no-saved-posts {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-muted);
+}
+
+.no-saved-posts i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}

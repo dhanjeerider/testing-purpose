@@ -30,6 +30,9 @@ function ajax_news_theme_scripts() {
     // Bootstrap CSS
     wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css', array(), '5.3.0');
     
+    // Material Design CSS
+    wp_enqueue_style('material-design', get_template_directory_uri() . '/assets/css/material-design.css', array(), '1.0.0');
+    
     // Font Awesome
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', array(), '6.4.0');
     
@@ -60,6 +63,9 @@ function ajax_news_theme_scripts() {
     
     // Load More
     wp_enqueue_script('load-more', get_template_directory_uri() . '/assets/js/load-more.js', array('jquery'), '1.0.0', true);
+    
+    // Layout Switcher JS
+    wp_enqueue_script('layout-switcher', get_template_directory_uri() . '/assets/js/layout-switcher.js', array('jquery'), '1.0.0', true);
     
     // Localize script for AJAX
     wp_localize_script('ajax-navigation', 'ajaxNewsTheme', array(
@@ -288,7 +294,75 @@ function ajax_news_register_blocks() {
         );
     });
 }
-add_action('init', 'ajax_news_register_blocks');\n\n// Live Search AJAX Handler\nfunction ajax_news_live_search() {\n    check_ajax_referer('ajax_news_nonce', 'nonce');\n    \n    $query = isset($_POST['query']) ? sanitize_text_field($_POST['query']) : '';\n    \n    if (empty($query)) {\n        wp_send_json_error();\n    }\n    \n    $args = array(\n        's' => $query,\n        'posts_per_page' => 5,\n        'post_status' => 'publish',\n    );\n    \n    $search_query = new WP_Query($args);\n    \n    $html = '';\n    \n    if ($search_query->have_posts()) {\n        $html .= '<div class=\"search-results-list\">';\n        while ($search_query->have_posts()) {\n            $search_query->the_post();\n            $html .= '<a href=\"' . get_permalink() . '\" class=\"search-result-item ajax-link\">';\n            if (has_post_thumbnail()) {\n                $html .= get_the_post_thumbnail(get_the_ID(), 'thumbnail', array('class' => 'search-result-thumb'));\n            }\n            $html .= '<div class=\"search-result-content\">';\n            $html .= '<h6>' . get_the_title() . '</h6>';\n            $html .= '<small>' . get_the_date() . '</small>';\n            $html .= '</div>';\n            $html .= '</a>';\n        }\n        $html .= '</div>';\n    } else {\n        $html = '<p class=\"text-center p-3 text-muted\">No results found</p>';\n    }\n    \n    wp_reset_postdata();\n    \n    wp_send_json_success(array('html' => $html));\n}\nadd_action('wp_ajax_live_search', 'ajax_news_live_search');\nadd_action('wp_ajax_nopriv_live_search', 'ajax_news_live_search');\n\n// Register Service Worker for PWA\nfunction ajax_news_register_service_worker() {\n    if (is_front_page() || is_home()) {\n        ?>\n        <script>\n        if ('serviceWorker' in navigator) {\n            window.addEventListener('load', function() {\n                navigator.serviceWorker.register('<?php echo get_template_directory_uri(); ?>/service-worker.js')\n                .then(function(registration) {\n                    console.log('ServiceWorker registration successful');\n                })\n                .catch(function(err) {\n                    console.log('ServiceWorker registration failed: ', err);\n                });\n            });\n        }\n        </script>\n        <?php\n    }\n}\nadd_action('wp_footer', 'ajax_news_register_service_worker');
+add_action('init', 'ajax_news_register_blocks');
+
+// Live Search AJAX Handler
+function ajax_news_live_search() {
+    check_ajax_referer('ajax_news_nonce', 'nonce');
+    
+    $query = isset($_POST['query']) ? sanitize_text_field($_POST['query']) : '';
+    
+    if (empty($query)) {
+        wp_send_json_error();
+    }
+    
+    $args = array(
+        's' => $query,
+        'posts_per_page' => 5,
+        'post_status' => 'publish',
+    );
+    
+    $search_query = new WP_Query($args);
+    
+    $html = '';
+    
+    if ($search_query->have_posts()) {
+        $html .= '<div class="search-results-list">';
+        while ($search_query->have_posts()) {
+            $search_query->the_post();
+            $html .= '<a href="' . get_permalink() . '" class="search-result-item ajax-link">';
+            if (has_post_thumbnail()) {
+                $html .= get_the_post_thumbnail(get_the_ID(), 'thumbnail', array('class' => 'search-result-thumb'));
+            }
+            $html .= '<div class="search-result-content">';
+            $html .= '<h6>' . get_the_title() . '</h6>';
+            $html .= '<small>' . get_the_date() . '</small>';
+            $html .= '</div>';
+            $html .= '</a>';
+        }
+        $html .= '</div>';
+    } else {
+        $html = '<p class="text-center p-3 text-muted">No results found</p>';
+    }
+    
+    wp_reset_postdata();
+    
+    wp_send_json_success(array('html' => $html));
+}
+add_action('wp_ajax_live_search', 'ajax_news_live_search');
+add_action('wp_ajax_nopriv_live_search', 'ajax_news_live_search');
+
+// Register Service Worker for PWA
+function ajax_news_register_service_worker() {
+    if (is_front_page() || is_home()) {
+        ?>
+        <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('<?php echo get_template_directory_uri(); ?>/service-worker.js')
+                .then(function(registration) {
+                    console.log('ServiceWorker registration successful');
+                })
+                .catch(function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+        </script>
+        <?php
+    }
+}
+add_action('wp_footer', 'ajax_news_register_service_worker');
 
 // Theme Customizer
 function ajax_news_customize_register($wp_customize) {
