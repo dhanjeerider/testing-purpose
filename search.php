@@ -1,107 +1,78 @@
 <?php get_header(); ?>
 
-<div class="container my-5">
-    
-    <!-- Search Title Section -->
-    <div class="search-title-section mb-5">
-        <div class="search-title-wrapper">
-            <h1 class="search-main-title">Search Results</h1>
-            <p class="search-query-text">
-                Showing results for: <strong>"<?php echo get_search_query(); ?>"</strong>
-            </p>
-            <?php if (have_posts()) : ?>
-                <div class="search-meta">
-                    <span class="post-count">
-                        <i class="fas fa-search"></i> <?php echo $wp_query->found_posts; ?> Result(s) Found
-                    </span>
-                </div>
-            <?php endif; ?>
-        </div>
-        
-        <!-- Search Form -->
-        <div class="search-form-wrapper mt-4">
-            <form role="search" method="get" class="search-form" action="<?php echo home_url('/'); ?>">
-                <div class="input-group input-group-lg">
-                    <input type="search" class="form-control" placeholder="Search again..." value="<?php echo get_search_query(); ?>" name="s" required>
-                    <button class="btn btn-primary" type="submit">
-                        <i class="fas fa-search"></i> Search
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-lg-8">
-            <div class="posts-container">
-                <div class="row">
+<main class="site-main">
+    <div class="container py-4">
+        <div class="row">
+            <!-- Main Content -->
+            <div class="col-lg-8">
+                <!-- Search Title -->
+                <header class="page-header mb-4">
+                    <h1 class="page-title" style="font-size: 1.75rem; font-weight: 700; color: var(--text-color); margin-bottom: 10px;">
+                        <?php
+                        printf(
+                            esc_html__('Search Results for: %s', 'ajax-news-theme'),
+                            '<span style="color: var(--primary-color);">' . get_search_query() . '</span>'
+                        );
+                        ?>
+                    </h1>
                     <?php if (have_posts()) : ?>
-                        <?php while (have_posts()) : the_post(); ?>
-                            <div class="col-md-6 mb-4">
-                                <article id="post-<?php the_ID(); ?>" <?php post_class('material-card h-100'); ?>>
-                                    <?php if (has_post_thumbnail()) : ?>
-                                        <div class="post-thumbnail">
-                                            <a href="<?php the_permalink(); ?>">
-                                                <?php the_post_thumbnail('news-medium'); ?>
-                                            </a>
-                                        </div>
-                                    <?php endif; ?>
-                                    
-                                    <div class="card-content p-4">
-                                        <h2 class="post-title h5">
-                                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                        </h2>
-                                        
-                                        <div class="post-meta mb-3">
-                                            <span class="meta-item"><i class="far fa-calendar"></i> <?php echo get_the_date(); ?></span>
-                                        </div>
-                                        
-                                        <div class="post-excerpt">
-                                            <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
-                                        </div>
-                                        
-                                        <div class="post-footer mt-3">
-                                            <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-sm">
-                                                Read More <i class="fas fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        <?php endwhile; ?>
-                        
-                        <div class="col-12">
-                            <nav class="pagination-wrapper mt-4">
-                                <?php
-                                the_posts_pagination(array(
-                                    'mid_size' => 2,
-                                    'prev_text' => '<i class="fas fa-chevron-left"></i> Previous',
-                                    'next_text' => 'Next <i class="fas fa-chevron-right"></i>',
-                                ));
-                                ?>
-                            </nav>
-                        </div>
-                    <?php else : ?>
-                        <div class="col-12">
-                            <div class="no-results text-center py-5">
-                                <i class="fas fa-search fa-4x mb-3 text-muted"></i>
-                                <h3>No Results Found</h3>
-                                <p class="text-muted">Try different keywords</p>
-                            </div>
-                        </div>
+                        <p class="search-results-count text-muted" style="font-size: 14px;">
+                            <?php
+                            global $wp_query;
+                            echo $wp_query->found_posts . ' result(s) found';
+                            ?>
+                        </p>
                     <?php endif; ?>
+                </header>
+
+                <div id="posts-container">
+                    <div class="posts-grid" id="main-content" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px;">
+                        <?php if (have_posts()) : ?>
+                            <?php while (have_posts()) : the_post(); ?>
+                                <?php get_template_part('template-parts/content', 'loop'); ?>
+                            <?php endwhile; ?>
+                        <?php else : ?>
+                            <div class="col-12">
+                                <div class="no-results" style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 40px 20px; text-align: center;">
+                                    <i class="fas fa-search" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 20px;"></i>
+                                    <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--text-color); margin-bottom: 10px;">
+                                        No results found
+                                    </h3>
+                                    <p class="text-muted" style="font-size: 14px; margin-bottom: 20px;">
+                                        Sorry, no posts matched your search criteria. Try different keywords.
+                                    </p>
+                                    
+                                    <!-- Search Again -->
+                                    <form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
+                                        <div class="input-group" style="max-width: 500px; margin: 0 auto;">
+                                            <input type="search" class="form-control" placeholder="Search again..." name="s" value="<?php echo get_search_query(); ?>" style="padding: 10px 15px; font-size: 14px;">
+                                            <button type="submit" class="btn btn-primary" style="padding: 10px 20px; font-size: 14px;">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+
+                    <!-- Pagination -->
+                    <?php
+                    the_posts_pagination(array(
+                        'mid_size' => 2,
+                        'prev_text' => __('&laquo; Previous', 'ajax-news-theme'),
+                        'next_text' => __('Next &raquo;', 'ajax-news-theme'),
+                    ));
+                    ?>
                 </div>
             </div>
-        </div>
-        
-        <div class="col-lg-4">
-            <aside class="main-sidebar">
-                <?php if (is_active_sidebar('main-sidebar')) : ?>
-                    <?php dynamic_sidebar('main-sidebar'); ?>
-                <?php endif; ?>
-            </aside>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <?php get_sidebar(); ?>
+            </div>
         </div>
     </div>
-</div>
+</main>
 
 <?php get_footer(); ?>

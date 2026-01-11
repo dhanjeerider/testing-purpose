@@ -1,6 +1,6 @@
 <?php
 /**
- * Shortcodes for AJAX News Theme
+ * Shortcodes for AJAX News Theme - Cleaned Up
  */
 
 // Social Share Shortcode
@@ -18,7 +18,7 @@ function ajax_news_social_share_shortcode($atts) {
     <div class="social-share">
         <h4>Share this article:</h4>
         
-        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $url; ?>" target="_blank" class="social-share-btn facebook">
+   <div class="d-flex flex-wrap"><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $url; ?>" target="_blank" class="social-share-btn facebook">
             <i class="fab fa-facebook-f"></i> Facebook
         </a>
         
@@ -37,138 +37,11 @@ function ajax_news_social_share_shortcode($atts) {
         <a href="https://t.me/share/url?url=<?php echo $url; ?>&text=<?php echo $title; ?>" target="_blank" class="social-share-btn telegram">
             <i class="fab fa-telegram-plane"></i> Telegram
         </a>
-    </div>
+    </div> </div>
     <?php
     return ob_get_clean();
 }
 add_shortcode('social_share', 'ajax_news_social_share_shortcode');
-
-// Reactions Shortcode
-function ajax_news_reactions_shortcode($atts) {
-    $atts = shortcode_atts(array(
-        'post_id' => get_the_ID(),
-    ), $atts);
-    
-    $post_id = $atts['post_id'];
-    
-    // Get reaction counts
-    $likes = get_post_meta($post_id, 'reaction_likes', true) ?: 0;
-    $dislikes = get_post_meta($post_id, 'reaction_dislikes', true) ?: 0;
-    $saves = get_post_meta($post_id, 'reaction_saves', true) ?: 0;
-    
-    // Check if user has reacted (using cookies for non-logged users)
-    $user_id = get_current_user_id();
-    $cookie_prefix = 'reaction_' . $post_id . '_';
-    
-    $user_liked = false;
-    $user_disliked = false;
-    $user_saved = false;
-    
-    if ($user_id) {
-        $user_reactions = get_user_meta($user_id, 'post_reactions', true) ?: array();
-        if (isset($user_reactions[$post_id])) {
-            $user_liked = in_array('like', $user_reactions[$post_id]);
-            $user_disliked = in_array('dislike', $user_reactions[$post_id]);
-            $user_saved = in_array('save', $user_reactions[$post_id]);
-        }
-    } else {
-        $user_liked = isset($_COOKIE[$cookie_prefix . 'like']);
-        $user_disliked = isset($_COOKIE[$cookie_prefix . 'dislike']);
-        $user_saved = isset($_COOKIE[$cookie_prefix . 'save']);
-    }
-    
-    $output = '<div class="reaction-buttons">';
-    
-    // Like Button
-    $like_class = $user_liked ? 'reaction-btn liked active' : 'reaction-btn';
-    $output .= '<button class="' . $like_class . '" data-post-id="' . $post_id . '" data-reaction="like">';
-    $output .= '<i class="fas fa-thumbs-up"></i> Like <span class="count">' . $likes . '</span>';
-    $output .= '</button>';
-    
-    // Dislike Button
-    $dislike_class = $user_disliked ? 'reaction-btn disliked active' : 'reaction-btn';
-    $output .= '<button class="' . $dislike_class . '" data-post-id="' . $post_id . '" data-reaction="dislike">';
-    $output .= '<i class="fas fa-thumbs-down"></i> Dislike <span class="count">' . $dislikes . '</span>';
-    $output .= '</button>';
-    
-    // Save Button
-    $save_class = $user_saved ? 'reaction-btn saved active' : 'reaction-btn';
-    $output .= '<button class="' . $save_class . '" data-post-id="' . $post_id . '" data-reaction="save">';
-    $output .= '<i class="fas fa-bookmark"></i> Save <span class="count">' . $saves . '</span>';
-    $output .= '</button>';
-    
-    $output .= '</div>';
-    
-    return $output;
-}
-add_shortcode('reactions', 'ajax_news_reactions_shortcode');
-
-// Video Player Shortcode
-function ajax_news_video_player_shortcode($atts) {
-    $atts = shortcode_atts(array(
-        'url' => '',
-        'type' => 'youtube', // youtube, vimeo, mp4
-        'poster' => '',
-    ), $atts);
-    
-    $output = '<div class="video-player-container">';
-    
-    if ($atts['type'] === 'youtube') {
-        // Extract YouTube ID
-        preg_match('/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i', $atts['url'], $matches);
-        $youtube_id = $matches[1] ?? '';
-        
-        if ($youtube_id) {
-            $output .= '<iframe src="https://www.youtube.com/embed/' . $youtube_id . '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-        }
-    } elseif ($atts['type'] === 'vimeo') {
-        // Extract Vimeo ID
-        preg_match('/vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/([^\/]*)\/videos\/|album\/(\d+)\/video\/|)(\d+)(?:$|\/|\?)/', $atts['url'], $matches);
-        $vimeo_id = $matches[3] ?? '';
-        
-        if ($vimeo_id) {
-            $output .= '<iframe src="https://player.vimeo.com/video/' . $vimeo_id . '" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
-        }
-    } else {
-        // HTML5 Video
-        $output .= '<video class="plyr-video" controls';
-        if ($atts['poster']) {
-            $output .= ' poster="' . esc_url($atts['poster']) . '"';
-        }
-        $output .= '>';
-        $output .= '<source src="' . esc_url($atts['url']) . '" type="video/mp4">';
-        $output .= 'Your browser does not support the video tag.';
-        $output .= '</video>';
-    }
-    
-    $output .= '</div>';
-    
-    return $output;
-}
-add_shortcode('video_player', 'ajax_news_video_player_shortcode');
-
-// Newsletter Subscription Shortcode
-function ajax_news_newsletter_shortcode($atts) {
-    $atts = shortcode_atts(array(
-        'title' => 'Subscribe to our Newsletter',
-        'placeholder' => 'Enter your email',
-    ), $atts);
-    
-    $output = '<div class="newsletter-box p-4 my-4" style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px;">';
-    $output .= '<h3>' . esc_html($atts['title']) . '</h3>';
-    $output .= '<form class="newsletter-form" method="post" action="' . admin_url('admin-ajax.php') . '">';
-    $output .= '<div class="input-group">';
-    $output .= '<input type="email" name="email" class="form-control" placeholder="' . esc_attr($atts['placeholder']) . '" required>';
-    $output .= '<button type="submit" class="btn btn-primary">Subscribe</button>';
-    $output .= '</div>';
-    $output .= '<input type="hidden" name="action" value="newsletter_subscribe">';
-    $output .= wp_nonce_field('newsletter_nonce', 'nonce', true, false);
-    $output .= '</form>';
-    $output .= '</div>';
-    
-    return $output;
-}
-add_shortcode('newsletter', 'ajax_news_newsletter_shortcode');
 
 // Related Posts Shortcode
 function ajax_news_related_posts_shortcode($atts) {
@@ -193,36 +66,22 @@ function ajax_news_related_posts_shortcode($atts) {
         return '';
     }
     
-    $output = '<div class="related-posts my-5">';
-    $output .= '<h3>Related Articles</h3>';
-    $output .= '<div class="row">';
+    ob_start();
+    echo '<div class="related-posts my-5">';
+    echo '<h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 20px; color: var(--text-color);">Related Articles</h3>';
+    echo '<div class="posts-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px;">';
     
     while ($related_query->have_posts()) {
         $related_query->the_post();
-        
-        $output .= '<div class="col-md-4">';
-        $output .= '<article class="news-card">';
-        
-        if (has_post_thumbnail()) {
-            $output .= '<a href="' . get_permalink() . '" class="ajax-link">';
-            $output .= get_the_post_thumbnail(get_the_ID(), 'news-thumb');
-            $output .= '</a>';
-        }
-        
-        $output .= '<div class="news-card-body">';
-        $output .= '<h4 class="news-card-title"><a href="' . get_permalink() . '" class="ajax-link">' . get_the_title() . '</a></h4>';
-        $output .= '<p>' . wp_trim_words(get_the_excerpt(), 15) . '</p>';
-        $output .= '</div>';
-        $output .= '</article>';
-        $output .= '</div>';
+        get_template_part('template-parts/content', 'loop');
     }
     
-    $output .= '</div>';
-    $output .= '</div>';
+    echo '</div>';
+    echo '</div>';
     
     wp_reset_postdata();
     
-    return $output;
+    return ob_get_clean();
 }
 add_shortcode('related_posts', 'ajax_news_related_posts_shortcode');
 

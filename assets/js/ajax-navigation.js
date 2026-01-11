@@ -7,52 +7,13 @@
     
     $(document).ready(function() {
         
-        // Auto-add ajax-link class to all internal links
-        function markInternalLinks() {
-            const currentDomain = window.location.origin;
-            
-            $('a[href]').each(function() {
-                const href = $(this).attr('href');
-                
-                if (!href) return;
-                
-                // Skip anchors, javascript, mailto, tel, external
-                if (
-                    href.startsWith('#') ||
-                    href.startsWith('javascript:') ||
-                    href.startsWith('mailto:') ||
-                    href.startsWith('tel:') ||
-                    $(this).attr('target') === '_blank'
-                ) return;
-                
-                // Check if internal link
-                try {
-                    const fullUrl = new URL(href, currentDomain);
-                    if (fullUrl.origin === currentDomain) {
-                        $(this).addClass('ajax-link');
-                    }
-                } catch (e) {
-                    // If relative URL, it's internal
-                    if (!href.startsWith('http')) {
-                        $(this).addClass('ajax-link');
-                    }
-                }
-            });
-        }
-        
-        // Mark links on page load
-        markInternalLinks();
-        
-        // Re-mark after content loaded
-        $(document).on('contentLoaded', markInternalLinks);
-        
-        // Handle all ajax links
-        $(document).on('click', 'a.ajax-link', function(e) {
+        // Handle all internal links
+        $(document).on('click', 'a.ajax-link, .navbar-nav a, .pagination a', function(e) {
             const $link = $(this);
             const url = $link.attr('href');
             
-            // Skip if no URL or anchor
-            if (!url || url === '#' || url.startsWith('#')) {
+            // Check if it's an internal link
+            if (!url || url.indexOf('#') === 0 || url.indexOf('http') === 0 && url.indexOf(ajaxNewsTheme.home_url) !== 0) {
                 return;
             }
             
