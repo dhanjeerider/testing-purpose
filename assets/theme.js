@@ -57,68 +57,72 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // ========================================
-    // Hero Slider Functionality
+    // Hero Slider - Thumbnail Auto Slide
     // ========================================
     const heroSlider = document.querySelector('.hero-slider');
     if (heroSlider) {
+        const slides = heroSlider.querySelectorAll('.hero-banner');
+        
+        if (slides.length > 0) {
+            let currentIndex = 0;
+            let autoSlideInterval;
+            
+            // Auto scroll function
+            function autoScroll() {
+                currentIndex++;
+                if (currentIndex >= slides.length) {
+                    currentIndex = 0;
+                    heroSlider.scrollTo({
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    const slideWidth = slides[0].offsetWidth;
+                    const gap = 16; // 1rem gap
+                    heroSlider.scrollTo({
+                        left: (slideWidth + gap) * currentIndex,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+            
+            // Start auto slide every 3 seconds
+            autoSlideInterval = setInterval(autoScroll, 3000);
+            
+            // Pause on hover
+            heroSlider.addEventListener('mouseenter', function() {
+                clearInterval(autoSlideInterval);
+            });
+            
+            // Resume on mouse leave
+            heroSlider.addEventListener('mouseleave', function() {
+                autoSlideInterval = setInterval(autoScroll, 3000);
+            });
+            
+            // Pause on touch/scroll
+            heroSlider.addEventListener('touchstart', function() {
+                clearInterval(autoSlideInterval);
+            });
+            
+            heroSlider.addEventListener('scroll', function() {
+                clearInterval(autoSlideInterval);
+                // Resume after 2 seconds of no scrolling
+                setTimeout(function() {
+                    autoSlideInterval = setInterval(autoScroll, 3000);
+                }, 2000);
+            });
+        }
+        
+        // Remove dots and navigation if they exist
+        const dotsContainer = document.querySelector('.hero-dots');
+        if (dotsContainer) {
+            dotsContainer.remove();
+        }
+        
         const prevBtn = heroSlider.querySelector('.hero-prev');
         const nextBtn = heroSlider.querySelector('.hero-next');
-        const slides = heroSlider.querySelectorAll('.hero-banner');
-        const dots = document.querySelectorAll('.hero-dots .dot');
-        let currentSlide = 0;
-        const totalSlides = slides.length;
-        
-        function showSlide(index) {
-            // Remove active class from all slides and dots
-            slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-            
-            // Add active class to current slide and dot
-            if (slides[index]) {
-                slides[index].classList.add('active');
-            }
-            if (dots[index]) {
-                dots[index].classList.add('active');
-            }
-        }
-        
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            showSlide(currentSlide);
-        }
-        
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            showSlide(currentSlide);
-        }
-        
-        if (prevBtn) {
-            prevBtn.addEventListener('click', prevSlide);
-        }
-        
-        if (nextBtn) {
-            nextBtn.addEventListener('click', nextSlide);
-        }
-        
-        // Dot navigation
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', function() {
-                currentSlide = index;
-                showSlide(currentSlide);
-            });
-        });
-        
-        // Auto-play slider every 5 seconds
-        let autoplayInterval = setInterval(nextSlide, 5000);
-        
-        // Pause autoplay on hover
-        heroSlider.addEventListener('mouseenter', function() {
-            clearInterval(autoplayInterval);
-        });
-        
-        heroSlider.addEventListener('mouseleave', function() {
-            autoplayInterval = setInterval(nextSlide, 5000);
-        });
+        if (prevBtn) prevBtn.remove();
+        if (nextBtn) nextBtn.remove();
     }
     
     // ========================================

@@ -13,58 +13,32 @@
 get_header();
 // Display hero slider on the front page (only on the first page of the main query).
 if ( ! is_paged() ) {
-    // Query a limited number of posts for the hero slider.  You can customize the
-    // arguments (e.g. 'category_name' => 'featured') to pull posts from a specific category.
+    // Query posts for the thumbnail slider
     $hero_query = new WP_Query( array(
-        'posts_per_page'      => 5,
+        'posts_per_page'      => 10,
         'ignore_sticky_posts' => true,
     ) );
 
     if ( $hero_query->have_posts() ) {
-        $slide_count = 0;
         echo '<section class="hero-section">';
         echo '<div class="hero-slider">';
-        // Previous navigation button.
-        echo '<button class="hero-nav hero-prev">';
-        echo '<svg viewBox="0 0 24 24" fill="none"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"></path></svg>';
-        echo '</button>';
 
         while ( $hero_query->have_posts() ) {
             $hero_query->the_post();
-            // Determine if this slide should be marked as active (the first slide).
-            $active = ( 0 === $slide_count ) ? ' active' : '';
-            echo '<div class="hero-banner' . $active . '">';
+            echo '<a href="' . esc_url( get_permalink() ) . '" class="hero-banner">';
             echo '<div class="hero-image">';
             if ( has_post_thumbnail() ) {
-                echo '<img src="' . esc_url( get_the_post_thumbnail_url( get_the_ID(), 'full' ) ) . '" alt="' . esc_attr( get_the_title() ) . '">';
+                echo '<img src="' . esc_url( get_the_post_thumbnail_url( get_the_ID(), 'medium' ) ) . '" alt="' . esc_attr( get_the_title() ) . '">';
             }
             echo '</div>';
             echo '<div class="hero-overlay"></div>';
             echo '<div class="hero-content">';
             echo '<h1 class="hero-title">' . esc_html( get_the_title() ) . '</h1>';
-            // Use the excerpt for the description if available.
-            $excerpt = get_the_excerpt();
-            if ( $excerpt ) {
-                echo '<div class="hero-description"><p>' . esc_html( $excerpt ) . '</p></div>';
-            }
-            // Call to action button linking to the post.
-            echo '<a href="' . esc_url( get_permalink() ) . '" class="btn btn-primary">' . esc_html__( 'Download Now', 'mvdrive' ) . '</a>';
             echo '</div>'; // hero-content
-            echo '</div>'; // hero-banner
-            $slide_count++;
+            echo '</a>'; // hero-banner
         }
-        // Next navigation button.
-        echo '<button class="hero-nav hero-next">';
-        echo '<svg viewBox="0 0 24 24" fill="none"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2"></path></svg>';
-        echo '</button>';
+        
         echo '</div>'; // hero-slider
-        // Hero dots navigation.
-        echo '<div class="hero-dots">';
-        for ( $i = 0; $i < $slide_count; $i++ ) {
-            $dot_active = ( 0 === $i ) ? ' active' : '';
-            echo '<span class="dot' . $dot_active . '"></span>';
-        }
-        echo '</div>';
         echo '</section>';
 
         wp_reset_postdata();
@@ -77,7 +51,7 @@ mvdrive_display_notice();
 ?>
 <section class="content-section">
     <h2 class="section-title">
-        <i class="material-icons"></i>
+
         <span class="material-text"><?php _e( 'Latest Releases', 'mvdrive' ); ?></span>
     </h2>
     <div class="movies-grid" id="moviesGridMain">

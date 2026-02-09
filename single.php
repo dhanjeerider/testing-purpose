@@ -36,7 +36,13 @@ get_header();
                         <?php echo get_the_date(); ?>
                     </span>
                     <div class="post-categories">
-                        <?php the_category( '' ); ?>
+                        <?php
+                        // Show only first category
+                        $categories = get_the_category();
+                        if ( ! empty( $categories ) ) {
+                            echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
+                        }
+                        ?>
                     </div>
                 </div>
             </header>
@@ -53,6 +59,8 @@ get_header();
                 <span class="tags-label"><?php _e( 'Tags:', 'mvdrive' ); ?></span>
                 <?php the_tags( '', ', ', '' ); ?>
             </div>
+
+            <?php mvdrive_display_subscribe_button(); ?>
 
             <?php mvdrive_display_telegram_cta(); ?>
 

@@ -42,15 +42,23 @@ add_action( 'after_setup_theme', 'mvdrive_theme_setup' );
  * Enqueue theme scripts and styles.
  */
 function mvdrive_enqueue_scripts() {
-    // Enqueue the main stylesheet
-    wp_enqueue_style( 'mvdrive-style', get_stylesheet_uri(), array(), '2.0' );
+    // Enqueue the main stylesheet with version for cache busting
+    wp_enqueue_style( 'mvdrive-style', get_stylesheet_uri(), array(), '2.2' );
     
-    // Enqueue theme JavaScript
+    // Enqueue FontAwesome
+    wp_enqueue_style( 
+        'fontawesome', 
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css', 
+        array(), 
+        '6.5.1' 
+    );
+    
+    // Enqueue theme JavaScript with version for cache busting
     wp_enqueue_script( 
         'mvdrive-theme-js', 
         get_template_directory_uri() . '/assets/theme.js', 
         array(), 
-        '2.0', 
+        '2.2', 
         true 
     );
 }
@@ -72,6 +80,62 @@ function mvdrive_widgets_init() {
     ) );
 }
 add_action( 'widgets_init', 'mvdrive_widgets_init' );
+
+/**
+ * Add custom meta box for quality badge
+ */
+function mvdrive_add_quality_meta_box() {
+    add_meta_box(
+        'mvdrive_quality_meta_box',
+        __( 'Movie Quality Badge', 'mvdrive' ),
+        'mvdrive_quality_meta_box_callback',
+        'post',
+        'side',
+        'default'
+    );
+}
+add_action( 'add_meta_boxes', 'mvdrive_add_quality_meta_box' );
+
+/**
+ * Display the quality meta box
+ */
+function mvdrive_quality_meta_box_callback( $post ) {
+    wp_nonce_field( 'mvdrive_save_quality', 'mvdrive_quality_nonce' );
+    $value = get_post_meta( $post->ID, 'quality', true );
+    ?>
+    <label for="mvdrive_quality_field">
+        <?php _e( 'Quality (e.g., HD, 4K, CAM, WEB-DL):', 'mvdrive' ); ?>
+    </label>
+    <input type="text" id="mvdrive_quality_field" name="mvdrive_quality_field" 
+           value="<?php echo esc_attr( $value ); ?>" 
+           placeholder="HD" 
+           style="width: 100%; margin-top: 5px;">
+    <?php
+}
+
+/**
+ * Save the quality meta box data
+ */
+function mvdrive_save_quality_meta_box_data( $post_id ) {
+    if ( ! isset( $_POST['mvdrive_quality_nonce'] ) ) {
+        return;
+    }
+    if ( ! wp_verify_nonce( $_POST['mvdrive_quality_nonce'], 'mvdrive_save_quality' ) ) {
+        return;
+    }
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+        return;
+    }
+    if ( ! current_user_can( 'edit_post', $post_id ) ) {
+        return;
+    }
+    if ( ! isset( $_POST['mvdrive_quality_field'] ) ) {
+        return;
+    }
+    $quality = sanitize_text_field( $_POST['mvdrive_quality_field'] );
+    update_post_meta( $post_id, 'quality', $quality );
+}
+add_action( 'save_post', 'mvdrive_save_quality_meta_box_data' );
 
 /**
  * Register settings and controls with the WordPress Customizer.  The
@@ -166,20 +230,72 @@ function mvdrive_customize_register( $wp_customize ) {
         'section'  => 'mvdrive_telegram_section',
         'type'     => 'url',
     ) );
+
+    /*
+     * Subscribe Button Section
+     */
+    $wp_customize->add_section( 'mvdrive_subscribe_section', array(
+        'title'       => __( 'Subscribe Button', 'mvdrive' ),
+        'description' => __( 'Customize the subscribe bell button that appears on posts.', 'mvdrive' ),
+        'priority'    => 50,
+    ) );
+
+    // Subscribe button text.
+    $wp_customize->add_setting( 'mvdrive_subscribe_text', array(
+        'default'           => __( 'Subscribe for Updates', 'mvdrive' ),
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport'         => 'refresh',
+    ) );
+    $wp_customize->add_control( 'mvdrive_subscribe_text', array(
+        'label'    => __( 'Subscribe Text', 'mvdrive' ),
+        'section'  => 'mvdrive_subscribe_section',
+        'type'     => 'text',
+    ) );
+
+    // Subscribe link URL.
+    $wp_customize->add_setting( 'mvdrive_subscribe_link', array(
+        'default'           => home_url( '/subscribe/' ),
+        'sanitize_callback' => 'esc_url_raw',
+        'transport'         => 'refresh',
+    ) );
+    $wp_customize->add_control( 'mvdrive_subscribe_link', array(
+        'label'    => __( 'Subscribe Link URL', 'mvdrive' ),
+        'section'  => 'mvdrive_subscribe_section',
+        'type'     => 'url',
+    ) );
 }
 add_action( 'customize_register', 'mvdrive_customize_register' );
 
 /**
+ * Output the subscribe button HTML.
+ */
+function mvdrive_display_subscribe_button() {
+    $text = get_theme_mod( 'mvdrive_subscribe_text', __( 'Subscribe for Updates', 'mvdrive' ) );
+    $link = get_theme_mod( 'mvdrive_subscribe_link', home_url( '/subscribe/' ) );
+
+    if ( ! $text || ! $link ) {
+        return;
+    }
+
+    echo '<div class="subscribe-button-wrapper">';
+    echo '<a href="' . esc_url( $link ) . " target="_blank" class="subscribe-btn">';
+    echo '<svg class="bell-icon" viewBox="0 0 24 24" fill="none"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>';
+    echo '<span>' . esc_html( $text ) . '</span>';
+    echo '</a>';
+    echo '</div>';
+}
+
+/**
  * Output the notice section HTML.  Call this function from a template
  * (typically index.php) to display the notice.  The HTML uses the
- * classes from the original MoviesDrive layout so that the user’s CSS
+ * classes from the original MoviesDrive layout so that the user's CSS
  * continues to apply.  The text and link values are pulled from the
  * Customizer settings defined above.
  */
 function mvdrive_display_notice() {
-    $notice_text  = get_theme_mod( 'mvdrive_notice_text' );
-    $link_text    = get_theme_mod( 'mvdrive_notice_link_text' );
-    $link_url     = get_theme_mod( 'mvdrive_notice_link_url' );
+    $notice_text  = get_theme_mod( 'mvdrive_notice_text', __( 'Avoid fake copies of our site. Bookmark our official domain.', 'mvdrive' ) );
+    $link_text    = get_theme_mod( 'mvdrive_notice_link_text', __( 'Official Site', 'mvdrive' ) );
+    $link_url     = get_theme_mod( 'mvdrive_notice_link_url', home_url( '/' ) );
 
     if ( empty( $notice_text ) ) {
         return;
@@ -208,9 +324,9 @@ function mvdrive_display_notice() {
  * ensure compatibility with the existing CSS.
  */
 function mvdrive_display_telegram_cta() {
-    $title    = get_theme_mod( 'mvdrive_telegram_title' );
-    $subtitle = get_theme_mod( 'mvdrive_telegram_subtitle' );
-    $link     = get_theme_mod( 'mvdrive_telegram_link' );
+    $title    = get_theme_mod( 'mvdrive_telegram_title', __( 'Join our Telegram Channel', 'mvdrive' ) );
+    $subtitle = get_theme_mod( 'mvdrive_telegram_subtitle', __( 'Get instant updates on new releases', 'mvdrive' ) );
+    $link     = get_theme_mod( 'mvdrive_telegram_link', 'https://t.me/yourchannel' );
 
     if ( ! $title && ! $subtitle && ! $link ) {
         return;

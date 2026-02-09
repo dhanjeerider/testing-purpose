@@ -20,10 +20,22 @@ if ( empty( $quality ) ) {
     <div class="poster-card">
         <div class="poster-inner">
             <div class="poster-image">
-                <?php if ( has_post_thumbnail() ) : ?>
-                    <img src="<?php echo esc_url( get_the_post_thumbnail_url( get_the_ID(), 'medium' ) ); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>" loading="lazy">
+                <?php 
+                $thumbnail_url = '';
+                if ( has_post_thumbnail() ) {
+                    $thumbnail_url = get_the_post_thumbnail_url( get_the_ID(), 'full' );
+                } else {
+                    // Get first image from post content
+                    $content = get_post_field( 'post_content', get_the_ID() );
+                    preg_match_all( '/<img.+src=["\']([^"\']+)["\'].*>/i', $content, $matches );
+                    if ( ! empty( $matches[1][0] ) ) {
+                        $thumbnail_url = $matches[1][0];
+                    }
+                }
+                
+                if ( $thumbnail_url ) : ?>
+                    <img src="<?php echo esc_url( $thumbnail_url ); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>" loading="lazy">
                 <?php else : ?>
-                    <!-- Placeholder image if no featured image is set.  The user can supply CSS to style this element. -->
                     <div class="no-image" style="width:100%;height:100%;background:#ccc;"></div>
                 <?php endif; ?>
                 <span class="poster-quality"><?php echo esc_html( $quality ); ?></span>
