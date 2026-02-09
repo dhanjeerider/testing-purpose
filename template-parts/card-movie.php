@@ -25,11 +25,21 @@ if ( empty( $quality ) ) {
                 if ( has_post_thumbnail() ) {
                     $thumbnail_url = get_the_post_thumbnail_url( get_the_ID(), 'full' );
                 } else {
-                    // Get first image from post content
+                    // Get first valid image from post content (not YouTube/embed URLs)
                     $content = get_post_field( 'post_content', get_the_ID() );
-                    preg_match_all( '/<img.+src=["\']([^"\']+)["\'].*>/i', $content, $matches );
-                    if ( ! empty( $matches[1][0] ) ) {
-                        $thumbnail_url = $matches[1][0];
+                    // Match only <img> tags specifically
+                    preg_match_all( '/<img[^>]+src=["\']([^"\']+)["\'][^>]*>/i', $content, $matches );
+                    if ( ! empty( $matches[1] ) ) {
+                        // Filter out YouTube, embed, and data URLs
+                        foreach ( $matches[1] as $img_url ) {
+                            if ( strpos( $img_url, 'youtube.com' ) === false && 
+                                 strpos( $img_url, 'youtu.be' ) === false &&
+                                 strpos( $img_url, 'data:image' ) === false &&
+                                 strpos( $img_url, '/embed/' ) === false ) {
+                                $thumbnail_url = $img_url;
+                                break;
+                            }
+                        }
                     }
                 }
                 
