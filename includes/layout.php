@@ -24,13 +24,13 @@ function layout_head(string $title, PDO $pdo): void {
 <meta property="og:description" content="<?= htmlspecialchars($siteDesc, ENT_QUOTES, 'UTF-8') ?>">
 <?php if ($ogImage): ?><meta property="og:image" content="<?= htmlspecialchars($ogImage, ENT_QUOTES, 'UTF-8') ?>"><?php endif; ?>
 <?php if ($faviconUrl): ?><link rel="icon" href="<?= htmlspecialchars($faviconUrl, ENT_QUOTES, 'UTF-8') ?>"><?php endif; ?>
-<?php if ($scMeta): ?><?= $scMeta ?><?php endif; ?>
+<?php if ($scMeta): ?><meta name="google-site-verification" content="<?= htmlspecialchars($scMeta, ENT_QUOTES, 'UTF-8') ?>"><?php endif; ?>
+<script src="https://cdn.tailwindcss.com"></script>
 <script>
-tailwind.config = {
-    theme: { extend: { colors: { primary: '#00e5ff', accent: '#ff3e8d' } } }
+if (typeof tailwind !== 'undefined') {
+    tailwind.config = { theme: { extend: { colors: { primary: '#00e5ff', accent: '#ff3e8d' } } } };
 }
 </script>
-<script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
 :root { --primary: #00e5ff; --accent: #ff3e8d; --bg: #1a1d2e; }
@@ -166,8 +166,8 @@ function layout_header(PDO $pdo): void {
 </header>
 
 <!-- Mobile slide-in menu -->
-<div id="mobileMenuOverlay" class="fixed inset-0 bg-black/60 z-40 hidden" onclick="closeMobileMenu()"></div>
-<div id="mobileMenu" class="fixed top-0 right-0 bottom-0 w-[67%] max-w-xs z-50 neu-raised flex flex-col translate-x-full transition-transform duration-300" style="padding-top:env(safe-area-inset-top)">
+<div id="mobileMenuOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:40;" onclick="closeMobileMenu()"></div>
+<div id="mobileMenu" style="display:flex;flex-direction:column;position:fixed;top:0;right:0;bottom:0;width:67%;max-width:20rem;z-index:50;transform:translateX(100%);transition:transform 0.3s ease;background:linear-gradient(135deg,#1e2237 0%,#1a1d2e 100%);box-shadow:-8px 0 32px #0c0e1d;">
   <div class="flex items-center justify-between p-4 border-b border-white/10">
     <span class="font-bold text-white">Menu</span>
     <button onclick="closeMobileMenu()" class="p-1 text-white/60 hover:text-white"><i class="fas fa-times text-xl"></i></button>
@@ -249,12 +249,12 @@ function layout_header(PDO $pdo): void {
 
 function openMobileMenu(){
   document.getElementById('mobileMenu').style.transform = 'translateX(0)';
-  document.getElementById('mobileMenuOverlay').classList.remove('hidden');
+  document.getElementById('mobileMenuOverlay').style.display = 'block';
   document.body.style.overflow = 'hidden';
 }
 function closeMobileMenu(){
-  document.getElementById('mobileMenu').style.transform = '';
-  document.getElementById('mobileMenuOverlay').classList.add('hidden');
+  document.getElementById('mobileMenu').style.transform = 'translateX(100%)';
+  document.getElementById('mobileMenuOverlay').style.display = 'none';
   document.body.style.overflow = '';
 }
 </script>
