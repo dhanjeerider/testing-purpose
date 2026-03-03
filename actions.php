@@ -99,7 +99,10 @@ if ($action === 'save_many_settings') {
     $settings = [
         'site_title', 'site_description', 'telegram_link', 'google_analytics_id', 'search_console_meta',
         'admin_email', 'subscription_enabled', 'upi_id', 'upi_qr_url',
-        'razorpay_key_id', 'razorpay_key_secret', 'video_ad_enabled', 'video_ad_type', 'video_ad_url', 'video_ad_skip_seconds'
+        'razorpay_key_id', 'razorpay_key_secret', 'video_ad_enabled', 'video_ad_type', 'video_ad_url', 'video_ad_skip_seconds',
+        'keywords', 'footer_text', 'favicon_url', 'logo_url', 'og_image',
+        'twitter_link', 'instagram_link', 'youtube_link', 'facebook_link',
+        'subscription_name', 'subscription_amount',
     ];
     foreach ($settings as $key) {
         setSetting($pdo, $key, $_POST[$key] ?? '');
