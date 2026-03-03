@@ -1,0 +1,13 @@
+{
+  "name": "TMovie PHP",
+  "short_name": "TMovie",
+  "start_url": "/index.php",
+  "display": "standalone",
+  "background_color": "#1a1d2e",
+  "theme_color": "#1a1d2e",
+  "icons": [
+    { "src": "https://placehold.co/72x72/1a1d2e/19f9ff?text=T", "sizes": "72x72", "type": "image/png" },
+    { "src": "https://placehold.co/192x192/1a1d2e/19f9ff?text=T", "sizes": "192x192", "type": "image/png" },
+    { "src": "https://placehold.co/512x512/1a1d2e/19f9ff?text=T", "sizes": "512x512", "type": "image/png" }
+  ]
+}
