@@ -1,0 +1,334 @@
+<main class="pb-16 md:pb-0">		<section class="pt-6">
+			<div class="max-w-gp mx-auto px-4 md:px-6">
+                                    <div class="flex justify-start gap-1">
+                        <svg class="w-6 h-6 text-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M264-384q0 46 19.5 87.5T338-223q-1-5-1.5-10t-.5-10q0-27 10-50.5t27-42.5l107-120 107 120q17 20 27 43.5t10 49.5q0 5-.5 10.5T622-222q35-29 54.5-71.5T696-384q0-51-17.5-100.5T628-576q-17 11-35.5 17t-40.5 6q-52 0-91.5-32T411-668q-36 33-63 67.5T302-530q-19 36-28.5 73t-9.5 73Zm216 36-53 60q-9 11-14 22.5t-5 25.5q0 30 21 51t51 21q30 0 51-21t21-51q0-14-5-26t-14-22l-53-60Zm0-468v119q0 30 21 51t51 21q17 0 31.5-7t24.5-20l16-20q64 38 104 118.5T768-384q0 120-84 204T480-96q-120 0-204-84t-84-204q0-112 76-226.5T480-816Z"></path></svg>                        <h2 class="sec-title text-lg font-bold">Indispensable on your phone</h2>
+                    </div>
+
+                                    
+				<div class="flex gap-4 overflow-x-auto snap-x snap-mandatory hide-sb mt-4">
+											<a href="https://liteapks.com/spotify-2.html" class="snap-start shrink-0 w-[85%] sm:w-[60%] md:w-[45%] lg:w-[30%] rounded-2xl overflow-hidden cursor-pointer no-underline text-dark bg-green-50 block relative group">
+    <div class="relative w-full aspect-video overflow-hidden">
+                    <img src="https://liteapks.com/wp-content/uploads/2022/04/spotify-music-and-podcasts-1.png" alt="Spotify" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            </div>
+
+    <div class="p-4 flex items-center gap-3 bg-white/50 backdrop-blur-sm absolute bottom-0 left-0 right-0">
+                    <img src="https://liteapks.com/wp-content/uploads/2022/04/spotify-music-and-podcasts-150x150.png" class="w-10 h-10 rounded-xl shadow-sm" alt="Spotify">
+                <div>
+            <h3 class="font-semibold text-dark text-md m-0 leading-tight">Spotify</h3>
+            <p class="text-xs font-semibold text-primary mt-0.5">Music &amp; Audio</p>
+        </div>
+    </div>
+</a>																																																					</div>
+			</div>
+		</section>
+	
+
+        <section class="pt-10">
+            <div class="max-w-gp mx-auto px-4 md:px-6">
+
+                
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-start gap-1">
+                            <svg class="w-6 h-6 text-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M144-276q0-15 10.5-25.5T180-312q6 0 12 2t11 6q10 7 21.5 11.5T248-288q30 0 51-21t21-51q0-30-21-51t-51-21q-12 0-23.5 4T203-416q-5 4-11 6t-12 2q-15 0-25.5-10.5T144-444v-156q0-10 7-17t17-7h181q1 0 1 1t-1-1q-11-14-18-38.5t-7-44.5q0-66 45.5-111.5T480-864q65 0 110.5 45.5T636-707q0 21-7 44.5T611-624q-1 2-1 1t1-1h181q10 0 17 7t7 17v156q0 15-10.5 25.5T780-408q-6 0-12-2t-11-6q-10-8-21.5-12t-23.5-4q-30 0-51 21t-21 51q0 30 21 51t51 21q13 0 24.5-3.5T757-304q5-5 11-6.5t12-1.5q15 0 25.5 10.5T816-276v156q0 10-7 17t-17 7H168q-10 0-17-7t-7-17v-156Zm72 108h528v-51q-8 3-16 3h-16q-60 0-102-42t-42-102q0-60 42-102t102-42h16q8 0 16 3v-51H567q-20 0-33.5-13T520-597q0-8 1-15.5t6-13.5q11-17 24-39t13-42q0-35-24.5-60T480-792q-35 0-59.5 25T396-707q0 15 10.5 37.5T433-626q5 6 7 13.5t2 15.5q0 20-14.5 32.5T393-552H216v51q8-2 16-2.5t16-.5q60 0 102 42t42 102q0 60-42 102t-102 42q-8 0-16-.5t-16-2.5v51Zm264-312Z"></path></svg>                            <h2 class="text-lg font-bold">Must have collection</h2>
+                        </div>
+
+                                                    <a href="https://liteapks.com/collection" class="text-sm font-semibold text-primary no-underline hover:underline">
+                                More                            </a>
+                                            </div>
+
+                    
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
+                    
+<div class="group relative rounded-2xl overflow-hidden aspect-square bg-dark">
+
+            <img src="https://liteapks.com/wp-content/uploads/2026/03/custom-android-500x500.webp" alt="Personalize Beyond The Default" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500">
+    
+    <div class="absolute inset-0 bg-gradient-to-t from-[#1d4ed8]/90 via-[#1d4ed8]/40 to-transparent transition-opacity duration-300 group-hover:opacity-0"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-[#1d4ed8]/90 via-[#1d4ed8]/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+
+    <a href="https://liteapks.com/collection/personalize-beyond-the-default" class="absolute inset-0 z-[1]" aria-label="Personalize Beyond The Default"></a>
+
+    <div class="absolute bottom-0 left-0 right-0 p-3 sm:p-4 z-[2] pointer-events-none">
+        <h2 class="text-white font-bold text-sm sm:text-base leading-snug mb-2.5 drop-shadow">
+            Personalize Beyond The Default        </h2>
+
+                    <div class="flex flex-wrap gap-1.5 pointer-events-auto">
+                                    <a href="https://liteapks.com/kwgt-kustom-widget-maker.html" class="relative z-[3] rounded-xl ring-2 ring-white/30 overflow-hidden w-9 h-9 sm:w-11 sm:h-11 flex-shrink-0 hover:ring-white/70 transition-all">
+                        <img src="https://liteapks.com/wp-content/uploads/2023/02/kwgt-kustom-widget-maker-150x150.jpg" alt="" loading="lazy" class="w-full h-full object-cover">
+                    </a>
+                                    <a href="https://liteapks.com/themepack.html" class="relative z-[3] rounded-xl ring-2 ring-white/30 overflow-hidden w-9 h-9 sm:w-11 sm:h-11 flex-shrink-0 hover:ring-white/70 transition-all">
+                        <img src="https://liteapks.com/wp-content/uploads/2022/11/themepack-app-icons-widgets-150x150.jpg" alt="" loading="lazy" class="w-full h-full object-cover">
+                    </a>
+                                    <a href="https://liteapks.com/zedge-wallpapers-ringtones.html" class="relative z-[3] rounded-xl ring-2 ring-white/30 overflow-hidden w-9 h-9 sm:w-11 sm:h-11 flex-shrink-0 hover:ring-white/70 transition-all">
+                        <img src="https://liteapks.com/wp-content/uploads/2024/03/zedge-150x150.webp" alt="" loading="lazy" class="w-full h-full object-cover">
+                    </a>
+                                                <span class="flex items-end text-base font-bold text-white">
+                    +47 more                </span>
+                            </div>
+            </div>
+
+</div>
+
+<div class="group relative rounded-2xl overflow-hidden aspect-square bg-dark">
+
+            <img src="https://liteapks.com/wp-content/uploads/2026/03/gta-series-500x338.jpg" alt="Grand Theft Auto" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500">
+    
+    <div class="absolute inset-0 bg-gradient-to-t from-[#15803d]/90 via-[#15803d]/40 to-transparent transition-opacity duration-300 group-hover:opacity-0"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-[#15803d]/90 via-[#15803d]/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+
+    <a href="https://liteapks.com/collection/grand-theft-auto" class="absolute inset-0 z-[1]" aria-label="Grand Theft Auto"></a>
+
+    <div class="absolute bottom-0 left-0 right-0 p-3 sm:p-4 z-[2] pointer-events-none">
+        <h2 class="text-white font-bold text-sm sm:text-base leading-snug mb-2.5 drop-shadow">
+            Grand Theft Auto        </h2>
+
+                    <div class="flex flex-wrap gap-1.5 pointer-events-auto">
+                                    <a href="https://liteapks.com/madout2-bigcityonline.html" class="relative z-[3] rounded-xl ring-2 ring-white/30 overflow-hidden w-9 h-9 sm:w-11 sm:h-11 flex-shrink-0 hover:ring-white/70 transition-all">
+                        <img src="https://liteapks.com/wp-content/uploads/2022/06/madout2-bigcityonline-150x150.png" alt="" loading="lazy" class="w-full h-full object-cover">
+                    </a>
+                                    <a href="https://liteapks.com/grand-theft-auto-san-andreas.html" class="relative z-[3] rounded-xl ring-2 ring-white/30 overflow-hidden w-9 h-9 sm:w-11 sm:h-11 flex-shrink-0 hover:ring-white/70 transition-all">
+                        <img src="https://liteapks.com/wp-content/uploads/2022/06/grand-theft-auto-san-andreas-150x150.png" alt="" loading="lazy" class="w-full h-full object-cover">
+                    </a>
+                                    <a href="https://liteapks.com/gangs-town-story-2.html" class="relative z-[3] rounded-xl ring-2 ring-white/30 overflow-hidden w-9 h-9 sm:w-11 sm:h-11 flex-shrink-0 hover:ring-white/70 transition-all">
+                        <img src="https://liteapks.com/wp-content/uploads/2022/09/gangs-town-story-150x150.jpg" alt="" loading="lazy" class="w-full h-full object-cover">
+                    </a>
+                                                <span class="flex items-end text-base font-bold text-white">
+                    +11 more                </span>
+                            </div>
+            </div>
+
+</div>
+
+<div class="group relative rounded-2xl overflow-hidden aspect-square bg-dark">
+
+            <img src="https://liteapks.com/wp-content/uploads/2026/03/game-pixel-thumb-500x281.jpg" alt="Legendary Pixel Games" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500">
+    
+    <div class="absolute inset-0 bg-gradient-to-t from-[#c2410c]/90 via-[#c2410c]/40 to-transparent transition-opacity duration-300 group-hover:opacity-0"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-[#c2410c]/90 via-[#c2410c]/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+
+    <a href="https://liteapks.com/collection/legendary-pixel-games" class="absolute inset-0 z-[1]" aria-label="Legendary Pixel Games"></a>
+
+    <div class="absolute bottom-0 left-0 right-0 p-3 sm:p-4 z-[2] pointer-events-none">
+        <h2 class="text-white font-bold text-sm sm:text-base leading-snug mb-2.5 drop-shadow">
+            Legendary Pixel Games        </h2>
+
+                    <div class="flex flex-wrap gap-1.5 pointer-events-auto">
+                                    <a href="https://liteapks.com/terraria.html" class="relative z-[3] rounded-xl ring-2 ring-white/30 overflow-hidden w-9 h-9 sm:w-11 sm:h-11 flex-shrink-0 hover:ring-white/70 transition-all">
+                        <img src="https://liteapks.com/wp-content/uploads/2022/06/terraria-150x150.png" alt="" loading="lazy" class="w-full h-full object-cover">
+                    </a>
+                                    <a href="https://liteapks.com/guardian-tales.html" class="relative z-[3] rounded-xl ring-2 ring-white/30 overflow-hidden w-9 h-9 sm:w-11 sm:h-11 flex-shrink-0 hover:ring-white/70 transition-all">
+                        <img src="https://liteapks.com/wp-content/uploads/2023/02/guardian-tales-150x150.jpg" alt="" loading="lazy" class="w-full h-full object-cover">
+                    </a>
+                                    <a href="https://liteapks.com/hyper-light-drifter.html" class="relative z-[3] rounded-xl ring-2 ring-white/30 overflow-hidden w-9 h-9 sm:w-11 sm:h-11 flex-shrink-0 hover:ring-white/70 transition-all">
+                        <img src="https://liteapks.com/wp-content/uploads/2024/06/hyper-light-drifter-s-e-150x150.webp" alt="" loading="lazy" class="w-full h-full object-cover">
+                    </a>
+                                                <span class="flex items-end text-base font-bold text-white">
+                    +5 more                </span>
+                            </div>
+            </div>
+
+</div>
+                </div>
+            </div>
+        </section>
+    
+			<section class="pt-10">
+				<div class="max-w-gp mx-auto px-4 md:px-6">
+                    
+                        <div class="flex items-center justify-between">
+                            <div class="flex justify-start gap-1">
+                                <svg class="w-6 h-6 text-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M386.5-638.72q-38.5-38.72-38.5-93.5t38.72-93.28q38.72-38.5 93.5-38.5t93.28 38.72q38.5 38.72 38.5 93.5t-38.72 93.28q-38.72 38.5-93.5 38.5t-93.28-38.72Zm0 504q-38.5-38.72-38.5-93.5t38.72-93.28q38.72-38.5 93.5-38.5t93.28 38.72q38.5 38.72 38.5 93.5t-38.72 93.28Q534.56-96 479.78-96t-93.28-38.72Zm136-50.78Q540-203 540-228t-17.5-42.5Q505-288 480-288t-42.5 17.5Q420-253 420-228t17.5 42.5Q455-168 480-168t42.5-17.5ZM731.78-348q-54.78 0-93.28-38.72t-38.5-93.5q0-54.78 38.72-93.28t93.5-38.5q54.78 0 93.28 38.72t38.5 93.5q0 54.78-38.72 93.28t-93.5 38.5Zm.22-72q25 0 42.5-17.5T792-480q0-25-17.5-42.5T732-540q-25 0-42.5 17.5T672-480q0 25 17.5 42.5T732-420Zm-504.22 72q-54.78 0-93.28-38.72T96-480.22q0-54.78 38.72-93.28t93.5-38.5q54.78 0 93.28 38.72t38.5 93.5q0 54.78-38.72 93.28t-93.5 38.5Zm.22-72q25 0 42.5-17.5T288-480q0-25-17.5-42.5T228-540q-25 0-42.5 17.5T168-480q0 25 17.5 42.5T228-420Z"></path></svg>                                <h2 class="sec-title text-lg font-bold">Lastest Games</h2>
+                            </div>
+
+                                                        <a href="https://liteapks.com/games" class="text-sm font-semibold text-primary no-underline hover:underline">
+                                More                            </a>
+                                                    </div>
+
+                        
+                    
+					<div class="relative group mt-4">
+                        
+						<div id="" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+															<a href="https://liteapks.com/2-player-games.html" class="flex items-center gap-4 px-4 py-3 rounded-xl shadow-md hover:shadow-lg cursor-pointer hover:bg-gray-50 transition-colors no-underline text-dark bg-white">
+    <div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2022/12/2-player-games-the-challenge-150x150.jpg" class="w-full h-full object-cover" alt="2 Player Games" loading="lazy">
+            </div>
+
+    <div class="flex-1 min-w-0">
+        <h3 class="text-md font-semibold truncate m-0">2 Player Games</h3>
+        <div class="text-sm text-gray-3 truncate m-0 my-1 flex items-center gap-1.5 font-medium">
+            <div class="text-xs flex items-center gap-0.5">
+                <span>3.6</span>
+                <svg class="w-2.5 h-2.5 text-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+            </div>
+            <span>•</span>
+            <span class="truncate">Arcade</span>
+        </div>
+
+        <div class="truncate text-xs font-semibold text-orange">
+            Remove ADS        </div>
+
+    </div>
+</a>																																																																																																																																																																																		</div>
+
+                        
+                    </div>
+				</div>
+			</section>
+					<section class="pt-10">
+				<div class="max-w-gp mx-auto px-4 md:px-6">
+                    
+                        <div class="flex items-center justify-between">
+                            <div class="flex justify-start gap-1">
+                                <svg class="w-6 h-6 text-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M384-144H216q-29.7 0-50.85-21.15Q144-186.3 144-216v-168q40-2 68-29.5t28-66.5q0-39-28-66.5T144-576v-168q0-29.7 21.15-50.85Q186.3-816 216-816h168q0-40 27.77-68 27.78-28 68-28Q520-912 548-884.16q28 27.84 28 68.16h168q29.7 0 50.85 21.15Q816-773.7 816-744v168q40 0 68 27.77 28 27.78 28 68Q912-440 884.16-412q-27.84 28-68.16 28v168q0 29.7-21.15 50.85Q773.7-144 744-144H576q-2-40-29.38-68t-66.5-28q-39.12 0-66.62 28-27.5 28-29.5 68Zm-168-72h112q20-45 61.5-70.5T480-312q49 0 90.5 25.5T632-216h112v-240h72q9.6 0 16.8-7 7.2-7 7.2-17t-7.2-17q-7.2-7-16.8-7h-72v-240H504v-72q0-9.6-7-16.8-7-7.2-17-7.2t-17 7.2q-7 7.2-7 16.8v72H216v112q45 20 70.5 61.5T312-480q0 50.21-25.5 91.6Q261-347 216-328v112Zm264-264Z"></path></svg>                                <h2 class="sec-title text-lg font-bold">Lastest Apps</h2>
+                            </div>
+
+                                                        <a href="https://liteapks.com/apps" class="text-sm font-semibold text-primary no-underline hover:underline">
+                                More                            </a>
+                                                    </div>
+
+                        
+                    
+					<div class="relative group mt-4">
+                        
+						<div id="" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+															<a href="https://liteapks.com/period-calendar-period-tracker-my-calendar.html" class="flex items-center gap-4 px-4 py-3 rounded-xl shadow-md hover:shadow-lg cursor-pointer hover:bg-gray-50 transition-colors no-underline text-dark bg-white">
+    <div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2026/03/period-calendar-period-tracker-150x150.webp" class="w-full h-full object-cover" alt="Period Calendar Period Tracker (My Calendar)" loading="lazy">
+            </div>
+
+    <div class="flex-1 min-w-0">
+        <h3 class="text-md font-semibold truncate m-0">Period Calendar Period Tracker (My Calendar)</h3>
+        <div class="text-sm text-gray-3 truncate m-0 my-1 flex items-center gap-1.5 font-medium">
+            <div class="text-xs flex items-center gap-0.5">
+                <span>5</span>
+                <svg class="w-2.5 h-2.5 text-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+            </div>
+            <span>•</span>
+            <span class="truncate">Health &amp; Fitness</span>
+        </div>
+
+        <div class="truncate text-xs font-semibold text-orange">
+            Premium Unlocked        </div>
+
+    </div>
+</a>																																																																																																																																																																																		</div>
+
+                        
+                    </div>
+				</div>
+			</section>
+					<section class="pt-10">
+				<div class="max-w-gp mx-auto px-4 md:px-6">
+                    
+                        <div class="flex items-center justify-between">
+                            <div class="flex justify-start gap-1">
+                                <svg class="w-6 h-6 text-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M264-384q0 46 19.5 87.5T338-223q-1-5-1.5-10t-.5-10q0-27 10-50.5t27-42.5l107-120 107 120q17 20 27 43.5t10 49.5q0 5-.5 10.5T622-222q35-29 54.5-71.5T696-384q0-51-17.5-100.5T628-576q-17 11-35.5 17t-40.5 6q-52 0-91.5-32T411-668q-36 33-63 67.5T302-530q-19 36-28.5 73t-9.5 73Zm216 36-53 60q-9 11-14 22.5t-5 25.5q0 30 21 51t51 21q30 0 51-21t21-51q0-14-5-26t-14-22l-53-60Zm0-468v119q0 30 21 51t51 21q17 0 31.5-7t24.5-20l16-20q64 38 104 118.5T768-384q0 120-84 204T480-96q-120 0-204-84t-84-204q0-112 76-226.5T480-816Z"></path></svg>                                <h2 class="sec-title text-lg font-bold">Paid for you</h2>
+                            </div>
+
+                                                        <a href="https://liteapks.com/browse-apps-games?q=&amp;type%5B%5D=342&amp;sort=latest" class="text-sm font-semibold text-primary no-underline hover:underline">
+                                More                            </a>
+                                                    </div>
+
+                        
+                    
+					<div class="relative group mt-4">
+                        
+						<div id="" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+															<a href="https://liteapks.com/down-in-bermuda.html" class="flex items-center gap-4 px-4 py-3 rounded-xl shadow-md hover:shadow-lg cursor-pointer hover:bg-gray-50 transition-colors no-underline text-dark bg-white">
+    <div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2023/06/down-in-bermuda-150x150.jpg" class="w-full h-full object-cover" alt="Down in Bermuda" loading="lazy">
+            </div>
+
+    <div class="flex-1 min-w-0">
+        <h3 class="text-md font-semibold truncate m-0">Down in Bermuda</h3>
+        <div class="text-sm text-gray-3 truncate m-0 my-1 flex items-center gap-1.5 font-medium">
+            <div class="text-xs flex items-center gap-0.5">
+                <span>4</span>
+                <svg class="w-2.5 h-2.5 text-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+            </div>
+            <span>•</span>
+            <span class="truncate">Puzzle</span>
+        </div>
+
+        <div class="truncate text-xs font-semibold text-orange">
+            Unlocked All Paid Content        </div>
+
+    </div>
+</a>															<a href="https://liteapks.com/flatine-icon-pack.html" class="flex items-center gap-4 px-4 py-3 rounded-xl shadow-md hover:shadow-lg cursor-pointer hover:bg-gray-50 transition-colors no-underline text-dark bg-white">
+    <div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2026/03/flatine-icon-pack-150x150.webp" class="w-full h-full object-cover" alt="Flatine icon pack" loading="lazy">
+            </div>
+
+    <div class="flex-1 min-w-0">
+        <h3 class="text-md font-semibold truncate m-0">Flatine icon pack</h3>
+        <div class="text-sm text-gray-3 truncate m-0 my-1 flex items-center gap-1.5 font-medium">
+            <div class="text-xs flex items-center gap-0.5">
+                <span>5</span>
+                <svg class="w-2.5 h-2.5 text-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+            </div>
+            <span>•</span>
+            <span class="truncate">Personalization</span>
+        </div>
+
+        <div class="truncate text-xs font-semibold text-orange">
+            Full Version        </div>
+
+    </div>
+</a>																																																																									</div>
+
+                        
+                    </div>
+				</div>
+			</section>
+		
+
+
+
+
+		<section class="pt-6 pb-10 mt-6">
+			<div class="max-w-gp mx-auto px-4 md:px-6">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-start gap-1">
+                        <svg class="w-6 h-6 text-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M96-528q0-88 35.5-162T230-818l51 50q-52 43-82.5 105.5T168-528H96Zm696 0q0-73-30.5-135.5T678-769l52-51q62 53 98 128.5T864-528h-72ZM192-216v-72h48v-240q0-87 53.5-153T432-763v-53q0-20 14-34t34-14q20 0 34 14t14 34v53q85 16 138.5 82T720-528v240h48v72H192Zm288-276Zm0 396q-30 0-51-21t-21-51h144q0 30-21 51t-51 21ZM312-288h336v-240q0-70-49-119t-119-49q-70 0-119 49t-49 119v240Z"></path></svg>                        <h2 class="text-xl font-bold">News</h2>
+                    </div>
+
+                    <a href="https://liteapks.com/news" class="text-sm font-semibold text-primary no-underline hover:underline">
+                        More                    </a>
+                </div>
+
+                
+				<div class="flex flex-wrap gap-4 mt-4">
+											<div class="w-full md:w-[calc(50%-8px)] lg:w-[calc(33.333%-11px)]">
+							<article class="article-card rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+    <a href="https://liteapks.com/how-to-fix-youtube-revanced-mod.html" class="block">
+        <div class="article-thumb aspect-video overflow-hidden">
+            <img src="https://liteapks.com/wp-content/uploads/2024/04/youtube-revanced-1-500x253.jpg" alt="How to fix Youtube Revanced mod" class="w-full h-full object-cover transition-transform duration-300">
+        </div>
+        <div class="article-content p-5">
+            <div class="flex items-center gap-2 mb-3">
+
+                <span class="px-3 py-1 rounded-full bg-primary text-white text-xs font-semibold">Tutorial</span>
+                <time class="text-xs text-gray-400">April 5, 2024</time>
+            </div>
+            <h3 class="article-title text-lg font-bold text-gray-900 leading-snug mb-2 line-clamp-1 transition-colors truncate">
+                How to fix Youtube Revanced mod            </h3>
+            <p class="article-excerpt text-gray-500 text-sm line-clamp-2 mb-4">
+                Uninstall Old Yt Mods and install New Yt mods and GMSmicroG Buffering or Play back issues Fix: – Disable or ignore battery optimization in app setting – Don’t restrict background power usage in Background power consumption management at device battery setting for Yt &amp;...            </p>
+            <div class="flex items-center gap-3 text-xs text-gray-400">
+                <span>1 minute read</span>
+                <span>•</span>
+                <span>5.2K views</span>
+            </div>
+        </div>
+    </a>
+</article>						</div>
+											
+											
+									</div>
+			</div>
+		</section>
+	
+
+</main>

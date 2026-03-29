@@ -1,0 +1,369 @@
+<main class="pb-16 md:pb-0"><section class="hero-container relative mb-10"><div class="absolute top-0 w-full h-[28rem]">
+<img src="https://liteapks.com/wp-content/themes/liteapks/images/hero.webp" class="object-cover h-full w-full" alt="filter apps and games"><div class="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div></div><div class="relative w-full z-10 pt-[10rem]"><div class="max-w-gp md:px-6 mx-auto px-4 sm:px-6 py-5 sm:py-7 rounded-2xl"><div class="bg-white rounded-2xl shadow-md p-6 lg:p-8"><div class="text-center space-y-4 text-gray-900 mb-8"><p class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-brand">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+Download Free Apps &amp; Games</p><h1 class="text-2xl sm:text-4xl font-bold text-gray-900">
+Exploring your favorite<br><span class="text-primary"> MOD APK</span> Games &amp; Apps</h1><p class="text-base text-dark-2 max-w-2xl mx-auto">
+Search, filter, and download your favorite applications and games for Android.</p></div><div class="flex justify-center py-3"><nav class="flex items-center gap-1 text-sm font-semibold text-gray-2 mb-5 flex-wrap" aria-label="Breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList" itemid="https://liteapks.com/browse-apps-games?q=&amp;genre%5B%5D=21&amp;genre%5B%5D=22#breadcrumb">
+<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<a href="https://liteapks.com/" class="hover:text-primary-hover no-underline text-primary font-medium" itemprop="item" itemscope="" itemtype="https://schema.org/WebPage" itemid="https://liteapks.com/">
+<span itemprop="name">Home</span>
+</a><meta itemprop="position" content="1">
+</span>
+<svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<span class="text-orange" itemprop="name">Browse Apps &amp; Games</span><meta itemprop="position" content="2">
+</span></nav></div><form action="https://liteapks.com/browse-apps-games" method="get" class="relative"><div class="flex flex-col lg:flex-row gap-3">
+<label class="relative flex-1">
+<input type="text" id="searchInput" placeholder="Search for apps, games..." name="q" value="" class="w-full rounded-full border border-border px-4 sm:px-6 py-4 text-gray-900 outline-none focus:ring-2 focus:ring-brand/40 text-sm">
+<span class="absolute inset-y-0 right-1 flex items-center pr-1">
+<button id="searchButton" class="flex items-center px-5 sm:px-6 py-2 rounded-full text-white font-semibold shadow-soft bg-primary hover:bg-primary-dark transition text-xs">
+<svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"></path></svg>
+Search                                    </button>
+</span>
+</label></div><div class="mb-8 pt-6"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(0,1fr))] gap-4"><div class="custom-select-wrapper" id="genre-select-wrapper">
+<label class="block text-sm font-semibold mb-2 text-gray-900">Genre</label><div class="custom-select-trigger rounded-full" id="genre-select-trigger">
+<span class="selected-text has-selection" id="genre-selected-text">2 selected</span>
+<span class="arrow"></span></div><div class="custom-select-dropdown" id="genre-dropdown"><div class="custom-select-option">
+<input type="checkbox" id="genre-3" name="genre[]" value="3" data-taxonomy="category" data-term-id="3">
+<label for="genre-3">Action</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-4" name="genre[]" value="4" data-taxonomy="category" data-term-id="4">
+<label for="genre-4">Adventure</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-21" name="genre[]" value="21" data-taxonomy="category" data-term-id="21" checked="checked">
+<label for="genre-21">Apps</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-5" name="genre[]" value="5" data-taxonomy="category" data-term-id="5">
+<label for="genre-5">Arcade</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-22" name="genre[]" value="22" data-taxonomy="category" data-term-id="22" checked="checked">
+<label for="genre-22">Art &amp; Design</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-23" name="genre[]" value="23" data-taxonomy="category" data-term-id="23">
+<label for="genre-23">Auto &amp; Vehicles</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-3088" name="genre[]" value="3088" data-taxonomy="category" data-term-id="3088">
+<label for="genre-3088">Beauty</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-6" name="genre[]" value="6" data-taxonomy="category" data-term-id="6">
+<label for="genre-6">Board</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-24" name="genre[]" value="24" data-taxonomy="category" data-term-id="24">
+<label for="genre-24">Books &amp; Reference</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-25" name="genre[]" value="25" data-taxonomy="category" data-term-id="25">
+<label for="genre-25">Business</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-7" name="genre[]" value="7" data-taxonomy="category" data-term-id="7">
+<label for="genre-7">Card</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-8" name="genre[]" value="8" data-taxonomy="category" data-term-id="8">
+<label for="genre-8">Casino</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-9" name="genre[]" value="9" data-taxonomy="category" data-term-id="9">
+<label for="genre-9">Casual</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-26" name="genre[]" value="26" data-taxonomy="category" data-term-id="26">
+<label for="genre-26">Comics</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-27" name="genre[]" value="27" data-taxonomy="category" data-term-id="27">
+<label for="genre-27">Communication</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-671" name="genre[]" value="671" data-taxonomy="category" data-term-id="671">
+<label for="genre-671">Dating</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-399" name="genre[]" value="399" data-taxonomy="category" data-term-id="399">
+<label for="genre-399">Dating</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-28" name="genre[]" value="28" data-taxonomy="category" data-term-id="28">
+<label for="genre-28">Education</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-10" name="genre[]" value="10" data-taxonomy="category" data-term-id="10">
+<label for="genre-10">Educational</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-29" name="genre[]" value="29" data-taxonomy="category" data-term-id="29">
+<label for="genre-29">Emulator</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-30" name="genre[]" value="30" data-taxonomy="category" data-term-id="30">
+<label for="genre-30">Entertainment</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-6644" name="genre[]" value="6644" data-taxonomy="category" data-term-id="6644">
+<label for="genre-6644">Events</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-31" name="genre[]" value="31" data-taxonomy="category" data-term-id="31">
+<label for="genre-31">Finance</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-609" name="genre[]" value="609" data-taxonomy="category" data-term-id="609">
+<label for="genre-609">Food &amp; Drink</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-545" name="genre[]" value="545" data-taxonomy="category" data-term-id="545">
+<label for="genre-545">Food &amp; Drink</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-2" name="genre[]" value="2" data-taxonomy="category" data-term-id="2">
+<label for="genre-2">Games</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-32" name="genre[]" value="32" data-taxonomy="category" data-term-id="32">
+<label for="genre-32">Health &amp; Fitness</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-1704" name="genre[]" value="1704" data-taxonomy="category" data-term-id="1704">
+<label for="genre-1704">House &amp; Home</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-338" name="genre[]" value="338" data-taxonomy="category" data-term-id="338">
+<label for="genre-338">Libraries &amp; Demo</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-33" name="genre[]" value="33" data-taxonomy="category" data-term-id="33">
+<label for="genre-33">Lifestyle</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-34" name="genre[]" value="34" data-taxonomy="category" data-term-id="34">
+<label for="genre-34">Maps &amp; Navigation</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-35" name="genre[]" value="35" data-taxonomy="category" data-term-id="35">
+<label for="genre-35">Medical</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-36" name="genre[]" value="36" data-taxonomy="category" data-term-id="36">
+<label for="genre-36">Music</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-11" name="genre[]" value="11" data-taxonomy="category" data-term-id="11">
+<label for="genre-11">Music</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-37" name="genre[]" value="37" data-taxonomy="category" data-term-id="37">
+<label for="genre-37">Music &amp; Audio</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-38" name="genre[]" value="38" data-taxonomy="category" data-term-id="38">
+<label for="genre-38">News &amp; Magazines</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-12" name="genre[]" value="12" data-taxonomy="category" data-term-id="12">
+<label for="genre-12">NSFW</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-574" name="genre[]" value="574" data-taxonomy="category" data-term-id="574">
+<label for="genre-574">Parenting</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-39" name="genre[]" value="39" data-taxonomy="category" data-term-id="39">
+<label for="genre-39">Personalization</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-40" name="genre[]" value="40" data-taxonomy="category" data-term-id="40">
+<label for="genre-40">Photography</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-41" name="genre[]" value="41" data-taxonomy="category" data-term-id="41">
+<label for="genre-41">Productivity</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-13" name="genre[]" value="13" data-taxonomy="category" data-term-id="13">
+<label for="genre-13">Puzzle</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-14" name="genre[]" value="14" data-taxonomy="category" data-term-id="14">
+<label for="genre-14">Racing</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-15" name="genre[]" value="15" data-taxonomy="category" data-term-id="15">
+<label for="genre-15">Role Playing</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-7384" name="genre[]" value="7384" data-taxonomy="category" data-term-id="7384">
+<label for="genre-7384">RPG</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-42" name="genre[]" value="42" data-taxonomy="category" data-term-id="42">
+<label for="genre-42">Shopping</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-16" name="genre[]" value="16" data-taxonomy="category" data-term-id="16">
+<label for="genre-16">Simulation</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-43" name="genre[]" value="43" data-taxonomy="category" data-term-id="43">
+<label for="genre-43">Social</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-44" name="genre[]" value="44" data-taxonomy="category" data-term-id="44">
+<label for="genre-44">Sport</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-17" name="genre[]" value="17" data-taxonomy="category" data-term-id="17">
+<label for="genre-17">Sports</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-18" name="genre[]" value="18" data-taxonomy="category" data-term-id="18">
+<label for="genre-18">Strategy</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-45" name="genre[]" value="45" data-taxonomy="category" data-term-id="45">
+<label for="genre-45">Tools</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-46" name="genre[]" value="46" data-taxonomy="category" data-term-id="46">
+<label for="genre-46">Travel &amp; Local</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-19" name="genre[]" value="19" data-taxonomy="category" data-term-id="19">
+<label for="genre-19">Trivia</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-1" name="genre[]" value="1" data-taxonomy="category" data-term-id="1">
+<label for="genre-1">Uncategorized</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-47" name="genre[]" value="47" data-taxonomy="category" data-term-id="47">
+<label for="genre-47">Video Players &amp; Editors</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-48" name="genre[]" value="48" data-taxonomy="category" data-term-id="48">
+<label for="genre-48">Weather</label></div><div class="custom-select-option">
+<input type="checkbox" id="genre-20" name="genre[]" value="20" data-taxonomy="category" data-term-id="20">
+<label for="genre-20">Word</label></div></div></div><div class="custom-select-wrapper" id="type-select-wrapper">
+<label class="block text-sm font-semibold mb-2 text-gray-900">App Type</label><div class="custom-select-trigger rounded-full" id="type-select-trigger">
+<span class="selected-text" id="type-selected-text">Select App Type</span>
+<span class="arrow"></span></div><div class="custom-select-dropdown" id="type-dropdown"><div class="custom-select-option">
+<input type="checkbox" id="type-350" name="type[]" value="350" data-taxonomy="app_type" data-term-id="350">
+<label for="type-350">APK INSTALLER</label></div><div class="custom-select-option">
+<input type="checkbox" id="type-3955" name="type[]" value="3955" data-taxonomy="app_type" data-term-id="3955">
+<label for="type-3955">Beta</label></div><div class="custom-select-option">
+<input type="checkbox" id="type-50" name="type[]" value="50" data-taxonomy="app_type" data-term-id="50">
+<label for="type-50">Editor's Choice</label></div><div class="custom-select-option">
+<input type="checkbox" id="type-2635" name="type[]" value="2635" data-taxonomy="app_type" data-term-id="2635">
+<label for="type-2635">Fan Made</label></div><div class="custom-select-option">
+<input type="checkbox" id="type-381" name="type[]" value="381" data-taxonomy="app_type" data-term-id="381">
+<label for="type-381">LITE MOD</label></div><div class="custom-select-option">
+<input type="checkbox" id="type-346" name="type[]" value="346" data-taxonomy="app_type" data-term-id="346">
+<label for="type-346">MOD</label></div><div class="custom-select-option">
+<input type="checkbox" id="type-9300" name="type[]" value="9300" data-taxonomy="app_type" data-term-id="9300">
+<label for="type-9300">NSW Emulator</label></div><div class="custom-select-option">
+<input type="checkbox" id="type-351" name="type[]" value="351" data-taxonomy="app_type" data-term-id="351">
+<label for="type-351">OBB</label></div><div class="custom-select-option">
+<input type="checkbox" id="type-347" name="type[]" value="347" data-taxonomy="app_type" data-term-id="347">
+<label for="type-347">OFFLINE</label></div><div class="custom-select-option">
+<input type="checkbox" id="type-348" name="type[]" value="348" data-taxonomy="app_type" data-term-id="348">
+<label for="type-348">ONLINE</label></div><div class="custom-select-option">
+<input type="checkbox" id="type-6516" name="type[]" value="6516" data-taxonomy="app_type" data-term-id="6516">
+<label for="type-6516">Original</label></div><div class="custom-select-option">
+<input type="checkbox" id="type-342" name="type[]" value="342" data-taxonomy="app_type" data-term-id="342">
+<label for="type-342">Paid</label></div><div class="custom-select-option">
+<input type="checkbox" id="type-3668" name="type[]" value="3668" data-taxonomy="app_type" data-term-id="3668">
+<label for="type-3668">Pre-registered</label></div><div class="custom-select-option">
+<input type="checkbox" id="type-308" name="type[]" value="308" data-taxonomy="app_type" data-term-id="308">
+<label for="type-308">PREMIUM</label></div><div class="custom-select-option">
+<input type="checkbox" id="type-8720" name="type[]" value="8720" data-taxonomy="app_type" data-term-id="8720">
+<label for="type-8720">PSP Emulator</label></div></div></div><div class="custom-select-wrapper" id="collection-select-wrapper">
+<label class="block text-sm font-semibold mb-2 text-gray-900">Collection</label><div class="custom-select-trigger rounded-full" id="collection-select-trigger">
+<span class="selected-text" id="collection-selected-text">Select Collection</span>
+<span class="arrow"></span></div><div class="custom-select-dropdown" id="collection-dropdown"><div class="custom-select-option">
+<input type="checkbox" id="collection-9279" name="collection[]" value="9279" data-taxonomy="collection" data-term-id="9279">
+<label for="collection-9279">Grand Theft Auto</label></div><div class="custom-select-option">
+<input type="checkbox" id="collection-9280" name="collection[]" value="9280" data-taxonomy="collection" data-term-id="9280">
+<label for="collection-9280">Legendary Pixel Games</label></div><div class="custom-select-option">
+<input type="checkbox" id="collection-9313" name="collection[]" value="9313" data-taxonomy="collection" data-term-id="9313">
+<label for="collection-9313">Personalize Beyond The Default</label></div></div></div><div class="custom-select-wrapper" id="sort-select-wrapper">
+<label class="block text-sm font-semibold mb-2 text-gray-900">Sort By</label><div class="custom-select-trigger rounded-full" id="sort-select-trigger">
+<span class="selected-text" id="sort-selected-text">Select Sort</span>
+<span class="arrow"></span></div><div class="custom-select-dropdown" id="sort-dropdown"><div class="custom-select-option">
+<input type="radio" id="sort-latest" name="sort" value="latest">
+<label for="sort-latest">Latest Update</label></div><div class="custom-select-option">
+<input type="radio" id="sort-popular" name="sort" value="popular">
+<label for="sort-popular">Most Popular</label></div><div class="custom-select-option">
+<input type="radio" id="sort-newest" name="sort" value="newest">
+<label for="sort-newest">Newest</label></div></div></div></div></div><div id="selected-filters-container" class="border-t border-gray-200 py-6"><div class="flex items-center gap-2 mb-4">
+<span class="text-sm font-semibold text-gray-900"> Selected Filters:</span></div><div id="selected-filters" class="flex flex-wrap gap-2"><div class="inline-flex items-center gap-2 px-3 py-1 bg-primary text-white rounded-full text-sm font-medium" data-filter-type="genre" data-filter-value="21">
+                <div class="inline-flex items-center"><span class="mr-1"><svg class="inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="20px" height="20px" fill="currentColor"><path d="m251-444 229 132 230-132-194-111v147h-72v-147L251-444Zm193-195v-14q-42.24-12.32-69.12-46.92-26.88-34.6-26.88-80.1 0-54.98 38.72-93.48 38.72-38.5 93.5-38.5t93.28 38.6q38.5 38.6 38.5 93.21 0 45.19-26.88 79.99T516-653v14l264 153q17.1 9.62 26.55 25.81Q816-444 816-424v104q0 20-9.45 36.19Q797.1-267.63 780-258L516-105q-17.13 10-36.07 10Q461-95 444-105L180-258q-17.1-9.63-26.55-25.81Q144-300 144-320v-104q0-20 9.45-36.19Q162.9-476.38 180-486l264-153Zm0 389L216-382v62l264 152 264-152v-62L516-250q-17.13 10-36.07 10Q461-240 444-250Zm36-470q25 0 42.5-17.5T540-780q0-25-17.5-42.5T480-840q-25 0-42.5 17.5T420-780q0 25 17.5 42.5T480-720Zm0 552Z"></path></svg></span> <span>Apps</span></div>
+                <button type="button" class="remove-filter-btn ml-1 hover:bg-primary-dark text-white rounded-full p-0.5 transition-colors" aria-label="Remove filter">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div><div class="inline-flex items-center gap-2 px-3 py-1 bg-primary text-white rounded-full text-sm font-medium" data-filter-type="genre" data-filter-value="22">
+                <div class="inline-flex items-center"><span class="mr-1"><svg class="inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="20px" height="20px" fill="currentColor"><path d="m251-444 229 132 230-132-194-111v147h-72v-147L251-444Zm193-195v-14q-42.24-12.32-69.12-46.92-26.88-34.6-26.88-80.1 0-54.98 38.72-93.48 38.72-38.5 93.5-38.5t93.28 38.6q38.5 38.6 38.5 93.21 0 45.19-26.88 79.99T516-653v14l264 153q17.1 9.62 26.55 25.81Q816-444 816-424v104q0 20-9.45 36.19Q797.1-267.63 780-258L516-105q-17.13 10-36.07 10Q461-95 444-105L180-258q-17.1-9.63-26.55-25.81Q144-300 144-320v-104q0-20 9.45-36.19Q162.9-476.38 180-486l264-153Zm0 389L216-382v62l264 152 264-152v-62L516-250q-17.13 10-36.07 10Q461-240 444-250Zm36-470q25 0 42.5-17.5T540-780q0-25-17.5-42.5T480-840q-25 0-42.5 17.5T420-780q0 25 17.5 42.5T480-720Zm0 552Z"></path></svg></span> <span>Art &amp; Design</span></div>
+                <button type="button" class="remove-filter-btn ml-1 hover:bg-primary-dark text-white rounded-full p-0.5 transition-colors" aria-label="Remove filter">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div></div></div><div class="flex items-center justify-between">
+<button id="clearFilters" class="inline-flex justify-center px-4 py-2 text-xs bg-muted text-gray-800 rounded-full hover:bg-gray-300 transition font-medium">
+<svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#000000"><path d="M348.87-116.6q-61.14-26.6-106.4-71.87-45.27-45.26-71.87-106.4Q144-356 144-426h72q0 109 77.5 186.5T480-162q109 0 186.5-77.5T744-426q0-109-77.5-186.5T479.61-690H474l51 51-51 51-138-138 138-138 51 51-52 51h7q70 0 131.13 26.6 61.14 26.6 106.4 71.87 45.27 45.26 71.87 106.4Q816-496 816-426t-26.6 131.13q-26.6 61.14-71.87 106.4-45.26 45.27-106.4 71.87Q550-90 480-90t-131.13-26.6Z"></path></svg>
+Clear Filters                            </button><button id="searchButton" class="flex items-center px-6 py-2 rounded-full text-white font-semibold shadow-soft bg-orange transition text-xs">
+<svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"></path></svg>
+Search                            </button></div></form></div></div></div></section><div class="max-w-gp md:px-6 mx-auto px-4 sm:px-6 py-5 sm:py-7"><section class="pb-6 text-gray-900"><div class="flex items-center justify-between mb-6"><h2 class="text-xl font-bold flex items-center">
+5,477 Result found</h2><div class="inline-flex items-center bg-bg rounded-xl p-1">
+<button type="button" id="grid-btn" class="view-btn p-2 rounded-lg transition-all duration-200 bg-white shadow-sm text-primary" data-view="grid" aria-label="Grid view" aria-pressed="true">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+</svg>
+</button>
+<button type="button" id="list-btn" class="view-btn p-2 rounded-lg hover:text-dark transition-all duration-200 text-gray" data-view="list" aria-label="List view" aria-pressed="false">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+</svg>
+</button></div></div><section aria-label="app listings"><div id="games-container" class="grid-view"><div id="games-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4" style="opacity: 1;"><article class="game-card relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all group overflow-hidden"><div class="app-badge-wrap absolute z-1 flex flex-wrap gap-0.5 pointer-events-auto transition-all duration-200 top-5 left-5">
+<a href="https://liteapks.com/type/premium" class="text-[9px] font-bold px-[5px] py-[2px] rounded-lg leading-[1.4] no-underline bg-orange text-white" aria-label="Browse PREMIUM apps">
+PREMIUM                </a></div>
+<a href="https://liteapks.com/period-calendar-period-tracker-my-calendar.html" class="game-card-wrapper block p-3"><div class="game-thumb aspect-square rounded-xl overflow-hidden flex items-center justify-center bg-bg">
+<img src="https://liteapks.com/wp-content/uploads/2026/03/period-calendar-period-tracker.webp" alt="Period Calendar Period Tracker (My Calendar)" class="w-[90px] h-[90px] object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300" loading="lazy"></div></a><div class="game-content"><a href="https://liteapks.com/period-calendar-period-tracker-my-calendar.html" class="game-card-wrapper block p-3"><div class="game-info"><h3 class="font-bold text-sm text-dark line-clamp-1 group-hover:text-primary transition-colors">
+Period Calendar Period Tracker (My Calendar)</h3><p class="text-xs text-[#6b7280] mt-2">
+v1.77.353.GP <span class="mx-1"> • </span> 29 MB</p><div class="flex items-center gap-1 mt-2">
+<span class="text-xs text-star text-nowrap">★ 5.0</span>
+<span class="text-xs text-gray truncate max-w-[164px] md:max-w-[240px]">
+Premium Unlocked                    </span></div></div></a><div class="game-download hidden"><a href="https://liteapks.com/period-calendar-period-tracker-my-calendar.html" class="game-card-wrapper block p-3">
+</a><a href="https://liteapks.com/download/period-calendar-period-tracker-my-calendar-824819" class="block p-1 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-medium transition-colors">
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg>
+</a></div></div></article><article class="game-card relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all group overflow-hidden"><div class="app-badge-wrap absolute z-1 flex flex-wrap gap-0.5 pointer-events-auto transition-all duration-200 top-5 left-5">
+<a href="https://liteapks.com/type/mod" class="text-[9px] font-bold px-[5px] py-[2px] rounded-lg leading-[1.4] no-underline bg-orange text-white" aria-label="Browse MOD apps">
+MOD                </a></div>
+<a href="https://liteapks.com/era-flat.html" class="game-card-wrapper block p-3"><div class="game-thumb aspect-square rounded-xl overflow-hidden flex items-center justify-center bg-bg">
+<img src="https://liteapks.com/wp-content/uploads/2026/03/era-flat.webp" alt="Era Flat" class="w-[90px] h-[90px] object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300" loading="lazy"></div></a><div class="game-content"><a href="https://liteapks.com/era-flat.html" class="game-card-wrapper block p-3"><div class="game-info"><h3 class="font-bold text-sm text-dark line-clamp-1 group-hover:text-primary transition-colors">
+Era Flat</h3><p class="text-xs text-[#6b7280] mt-2">
+v5.7 <span class="mx-1"> • </span> 53 MB</p><div class="flex items-center gap-1 mt-2">
+<span class="text-xs text-star text-nowrap">★ 5.0</span>
+<span class="text-xs text-gray truncate max-w-[164px] md:max-w-[240px]">
+Full Version                    </span></div></div></a><div class="game-download hidden"><a href="https://liteapks.com/era-flat.html" class="game-card-wrapper block p-3">
+</a><a href="https://liteapks.com/download/era-flat-824812" class="block p-1 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-medium transition-colors">
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg>
+</a></div></div></article><article class="game-card relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all group overflow-hidden"><div class="app-badge-wrap absolute z-1 flex flex-wrap gap-0.5 pointer-events-auto transition-all duration-200 top-5 left-5">
+<a href="https://liteapks.com/type/paid" class="text-[9px] font-bold px-[5px] py-[2px] rounded-lg leading-[1.4] no-underline bg-orange text-white" aria-label="Browse Paid apps">
+Paid                </a></div>
+<a href="https://liteapks.com/flatine-icon-pack.html" class="game-card-wrapper block p-3"><div class="game-thumb aspect-square rounded-xl overflow-hidden flex items-center justify-center bg-bg">
+<img src="https://liteapks.com/wp-content/uploads/2026/03/flatine-icon-pack.webp" alt="Flatine icon pack" class="w-[90px] h-[90px] object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300" loading="lazy"></div></a><div class="game-content"><a href="https://liteapks.com/flatine-icon-pack.html" class="game-card-wrapper block p-3"><div class="game-info"><h3 class="font-bold text-sm text-dark line-clamp-1 group-hover:text-primary transition-colors">
+Flatine icon pack</h3><p class="text-xs text-[#6b7280] mt-2">
+v1.0.8 <span class="mx-1"> • </span> 24 MB</p><div class="flex items-center gap-1 mt-2">
+<span class="text-xs text-star text-nowrap">★ 5.0</span>
+<span class="text-xs text-gray truncate max-w-[164px] md:max-w-[240px]">
+Full Version                    </span></div></div></a><div class="game-download hidden"><a href="https://liteapks.com/flatine-icon-pack.html" class="game-card-wrapper block p-3">
+</a><a href="https://liteapks.com/download/flatine-icon-pack-819187" class="block p-1 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-medium transition-colors">
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg>
+</a></div></div></article><article class="game-card relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all group overflow-hidden"><div class="app-badge-wrap absolute z-1 flex flex-wrap gap-0.5 pointer-events-auto transition-all duration-200 top-5 left-5">
+<a href="https://liteapks.com/type/premium" class="text-[9px] font-bold px-[5px] py-[2px] rounded-lg leading-[1.4] no-underline bg-orange text-white" aria-label="Browse PREMIUM apps">
+PREMIUM                </a></div>
+<a href="https://liteapks.com/sketch-photo-editor.html" class="game-card-wrapper block p-3"><div class="game-thumb aspect-square rounded-xl overflow-hidden flex items-center justify-center bg-bg">
+<img src="https://liteapks.com/wp-content/uploads/2024/06/pencil-sketch-photo-editor.webp" alt="Sketch Photo Editor" class="w-[90px] h-[90px] object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300" loading="lazy"></div></a><div class="game-content"><a href="https://liteapks.com/sketch-photo-editor.html" class="game-card-wrapper block p-3"><div class="game-info"><h3 class="font-bold text-sm text-dark line-clamp-1 group-hover:text-primary transition-colors">
+Sketch Photo Editor</h3><p class="text-xs text-[#6b7280] mt-2">
+v2.1.10 <span class="mx-1"> • </span> 40M</p><div class="flex items-center gap-1 mt-2">
+<span class="text-xs text-star text-nowrap">★ 3.7</span>
+<span class="text-xs text-gray truncate max-w-[164px] md:max-w-[240px]">
+Premium Unlocked                    </span></div></div></a><div class="game-download hidden"><a href="https://liteapks.com/sketch-photo-editor.html" class="game-card-wrapper block p-3">
+</a><a href="https://liteapks.com/download/sketch-photo-editor-473514" class="block p-1 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-medium transition-colors">
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg>
+</a></div></div></article><article class="game-card relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all group overflow-hidden"><div class="app-badge-wrap absolute z-1 flex flex-wrap gap-0.5 pointer-events-auto transition-all duration-200 top-5 left-5">
+<a href="https://liteapks.com/type/premium" class="text-[9px] font-bold px-[5px] py-[2px] rounded-lg leading-[1.4] no-underline bg-orange text-white" aria-label="Browse PREMIUM apps">
+PREMIUM                </a></div>
+<a href="https://liteapks.com/rolling-icon.html" class="game-card-wrapper block p-3"><div class="game-thumb aspect-square rounded-xl overflow-hidden flex items-center justify-center bg-bg">
+<img src="https://liteapks.com/wp-content/uploads/2024/06/rolling-icon-3d-wallpaper.webp" alt="Rolling Icon" class="w-[90px] h-[90px] object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300" loading="lazy"></div></a><div class="game-content"><a href="https://liteapks.com/rolling-icon.html" class="game-card-wrapper block p-3"><div class="game-info"><h3 class="font-bold text-sm text-dark line-clamp-1 group-hover:text-primary transition-colors">
+Rolling Icon</h3><p class="text-xs text-[#6b7280] mt-2">
+v7.5.0 <span class="mx-1"> • </span> 20M</p><div class="flex items-center gap-1 mt-2">
+<span class="text-xs text-star text-nowrap">★ 5.0</span>
+<span class="text-xs text-gray truncate max-w-[164px] md:max-w-[240px]">
+Premium Unlocked                    </span></div></div></a><div class="game-download hidden"><a href="https://liteapks.com/rolling-icon.html" class="game-card-wrapper block p-3">
+</a><a href="https://liteapks.com/download/rolling-icon-473391" class="block p-1 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-medium transition-colors">
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg>
+</a></div></div></article><article class="game-card relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all group overflow-hidden"><div class="app-badge-wrap absolute z-1 flex flex-wrap gap-0.5 pointer-events-auto transition-all duration-200 top-5 left-5">
+<a href="https://liteapks.com/type/premium" class="text-[9px] font-bold px-[5px] py-[2px] rounded-lg leading-[1.4] no-underline bg-orange text-white" aria-label="Browse PREMIUM apps">
+PREMIUM                </a></div>
+<a href="https://liteapks.com/poster-maker-flyer-maker.html" class="game-card-wrapper block p-3"><div class="game-thumb aspect-square rounded-xl overflow-hidden flex items-center justify-center bg-bg">
+<img src="https://liteapks.com/wp-content/uploads/2024/11/poster-maker-flyer-maker.webp" alt="Poster Maker – Flyer Maker" class="w-[90px] h-[90px] object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300" loading="lazy"></div></a><div class="game-content"><a href="https://liteapks.com/poster-maker-flyer-maker.html" class="game-card-wrapper block p-3"><div class="game-info"><h3 class="font-bold text-sm text-dark line-clamp-1 group-hover:text-primary transition-colors">
+Poster Maker – Flyer Maker</h3><p class="text-xs text-[#6b7280] mt-2">
+v10.4.0-7 <span class="mx-1"> • </span> 36M</p><div class="flex items-center gap-1 mt-2">
+<span class="text-xs text-star text-nowrap">★ 3.7</span>
+<span class="text-xs text-gray truncate max-w-[164px] md:max-w-[240px]">
+Premium Unlocked                    </span></div></div></a><div class="game-download hidden"><a href="https://liteapks.com/poster-maker-flyer-maker.html" class="game-card-wrapper block p-3">
+</a><a href="https://liteapks.com/download/poster-maker-flyer-maker-555850" class="block p-1 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-medium transition-colors">
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg>
+</a></div></div></article><article class="game-card relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all group overflow-hidden"><div class="app-badge-wrap absolute z-1 flex flex-wrap gap-0.5 pointer-events-auto transition-all duration-200 top-5 left-5">
+<a href="https://liteapks.com/type/premium" class="text-[9px] font-bold px-[5px] py-[2px] rounded-lg leading-[1.4] no-underline bg-orange text-white" aria-label="Browse PREMIUM apps">
+PREMIUM                </a></div>
+<a href="https://liteapks.com/emoji-keyboard.html" class="game-card-wrapper block p-3"><div class="game-thumb aspect-square rounded-xl overflow-hidden flex items-center justify-center bg-bg">
+<img src="https://liteapks.com/wp-content/uploads/2024/09/emoji-keyboard-themes-fonts.webp" alt="Emoji Keyboard" class="w-[90px] h-[90px] object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300" loading="lazy"></div></a><div class="game-content"><a href="https://liteapks.com/emoji-keyboard.html" class="game-card-wrapper block p-3"><div class="game-info"><h3 class="font-bold text-sm text-dark line-clamp-1 group-hover:text-primary transition-colors">
+Emoji Keyboard</h3><p class="text-xs text-[#6b7280] mt-2">
+v3.6.0 <span class="mx-1"> • </span> 52M</p><div class="flex items-center gap-1 mt-2">
+<span class="text-xs text-star text-nowrap">★ 3.0</span>
+<span class="text-xs text-gray truncate max-w-[164px] md:max-w-[240px]">
+Premium Unlocked                    </span></div></div></a><div class="game-download hidden"><a href="https://liteapks.com/emoji-keyboard.html" class="game-card-wrapper block p-3">
+</a><a href="https://liteapks.com/download/emoji-keyboard-514757" class="block p-1 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-medium transition-colors">
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg>
+</a></div></div></article><article class="game-card relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all group overflow-hidden"><div class="app-badge-wrap absolute z-1 flex flex-wrap gap-0.5 pointer-events-auto transition-all duration-200 top-5 left-5">
+<a href="https://liteapks.com/type/premium" class="text-[9px] font-bold px-[5px] py-[2px] rounded-lg leading-[1.4] no-underline bg-orange text-white" aria-label="Browse PREMIUM apps">
+PREMIUM                </a></div>
+<a href="https://liteapks.com/3d-logo-maker.html" class="game-card-wrapper block p-3"><div class="game-thumb aspect-square rounded-xl overflow-hidden flex items-center justify-center bg-bg">
+<img src="https://liteapks.com/wp-content/uploads/2024/06/3d-logo-maker-and-logo-creator.webp" alt="3D Logo Maker" class="w-[90px] h-[90px] object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300" loading="lazy"></div></a><div class="game-content"><a href="https://liteapks.com/3d-logo-maker.html" class="game-card-wrapper block p-3"><div class="game-info"><h3 class="font-bold text-sm text-dark line-clamp-1 group-hover:text-primary transition-colors">
+3D Logo Maker</h3><p class="text-xs text-[#6b7280] mt-2">
+v1.10.13 <span class="mx-1"> • </span> 40M</p><div class="flex items-center gap-1 mt-2">
+<span class="text-xs text-star text-nowrap">★ 3.8</span>
+<span class="text-xs text-gray truncate max-w-[164px] md:max-w-[240px]">
+Premium Unlocked                    </span></div></div></a><div class="game-download hidden"><a href="https://liteapks.com/3d-logo-maker.html" class="game-card-wrapper block p-3">
+</a><a href="https://liteapks.com/download/3d-logo-maker-473409" class="block p-1 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-medium transition-colors">
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg>
+</a></div></div></article><article class="game-card relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all group overflow-hidden">
+<a href="https://liteapks.com/github-store.html" class="game-card-wrapper block p-3"><div class="game-thumb aspect-square rounded-xl overflow-hidden flex items-center justify-center bg-bg">
+<img src="https://liteapks.com/wp-content/uploads/2026/01/github-store-500x500.png" alt="GitHub Store" class="w-[90px] h-[90px] object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300" loading="lazy"></div></a><div class="game-content"><a href="https://liteapks.com/github-store.html" class="game-card-wrapper block p-3"><div class="game-info"><h3 class="font-bold text-sm text-dark line-clamp-1 group-hover:text-primary transition-colors">
+GitHub Store</h3><p class="text-xs text-[#6b7280] mt-2">
+v1.7.0 <span class="mx-1"> • </span> 15M</p><div class="flex items-center gap-1 mt-2">
+<span class="text-xs text-star text-nowrap">★ 4.0</span>
+<span class="text-xs text-gray truncate max-w-[164px] md:max-w-[240px]">
+Original                    </span></div></div></a><div class="game-download hidden"><a href="https://liteapks.com/github-store.html" class="game-card-wrapper block p-3">
+</a><a href="https://liteapks.com/download/github-store-807561" class="block p-1 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-medium transition-colors">
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg>
+</a></div></div></article><article class="game-card relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all group overflow-hidden">
+<a href="https://liteapks.com/apktool-m.html" class="game-card-wrapper block p-3"><div class="game-thumb aspect-square rounded-xl overflow-hidden flex items-center justify-center bg-bg">
+<img src="https://liteapks.com/wp-content/uploads/2025/08/apktool-m.webp" alt="Apktool M" class="w-[90px] h-[90px] object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300" loading="lazy"></div></a><div class="game-content"><a href="https://liteapks.com/apktool-m.html" class="game-card-wrapper block p-3"><div class="game-info"><h3 class="font-bold text-sm text-dark line-clamp-1 group-hover:text-primary transition-colors">
+Apktool M</h3><p class="text-xs text-[#6b7280] mt-2">
+v2.4.0-260328 <span class="mx-1"> • </span> 15M</p><div class="flex items-center gap-1 mt-2">
+<span class="text-xs text-star text-nowrap">★ 3.9</span>
+<span class="text-xs text-gray truncate max-w-[164px] md:max-w-[240px]">
+Original                    </span></div></div></a><div class="game-download hidden"><a href="https://liteapks.com/apktool-m.html" class="game-card-wrapper block p-3">
+</a><a href="https://liteapks.com/download/apktool-m-710377" class="block p-1 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-medium transition-colors">
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg>
+</a></div></div></article><article class="game-card relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all group overflow-hidden"><div class="app-badge-wrap absolute z-1 flex flex-wrap gap-0.5 pointer-events-auto transition-all duration-200 top-5 left-5">
+<a href="https://liteapks.com/type/premium" class="text-[9px] font-bold px-[5px] py-[2px] rounded-lg leading-[1.4] no-underline bg-orange text-white" aria-label="Browse PREMIUM apps">
+PREMIUM                </a></div>
+<a href="https://liteapks.com/auto-text.html" class="game-card-wrapper block p-3"><div class="game-thumb aspect-square rounded-xl overflow-hidden flex items-center justify-center bg-bg">
+<img src="https://liteapks.com/wp-content/uploads/2022/05/do-it-later-auto-sms-whatsapp.png" alt="Auto Text (Do It Later)" class="w-[90px] h-[90px] object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300" loading="lazy"></div></a><div class="game-content"><a href="https://liteapks.com/auto-text.html" class="game-card-wrapper block p-3"><div class="game-info"><h3 class="font-bold text-sm text-dark line-clamp-1 group-hover:text-primary transition-colors">
+Auto Text (Do It Later)</h3><p class="text-xs text-[#6b7280] mt-2">
+v6.0.5 <span class="mx-1"> • </span> 16M</p><div class="flex items-center gap-1 mt-2">
+<span class="text-xs text-star text-nowrap">★ 3.8</span>
+<span class="text-xs text-gray truncate max-w-[164px] md:max-w-[240px]">
+Premium Unlocked                    </span></div></div></a><div class="game-download hidden"><a href="https://liteapks.com/auto-text.html" class="game-card-wrapper block p-3">
+</a><a href="https://liteapks.com/download/auto-text-do-it-later-7600" class="block p-1 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-medium transition-colors">
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg>
+</a></div></div></article><article class="game-card relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all group overflow-hidden"><div class="app-badge-wrap absolute z-1 flex flex-wrap gap-0.5 pointer-events-auto transition-all duration-200 top-5 left-5">
+<a href="https://liteapks.com/type/paid" class="text-[9px] font-bold px-[5px] py-[2px] rounded-lg leading-[1.4] no-underline bg-orange text-white" aria-label="Browse Paid apps">
+Paid                </a></div>
+<a href="https://liteapks.com/my-budget-book.html" class="game-card-wrapper block p-3"><div class="game-thumb aspect-square rounded-xl overflow-hidden flex items-center justify-center bg-bg">
+<img src="https://liteapks.com/wp-content/uploads/2022/08/my-budget-book-mod-apk.png" alt="My Budget Book" class="w-[90px] h-[90px] object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300" loading="lazy"></div></a><div class="game-content"><a href="https://liteapks.com/my-budget-book.html" class="game-card-wrapper block p-3"><div class="game-info"><h3 class="font-bold text-sm text-dark line-clamp-1 group-hover:text-primary transition-colors">
+My Budget Book</h3><p class="text-xs text-[#6b7280] mt-2">
+v9.11 <span class="mx-1"> • </span> 7M</p><div class="flex items-center gap-1 mt-2">
+<span class="text-xs text-star text-nowrap">★ 4.0</span>
+<span class="text-xs text-gray truncate max-w-[164px] md:max-w-[240px]">
+Full Version                    </span></div></div></a><div class="game-download hidden"><a href="https://liteapks.com/my-budget-book.html" class="game-card-wrapper block p-3">
+</a><a href="https://liteapks.com/download/my-budget-book-26977" class="block p-1 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-medium transition-colors">
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg>
+</a></div></div></article></div><nav class="flex justify-center px-4 mt-8 mb-6" aria-label="Page navigation"><div class="archive-pagination flex flex-wrap items-center justify-center gap-1.5">
+<span aria-current="page" class="page-numbers current">1</span>
+<a class="page-numbers" href="https://liteapks.com/browse-apps-games/page/2?q&amp;genre%5B0%5D=21&amp;genre%5B1%5D=22#038;genre%5B0%5D=21&amp;genre%5B1%5D=22">2</a>
+<span class="page-numbers dots">…</span>
+<a class="page-numbers" href="https://liteapks.com/browse-apps-games/page/457?q&amp;genre%5B0%5D=21&amp;genre%5B1%5D=22#038;genre%5B0%5D=21&amp;genre%5B1%5D=22">457</a>
+<a class="next page-numbers" href="https://liteapks.com/browse-apps-games/page/2?q&amp;genre%5B0%5D=21&amp;genre%5B1%5D=22#038;genre%5B0%5D=21&amp;genre%5B1%5D=22"><svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M522-480 333-669l51-51 240 240-240 240-51-51 189-189Z"></path></svg></a></div></nav></div></section></section></div></main>

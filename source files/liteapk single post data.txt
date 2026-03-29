@@ -1,0 +1,1104 @@
+<main class="single-post-main">
+
+    <div class="single-hero">
+        <div class="hero-bg">
+            <img src="https://liteapks.com/wp-content/uploads/2023/04/capcut-cover.jpeg" alt="CapCut" fetchpriority="high">
+        </div>
+
+        <section class="app-info-section">
+            <div class="max-w-gp mx-auto px-4 lg:px-6">
+                    <nav class="flex items-center gap-1 text-sm font-semibold text-gray-2 mb-5 flex-wrap" aria-label="Breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList" itemid="https://liteapks.com/capcut-video-editor.html#breadcrumb">
+                    
+            <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                                    <a href="https://liteapks.com/" class="hover:text-primary-hover no-underline text-primary font-medium" itemprop="item" itemscope="" itemtype="https://schema.org/WebPage" itemid="https://liteapks.com/">
+                        <span itemprop="name">Home</span>
+                    </a>
+                                <meta itemprop="position" content="1">
+            </span>
+                                    <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>            
+            <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                                    <a href="https://liteapks.com/apps" class="hover:text-primary-hover no-underline text-primary font-medium" itemprop="item" itemscope="" itemtype="https://schema.org/WebPage" itemid="https://liteapks.com/apps">
+                        <span itemprop="name">Apps</span>
+                    </a>
+                                <meta itemprop="position" content="2">
+            </span>
+                                    <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>            
+            <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                                    <a href="https://liteapks.com/apps/video-players-editors" class="hover:text-primary-hover no-underline text-primary font-medium" itemprop="item" itemscope="" itemtype="https://schema.org/WebPage" itemid="https://liteapks.com/apps/video-players-editors">
+                        <span itemprop="name">Video Players &amp; Editors</span>
+                    </a>
+                                <meta itemprop="position" content="3">
+            </span>
+                                    <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>            
+            <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                                    <span class="text-orange" itemprop="name">CapCut</span>
+                                <meta itemprop="position" content="4">
+            </span>
+            </nav>
+                    <div class="app-info-row flex items-start gap-3">
+                    <div class="app-info-icon">
+                        <img src="https://liteapks.com/wp-content/uploads/2022/04/capcut-video-editor-150x150.png" alt="CapCut">
+                    </div>
+                    <div class="app-info-text">
+                        <h1>CapCut v17.3.0 MOD APK (Pro, Premium Unlocked)</h1>
+                        <div class="developer">
+                                                                                                                                    <a href="https://liteapks.com/developer/bytedance-pte-ltd" class="text-primary">Bytedance Pte. Ltd.</a>
+                                                                                    </div>
+
+                                                    <div class="mt-2 flex gap-1 flex-wrap">
+                                                                    <a href="https://liteapks.com/type/editors-choice" class="text-xs font-bold px-2 py-1 rounded-full leading-[1.4] bg-orange text-white">
+                                        Editor's Choice                                    </a>
+                                                                    <a href="https://liteapks.com/type/premium" class="text-xs font-bold px-2 py-1 rounded-full leading-[1.4] bg-primary text-white">
+                                        PREMIUM                                    </a>
+                                                            </div>
+                        
+                    </div>
+                </div>
+
+                                    <div class="sub-info mt-5">
+                        <p class="text-orange italic">
+                            MOD: Pro, Premium Unlocked                        </p>
+                    </div>
+                
+                                    <div class="short-desc mt-5 italic font-sm text-white/75">
+                        <p><em>CapCut Mod APK opens a new era for video editing. It combines with TikTok to create globally famous content creators.</em></p>
+                    </div>
+                
+                <div class="app-stats flex justify-start mt-8">
+
+                                            <div class="app-stat pr-2">
+                            <div class="value">17.3.0</div>
+                            <div class="label">Version</div>
+                        </div>
+                    
+                                        <div class="app-stat">
+                        <div class="value">200M</div>
+                        <div class="label">Size</div>
+                    </div>
+                    
+                                        <div class="app-stat">
+                        <div class="value">
+                            <a href="https://play.google.com/store/apps/details?id=com.lemon.lvoverseas">
+                                <svg viewBox="0 0 24 24" class="w-5 h-5"><path fill="#4285F4" d="M12.6 11.5l3.6-3.8L4.5 1.2c-.4-.2-.8-.2-1.2 0l9.3 10.3z"></path><path fill="#34A853" d="M19.8 10.1L16.2 8l-3.6 3.5 3.6 3.5 3.6-2.1c.7-.4.7-1.4 0-1.8z"></path><path fill="#FBBC04" d="M3.3 1.2C3.1 1.5 3 1.8 3 2.2v19.6c0 .4.1.7.3 1l9.3-9.3L3.3 1.2z"></path><path fill="#EA4335" d="M12.6 12.5L3.3 21.8c.4.2.8.2 1.2 0l11.7-6.5-3.6-2.8z"></path></svg>
+                            </a>
+                        </div>
+                        <div class="label">Get it on </div>
+                    </div>
+                    
+                    <div class="app-stat">
+                        <div class="value">
+                            4.3                            <div class="info-bar-sub info-bar-stars">★</div>
+                        </div>
+
+                        <div class="label">60433 ratings</div>
+                    </div>
+                </div>
+
+                <div class="app-cta">
+                                        <a href="https://liteapks.com/download/capcut-311" class="btn-install rounded-full">
+                        <svg class="w-5 h-5 mr-1.5 inline-block align-middle" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Download APK                    </a>
+                    
+                    <div class="app-actions">
+                        <button class="app-action-btn text-primary js-share-btn" data-url="https://liteapks.com/capcut-video-editor.html">
+                            <svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
+                            Share                        </button>
+                                                <button class="app-action-btn text-orange" id="request-update-btn" data-post-id="311">
+                            <svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                            Request Update                        </button>
+                                            </div>
+                </div>
+            </div>
+        </section>
+    </div><div id="ad-unit-1" style="overflow: hidden; height: 250px; display: flex; align-items: center; justify-content: center; margin-top: 10px; margin-bottom: 10px;"><script async="" src="//zv.sawneboenolic.com/tVkt70ypXINooNst/137921"></script></div>
+
+    <section class="app-info-bar bg-white">
+        <div class="max-w-gp mx-auto px-4 lg:px-6">
+            <div class="info-bar-scroll">
+
+                                <div class="info-bar-item">
+                    <div class="info-bar-label">VERSION</div>
+                    <div class="info-bar-value">17.3.0</div>
+                    <div class="info-bar-sub">Latest</div>
+                </div>
+                
+                                        <div class="info-bar-item">
+                            <div class="info-bar-label">SIZE</div>
+                            <div class="info-bar-value">200M</div>
+                            <div class="info-bar-sub">Total</div>
+                        </div>
+                
+
+                                <div class="info-bar-item">
+                    <div class="info-bar-label">GENRE</div>
+                    <div class="info-bar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#000000"><path d="m276-528 204-336 204 336H276ZM696-96q-70 0-119-49t-49-119q0-70 49-119t119-49q70 0 119 49t49 119q0 70-49 119T696-96Zm-552-24v-288h288v288H144Zm551.77-48Q736-168 764-195.77q28-27.78 28-68Q792-304 764.23-332q-27.78-28-68-28Q656-360 628-332.23q-28 27.78-28 68Q600-224 627.77-196q27.78 28 68 28ZM216-192h144v-144H216v144Zm188-408h152l-76-125-76 125Zm76 0ZM360-336Zm331 67Z"></path></svg>
+                    </div>
+                    <div class="info-bar-sub"><a class="text-primary font-medium" href="https://liteapks.com/apps/video-players-editors">Video Players &amp; Editors</a></div>
+                </div>
+                
+                                <div class="info-bar-item">
+                    <div class="info-bar-label">DEVELOPER</div>
+                    <div class="info-bar-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    </div>
+                    <div class="info-bar-sub">
+                                                                                <a class="text-primary font-medium" href="https://liteapks.com/developer/bytedance-pte-ltd">Bytedance Pte. Ltd.</a>
+                                            </div>
+                </div>
+                
+                <div class="info-bar-item">
+                    <div class="info-bar-label">REACHED</div>
+                    <div class="info-bar-value">145.7M+</div>
+                    <div class="info-bar-sub">Views</div>
+                </div>
+
+                <div class="info-bar-item">
+                    <div class="info-bar-label">UPDATED</div>
+                    <div class="info-bar-value info-bar-value--sm">Mar 10</div>
+                    <div class="info-bar-sub">2026</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <section class="screenshot-section bg-white">
+        <div class="max-w-gp mx-auto px-4 lg:px-6">
+            <h3 class="flex items-center gap-2 text-lg font-bold mb-3">
+                <svg class="w-5 h-5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                Screenshots            </h3>
+            <div class="screenshot-scroll" id="screenshotScroll">
+                                    <img src="https://liteapks.com/wp-content/uploads/2024/03/capcut-7.webp" alt="Screenshot 1" height="200" data-idx="0" loading="lazy">
+                                    <img src="https://liteapks.com/wp-content/uploads/2024/03/capcut-6.webp" alt="Screenshot 2" height="200" data-idx="1" loading="lazy">
+                                    <img src="https://liteapks.com/wp-content/uploads/2024/03/capcut-5.webp" alt="Screenshot 3" height="200" data-idx="2" loading="lazy">
+                                    <img src="https://liteapks.com/wp-content/uploads/2024/03/capcut-4.webp" alt="Screenshot 4" height="200" data-idx="3" loading="lazy">
+                                    <img src="https://liteapks.com/wp-content/uploads/2024/03/capcut-3.webp" alt="Screenshot 5" height="200" data-idx="4" loading="lazy">
+                                    <img src="https://liteapks.com/wp-content/uploads/2024/03/capcut-2.webp" alt="Screenshot 6" height="200" data-idx="5" loading="lazy">
+                                    <img src="https://liteapks.com/wp-content/uploads/2024/03/capcut.webp" alt="Screenshot 7" height="200" data-idx="6" loading="lazy">
+                            </div>
+        </div>
+    </section>
+    
+
+    <section class="content-section bg-white p-0">
+        <div class="max-w-gp mx-auto px-4 lg:px-6">
+            <div class="content-tabs" id="contentTabs">
+                                    <button class="content-tab active" data-tab="tab-desc">Description</button>
+                
+                                    <button class="content-tab" data-tab="mod-info">
+                        MOD Info                    </button>
+                
+            </div>
+
+                            <div class="tab-content active" id="tab-desc">
+                    <div class="desc-content entry-content expanded" id="descContent">
+                        <p>CapCut is an editing application that can help you create a product from basic to advanced, depending on your abilities and experience. If you don’t feel confident, try these prepared resources that resemble social media posts. It will turn a normal product you shoot into a creative and artistic cinematic product.</p>
+<h3>EASY-TO-USE VIDEO EDITOR</h3>
+<p>CapCut’s interface gathers the necessary features for a user’s creativity, and when they access a certain part, the potential hidden in it will appear before their eyes. The variety creates unique creative styles, but this does not cause too much difficulty for users. Specifically, users always have templates that you can take advantage of. If you don’t know anything about editing and don’t waste time choosing, look at the preview products. To use those colors, press and start editing, like drawing a few basic textures to complete the picture.</p>
+<ul>
+<li><i><strong>Simple and easy-to-use interface: </strong>Any user should try the application once because it is friendly to unskilled people.</i></li>
+<li><i><strong>Available presets and templates:</strong> With pre-designed content, you just need to add a few details to have a complete product.</i></li>
+</ul>
+<h3>HIGH-QUALITY VIDEO EFFECTS</h3>
+<p>When going to an editing application, color is often the first consideration, regardless of the platform. The product can turn out to be stunningly beautiful with impressive lighting effects or a boring color if the user does not know how to use these colors. In addition, the cinematic filters that you often see in dramas or movies can be partially recreated, but that is completely more than enough for users! With just one touch, everything can turn into a completely different version.</p>
+<ul>
+<li><i><strong>A wide variety of effects and filters:</strong> All elements that can add beauty to an image or video are freely accessible.</i></li>
+<li><i><strong>Compatible with image qualities:</strong> From HD to 4K, the application still handles it with complete ease.</i></li>
+</ul>
+<h3>LICENSED MUSIC LIBRARY</h3>
+<p>What is associated with effects or filters in advanced editing applications is the keyframe, and you do not need to verify this because this association has been going on for a long time. If you see videos where things change continuously within a frame, it’s because of keyframes that can help you transition from one element to another. So, instead of using a full filter, try placing a key frame so you can create a difference between two moments in the story. From there, viewers can better understand the character’s emotional changes with just two different colors.</p>
+<ul>
+<li><i><strong>A series of licensed songs</strong>: Current hot works can be used through the support of the application.</i></li>
+<li><i><strong>Always update new trends</strong>: If you want to stay ahead of current trends, then you know what hot sounds are.</i></li>
+</ul>
+<h3>CREATIVE STICKERS AND TEXT</h3>
+<p>Text will often appear in many aspects and many different applications, but not all types of applications have the same type of text font. For video editing applications, these fonts will often be tweaked and approved to ensure the fonts can be used and match current trends. You can realize that fonts not only inform content but can also be highly decorative, so creating a beautiful and trendy font is also necessary. Therefore, if you choose the right location, the observation effect will be better immediately.</p>
+<ul>
+<li><i><strong>Stickers with animations:</strong> Adding fun elements to videos is a way to make an impression on viewers.</i></li>
+<li><i><strong>Attach graphics and titles: </strong>With exciting effects, you should not ignore the combination of similar things.</i></li>
+<li><i><strong>Diverse styles: </strong>A large number of resources are waiting for you to apply them to your products.</i></li>
+</ul>
+                    </div>
+                    <button class="read-more-btn text-primary" id="readMoreBtn">Show less <svg class="w-4 h-4 ml-1 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg></button>
+
+                                    </div>
+            
+                            <div class="tab-content" id="mod-info">
+                                            <div class="entry-content">
+                            <ul>
+<li><em>Pro Works</em></li>
+<li><em>Security Popup Removed</em></li>
+<li><em>Templates/Library (Unavailable/Broken)</em></li>
+</ul>
+                        </div>
+                                    </div>
+            
+        </div>
+    </section>
+
+    
+    <section class="py-8">
+        <div class="max-w-gp mx-auto px-4 lg:px-6">
+            <h3 class="flex items-center gap-2 text-lg font-bold mb-4">
+                <svg class="w-5 h-5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Help &amp; FAQ            </h3>
+            <div class="flex flex-col divide-y divide-[#f0f0f0] border border-[#f0f0f0] rounded-2xl overflow-hidden">
+                                                            <details class="group">
+                            <summary class="flex items-center bg-white justify-between gap-3 px-4 py-3.5 cursor-pointer list-none select-none">
+                                <span class="text-sm font-semibold text-dark">What is APK INSTALLER? How to install?</span>
+                                <svg class="w-4 h-4 shrink-0 text-gray transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <div class="p-4 text-sm text-dark-2 leading-relaxed">
+                                <p><em>APK INSTALLER is an Android game installer that includes .apk and .obb files attached to the same container. You just need to install the container like regular apk files. Then install the game through our installer.</em></p>
+                            </div>
+                        </details>
+                                            <details class="group">
+                            <summary class="flex items-center bg-white justify-between gap-3 px-4 py-3.5 cursor-pointer list-none select-none">
+                                <span class="text-sm font-semibold text-dark">What is XAPK? How to install?</span>
+                                <svg class="w-4 h-4 shrink-0 text-gray transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <div class="p-4 text-sm text-dark-2 leading-relaxed">
+                                <p><em>XAPK is similar to APK INSTALLER, it includes apk and obb inside. To install the .xapk file, you need to use a third-party installer, for example, <strong><a href="https://play.google.com/store/apps/details?id=io.apkmody.sai">XAPKS Installer</a></strong> (a friendly tool of a friend of mine)</em></p>
+                            </div>
+                        </details>
+                                            <details class="group">
+                            <summary class="flex items-center bg-white justify-between gap-3 px-4 py-3.5 cursor-pointer list-none select-none">
+                                <span class="text-sm font-semibold text-dark">The download link is broken!</span>
+                                <svg class="w-4 h-4 shrink-0 text-gray transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <div class="p-4 text-sm text-dark-2 leading-relaxed">
+                                <p><em>Please report it to us via social media, or email, we will fix it in a moment. Managing the links of tens of thousands of games and applications is difficult, sometimes we get tired and do something wrong. Please sympathize.</em></p>
+                            </div>
+                        </details>
+                                            <details class="group">
+                            <summary class="flex items-center bg-white justify-between gap-3 px-4 py-3.5 cursor-pointer list-none select-none">
+                                <span class="text-sm font-semibold text-dark">What causes mods not to work properly?</span>
+                                <svg class="w-4 h-4 shrink-0 text-gray transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <div class="p-4 text-sm text-dark-2 leading-relaxed">
+                                <p><em>Team always do thorough testing before posting games and apps. Please read carefully before the instructions that include “MOD Info?” “How to?” in the post. If it still doesn’t work, report it back to us</em></p>
+                            </div>
+                        </details>
+                                            <details class="group">
+                            <summary class="flex items-center bg-white justify-between gap-3 px-4 py-3.5 cursor-pointer list-none select-none">
+                                <span class="text-sm font-semibold text-dark">How to fix "App not installed" error?</span>
+                                <svg class="w-4 h-4 shrink-0 text-gray transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <div class="p-4 text-sm text-dark-2 leading-relaxed">
+                                <p><em>This error occurs when you install an original version or mod of another website in the device. Please delete them and reinstall our version</em></p>
+                            </div>
+                        </details>
+                                            <details class="group">
+                            <summary class="flex items-center bg-white justify-between gap-3 px-4 py-3.5 cursor-pointer list-none select-none">
+                                <span class="text-sm font-semibold text-dark">How to update mods without losing data?</span>
+                                <svg class="w-4 h-4 shrink-0 text-gray transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <div class="p-4 text-sm text-dark-2 leading-relaxed">
+                                <p><em>It’s very simple, overwrite the new version without deleting the old version. However, this is only possible when you use the same mod version from LITEAPKS.COM<br>
+</em></p>
+                            </div>
+                        </details>
+                                                </div>
+        </div>
+    </section>
+
+    <section class="py-8">
+        <div class="max-w-gp mx-auto px-4 lg:px-6">
+            <div class="data-safety bg-white">
+                <h3>Data safety</h3>
+                <p class="text-sm text-gray-3 mb-4">Safety starts with understanding how developers collect and share your data.</p>
+                <div class="safety-item">
+                    <svg class="w-5 h-5 inline-block shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
+                    <p>No data shared with third parties</p>
+                </div>
+                <div class="safety-item">
+                    <svg class="w-5 h-5 inline-block shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    <p>This app may collect these data types: Location, Personal info and 3 others</p>
+                </div>
+                <div class="safety-item">
+                    <svg class="w-5 h-5 inline-block shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    <p>Data is encrypted in transit</p>
+                </div>
+                <div class="safety-item">
+                    <svg class="w-5 h-5 inline-block shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                    <p>You can request that data be deleted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comments-section bg-white py-8">
+        <div class="max-w-gp mx-auto px-4 lg:px-6">
+            <div class="rating-overview rating-big flex flex-col items-center my-4">
+
+                <div class="number">4.3/5</div>
+
+                
+                <div id="rateyo-widget" data-post-id="311" data-has-rated="0" data-rating="4.3" class="jq-ry-container" style="width: 150px;"><div class="jq-ry-group-wrapper"><div class="jq-ry-normal-group jq-ry-group"><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="30px" height="30px" fill="#dadce0"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="30px" height="30px" fill="#dadce0" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="30px" height="30px" fill="#dadce0" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="30px" height="30px" fill="#dadce0" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="30px" height="30px" fill="#dadce0" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg></div><div class="jq-ry-rated-group jq-ry-group" style="width: 86%;"><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="30px" height="30px" fill="#e8710a"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="30px" height="30px" fill="#e8710a" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="30px" height="30px" fill="#e8710a" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="30px" height="30px" fill="#e8710a" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="30px" height="30px" fill="#e8710a" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg></div></div></div>
+
+                <div class="count">60.4K reviews</div>
+
+            </div>
+
+            
+<section id="comments-section">
+
+    <div class="flex items-center justify-between mb-6">
+        <h2 class="text-xl font-bold text-dark flex items-center gap-2">
+            <svg class="size-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+            </svg>
+            Comments            <span class="text-base font-normal text-gray">(20)</span>
+        </h2>
+    </div>
+
+            <div class="bg-white border border-[#f0f0f0] rounded-2xl p-4 mb-6">
+            <form id="comment-form" class="form-comment" method="POST" action="https://liteapks.com/wp-admin/admin-ajax.php">
+                <input type="hidden" name="action" value="app_comment">
+                <input type="hidden" name="post_id" value="311">
+                <input type="hidden" name="parent" id="comment-parent" value="0">
+
+                <div class="space-y-4">
+                    <div>
+                        <textarea name="comment" id="comment-input" rows="4" placeholder="Write a comment..." required="" class="w-full px-4 py-3 border border-muted rounded-xl focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all resize-none"></textarea>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <input type="text" name="name" id="comment-name" placeholder="Name" required="" class="w-full px-4 py-3 border border-muted rounded-xl focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="comment-email" placeholder="Email" required="" class="w-full px-4 py-3 border border-muted rounded-xl focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+                        </div>
+                    </div>
+
+                    <div id="reply-indicator" class="hidden p-3 bg-primary/10 border border-primary/20 rounded-xl">
+                        <div class="flex items-start justify-between gap-3">
+                            <div class="flex-1">
+                                <p class="text-sm text-primary mb-1">
+                                    <span class="font-semibold">Replying to:</span>
+                                    <span id="reply-to-name" class="font-medium"></span>
+                                </p>
+                                <p id="reply-to-parent-info" class="text-xs text-gray hidden">
+                                    <span class="font-semibold">In thread:</span>
+                                    <span id="reply-to-parent-name"></span>
+                                </p>
+                            </div>
+                            <button type="button" id="cancel-reply" class="text-sm text-primary hover:text-primary-hover font-semibold flex-shrink-0">
+                                Cancel                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end">
+                        <button type="submit" class="px-6 py-3 bg-primary hover:bg-primary-hover text-white font-semibold rounded-xl transition-colors inline-flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
+                            <svg id="comment-submit-icon" class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 12L3.269 3.125A59.769 59.769 0 0121.485 12 59.768 59.768 0 013.27 20.875L5.999 12zm0 0h7.5"></path>
+                            </svg>
+                            <span class="submit-text">Send</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    
+            <div id="comments-list" class="space-y-4">
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/0bb907031ec2b6d249ebf4d70e261e1c0fdede87a87a0863c90da3e78c16dbaa?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/0bb907031ec2b6d249ebf4d70e261e1c0fdede87a87a0863c90da3e78c16dbaa?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Prakanshu</span>
+                                                                <time datetime="2026-03-17T21:39:10+07:00" class="text-xs text-gray ml-auto">
+                                    Mar 17, 2026                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                Hii how are you                            </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="270487" data-reply-to="270487" data-author="Prakanshu" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Prakanshu">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/4991fe12429a83b712e47cfec85956de098f58300ec3440d4b0b1c24482cc825?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/4991fe12429a83b712e47cfec85956de098f58300ec3440d4b0b1c24482cc825?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Avishekkumar</span>
+                                                                <time datetime="2026-03-17T21:35:50+07:00" class="text-xs text-gray ml-auto">
+                                    Mar 17, 2026                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                My capcut is no start                            </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="270483" data-reply-to="270483" data-author="Avishekkumar" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Avishekkumar">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/435ce8da091afb85895865bbe84f2e6066d6166c4bc925a512ea7767556f416b?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/435ce8da091afb85895865bbe84f2e6066d6166c4bc925a512ea7767556f416b?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Anish</span>
+                                                                <time datetime="2026-01-09T23:30:15+07:00" class="text-xs text-gray ml-auto">
+                                    Jan 9, 2026                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                Nice video editor 
+App
+                            </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="242602" data-reply-to="242602" data-author="Anish" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Anish">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/e1fe418664a7c647aa457768d3d4490c9db4965fac464a921408bc681b884ca1?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/e1fe418664a7c647aa457768d3d4490c9db4965fac464a921408bc681b884ca1?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Dev gupta</span>
+                                                                <time datetime="2026-01-09T23:27:57+07:00" class="text-xs text-gray ml-auto">
+                                    Jan 9, 2026                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                To Nice                             </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="242601" data-reply-to="242601" data-author="Dev gupta" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Dev gupta">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/729b5334c8677f015de7b7665d5ae99515a59a8a3a979e3aea89a6b4d6411019?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/729b5334c8677f015de7b7665d5ae99515a59a8a3a979e3aea89a6b4d6411019?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Karan</span>
+                                                                <time datetime="2026-01-09T23:05:06+07:00" class="text-xs text-gray ml-auto">
+                                    Jan 9, 2026                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                Cap cut update cap cut best 
+                            </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="242584" data-reply-to="242584" data-author="Karan" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Karan">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/c78c7d15dcf954adc25c0cf4c6e04357274cd2259dbc3794b53bd69c46dcd95f?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/c78c7d15dcf954adc25c0cf4c6e04357274cd2259dbc3794b53bd69c46dcd95f?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Muhammad MADNI</span>
+                                                                <time datetime="2025-10-07T10:57:14+07:00" class="text-xs text-gray ml-auto">
+                                    Oct 7, 2025                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                Very nice                            </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="206953" data-reply-to="206953" data-author="Muhammad MADNI" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Muhammad MADNI">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/9a54b60ddbc43dc433315cfdc1681e177c7336f365ff8c9b4a410a499c707708?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/9a54b60ddbc43dc433315cfdc1681e177c7336f365ff8c9b4a410a499c707708?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Arman</span>
+                                                                <time datetime="2025-10-07T00:23:29+07:00" class="text-xs text-gray ml-auto">
+                                    Oct 7, 2025                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                Arman                            </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="206921" data-reply-to="206921" data-author="Arman" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Arman">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/dc4ca47f994f40926942cdebfb9675529eab863fce8073c979dd06ee9adbdf6b?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/dc4ca47f994f40926942cdebfb9675529eab863fce8073c979dd06ee9adbdf6b?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Jef</span>
+                                                                <time datetime="2025-10-06T22:28:22+07:00" class="text-xs text-gray ml-auto">
+                                    Oct 6, 2025                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                No puedo quitar la marca de agua espero una actualización mejoren eso en parte final de los vídeos sale la marca de agua y también en las plantillas sale la marca de agua a mi no me gusta ver la marca de agua espero en una actualización mejoren ese problema Gracias.                            </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="206913" data-reply-to="206913" data-author="Jef" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Jef">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/ec0b526a6db7ede6bb84c1ec9ffb01d50725840ad054cb3a72e7e12c908ba8a9?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/ec0b526a6db7ede6bb84c1ec9ffb01d50725840ad054cb3a72e7e12c908ba8a9?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Eliana</span>
+                                                                <time datetime="2025-10-05T16:47:31+07:00" class="text-xs text-gray ml-auto">
+                                    Oct 5, 2025                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                good                            </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="206781" data-reply-to="206781" data-author="Eliana" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Eliana">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/c2af335bc3aa543a4e056550a2fc92ef522408592b30225319cff3fec2625a80?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/c2af335bc3aa543a4e056550a2fc92ef522408592b30225319cff3fec2625a80?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Vimlesh</span>
+                                                                <time datetime="2025-06-27T23:43:04+07:00" class="text-xs text-gray ml-auto">
+                                    Jun 27, 2025                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                कैपकट अपडेट                            </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="175332" data-reply-to="175332" data-author="Vimlesh" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Vimlesh">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/82cf706a91b582074dd2bd2b60712bb854a7a805deac5540ab8994f9b182f7f0?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/82cf706a91b582074dd2bd2b60712bb854a7a805deac5540ab8994f9b182f7f0?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Md Rifat</span>
+                                                                <time datetime="2025-06-27T23:03:44+07:00" class="text-xs text-gray ml-auto">
+                                    Jun 27, 2025                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                Joss app                             </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="175327" data-reply-to="175327" data-author="Md Rifat" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Md Rifat">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/bed48a0c0d35ec0052359b4e085db20fa4fc36f3a725ae0030bdebfd83c3e42c?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/bed48a0c0d35ec0052359b4e085db20fa4fc36f3a725ae0030bdebfd83c3e42c?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Mantesh</span>
+                                                                <time datetime="2025-06-27T22:27:05+07:00" class="text-xs text-gray ml-auto">
+                                    Jun 27, 2025                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                Gi                            </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="175320" data-reply-to="175320" data-author="Mantesh" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Mantesh">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/9c1d36494ea375bc22d59a313ddf9d78889986ae8fefdb7002eceebee5431ea1?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/9c1d36494ea375bc22d59a313ddf9d78889986ae8fefdb7002eceebee5431ea1?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Soma</span>
+                                                                <time datetime="2025-06-27T22:14:27+07:00" class="text-xs text-gray ml-auto">
+                                    Jun 27, 2025                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                Supara                             </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="175316" data-reply-to="175316" data-author="Soma" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Soma">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/31f7a548f033923c456b9a78a15ce4ddf789dea91d13f84c1b71066512c8b18b?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/31f7a548f033923c456b9a78a15ce4ddf789dea91d13f84c1b71066512c8b18b?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Kavish</span>
+                                                                <time datetime="2025-06-27T21:34:13+07:00" class="text-xs text-gray ml-auto">
+                                    Jun 27, 2025                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                Filters not loading and can't export in 4k                             </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="175311" data-reply-to="175311" data-author="Kavish" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Kavish">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/8664a1b7c11509195668492affec9d7b9b73837524440372dd8227d164524758?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/8664a1b7c11509195668492affec9d7b9b73837524440372dd8227d164524758?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Bhumi</span>
+                                                                <time datetime="2025-06-27T20:40:43+07:00" class="text-xs text-gray ml-auto">
+                                    Jun 27, 2025                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                It's not working nd can't be downloaded that new version                             </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="175302" data-reply-to="175302" data-author="Bhumi" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Bhumi">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/91a1c9a2ea04e78667c6777e3f4c284f1b737a61348a9b6daebf154866e73f2a?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/91a1c9a2ea04e78667c6777e3f4c284f1b737a61348a9b6daebf154866e73f2a?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">Arshad chy</span>
+                                                                <time datetime="2024-08-02T17:27:49+07:00" class="text-xs text-gray ml-auto">
+                                    Aug 2, 2024                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                Good                            </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="83067" data-reply-to="83067" data-author="Arshad chy" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Arshad chy">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/42440efd7de81696b21790748c5b225684bd1a1220e1e6f40120a58c22021e96?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/42440efd7de81696b21790748c5b225684bd1a1220e1e6f40120a58c22021e96?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">JuSa</span>
+                                                                <time datetime="2023-05-25T23:13:34+07:00" class="text-xs text-gray ml-auto">
+                                    May 25, 2023                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                Does the TikTok account link work? So that you can use the sounds?                            </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="12797" data-reply-to="12797" data-author="JuSa" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to JuSa">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                            <div class="mt-3 ml-[52px] space-y-3">
+                                                            <div class="bg-[#f9f9fb] rounded-xl p-3">
+                                    <div class="flex items-start gap-2.5">
+                                        <div class="flex-shrink-0">
+                                            <img alt="" src="https://secure.gravatar.com/avatar/5c874b70d8fc8a680dd97b22ca787113c47bcd0f9df3a340220607db2acf9d66?s=32&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5c874b70d8fc8a680dd97b22ca787113c47bcd0f9df3a340220607db2acf9d66?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo size-8 rounded-full object-cover" height="32" width="32" loading="lazy" decoding="async">                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <div class="flex flex-wrap items-center gap-2 mb-1.5">
+                                                <span class="font-semibold text-dark text-sm">Palli</span>
+                                                                                                    <span class="px-2 py-0.5 bg-primary/10 text-primary text-[10px] rounded-full font-semibold">MODERATOR</span>
+                                                                                                <time datetime="2023-05-26T13:31:03+07:00" class="text-xs text-gray ml-auto">
+                                                    May 26, 2023                                                </time>
+                                            </div>
+
+                                            <span class="inline-flex items-center gap-1 text-[11px] bg-primary/10 text-primary rounded px-2 py-0.5 mb-1.5">
+                                                <svg class="size-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                                </svg>
+                                                Replying to                                                <span class="font-semibold">JuSa</span>
+                                            </span>
+
+                                            <div class="text-sm text-dark leading-relaxed">
+                                                mod apps need workaround if want to connect with auto login . But u can login with email manually                                            </div>
+
+                                                                                            <div class="mt-2 flex justify-end">
+                                                    <button type="button" data-parent="12797" data-reply-to="12865" data-author="Palli" data-parent-author="JuSa" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Palli">
+                                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                                        </svg>
+                                                        Reply                                                    </button>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                    </div>
+                                    </article>
+                            <article class="comment-item bg-white border border-[#f0f0f0] rounded-2xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <img alt="" src="https://secure.gravatar.com/avatar/d7be8ad660337d46ef786f92c6f2ea43342d6e8c6360eaa2ce41807339cf7c73?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/d7be8ad660337d46ef786f92c6f2ea43342d6e8c6360eaa2ce41807339cf7c73?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo size-10 rounded-full object-cover" height="40" width="40" loading="lazy" decoding="async">                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="font-semibold text-dark text-sm">TariQ</span>
+                                                                <time datetime="2023-05-17T19:17:35+07:00" class="text-xs text-gray ml-auto">
+                                    May 17, 2023                                </time>
+                            </div>
+
+                            <div class="text-sm text-dark leading-relaxed">
+                                App is not working properly.
+Feed not showing up.
+And internet error is popping up...                            </div>
+
+                                                            <div class="mt-2 flex justify-end">
+                                    <button type="button" data-parent="11465" data-reply-to="11465" data-author="TariQ" data-parent-author="" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to TariQ">
+                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                        </svg>
+                                        Reply                                    </button>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                            <div class="mt-3 ml-[52px] space-y-3">
+                                                            <div class="bg-[#f9f9fb] rounded-xl p-3">
+                                    <div class="flex items-start gap-2.5">
+                                        <div class="flex-shrink-0">
+                                            <img alt="" src="https://secure.gravatar.com/avatar/5c874b70d8fc8a680dd97b22ca787113c47bcd0f9df3a340220607db2acf9d66?s=32&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5c874b70d8fc8a680dd97b22ca787113c47bcd0f9df3a340220607db2acf9d66?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo size-8 rounded-full object-cover" height="32" width="32" loading="lazy" decoding="async">                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <div class="flex flex-wrap items-center gap-2 mb-1.5">
+                                                <span class="font-semibold text-dark text-sm">Palli</span>
+                                                                                                    <span class="px-2 py-0.5 bg-primary/10 text-primary text-[10px] rounded-full font-semibold">MODERATOR</span>
+                                                                                                <time datetime="2023-05-19T21:24:20+07:00" class="text-xs text-gray ml-auto">
+                                                    May 19, 2023                                                </time>
+                                            </div>
+
+                                            <span class="inline-flex items-center gap-1 text-[11px] bg-primary/10 text-primary rounded px-2 py-0.5 mb-1.5">
+                                                <svg class="size-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                                </svg>
+                                                Replying to                                                <span class="font-semibold">TariQ</span>
+                                            </span>
+
+                                            <div class="text-sm text-dark leading-relaxed">
+                                                please use vpn io access mod because it look like it n ot abvailable in your country                                            </div>
+
+                                                                                            <div class="mt-2 flex justify-end">
+                                                    <button type="button" data-parent="11465" data-reply-to="11778" data-author="Palli" data-parent-author="TariQ" class="comment-reply-btn text-xs text-gray hover:text-primary transition-colors font-medium flex items-center gap-1" aria-label="Reply to Palli">
+                                                        <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                                        </svg>
+                                                        Reply                                                    </button>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                    </div>
+                                    </article>
+                    </div>
+
+        
+    
+</section>
+        </div>
+    </section>
+
+
+    
+        <section class="similar-section pb-5">
+        <div class="max-w-gp mx-auto px-4 lg:px-6">
+            <div class="section-title flex items-center justify-start gap-2 mb-3">
+                <svg class="w-5 h-5 text-primary shrink-0" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                <h3 class="text-lg font-semibold">
+                    More from Bytedance Pte. Ltd.                </h3>
+
+                <a class="text-primary text-sm" href="https://liteapks.com/developer/bytedance-pte-ltd">
+                    <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M381-480 192-669l51-51 240 240-240 240-51-51 189-189Zm285 0L477-669l51-51 240 240-240 240-51-51 189-189Z"></path></svg>
+                </a>
+            </div>
+            <div class="similar-scroll">
+                <a href="https://liteapks.com/hypic-photo-editor.html" class="hover:-translate-y-1 duration-200 shrink-0 w-[96px] text-center no-underline text-dark block snap-start" title="Hypic Photo Editor">
+    <div class="w-16 h-16 rounded-2xl overflow-hidden mx-auto mb-2 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2024/06/hypic-photo-editor-ai-art-150x150.webp" class="w-full h-full object-cover" alt="Hypic Photo Editor" loading="lazy">
+            </div>
+    <h3 class="text-dark text-xs font-semibold m-0 line-clamp-2">Hypic Photo Editor</h3>
+    <div class="text-xs text-gray flex items-center justify-center gap-0.5 mt-0.5">
+        <span>4.2</span>
+        <svg class="w-3 h-3 text-orange" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+    </div>
+</a>
+<a href="https://liteapks.com/ulike.html" class="hover:-translate-y-1 duration-200 shrink-0 w-[96px] text-center no-underline text-dark block snap-start" title="Ulike">
+    <div class="w-16 h-16 rounded-2xl overflow-hidden mx-auto mb-2 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2022/06/ulike-define-your-selfie-in-trendy-style-150x150.png" class="w-full h-full object-cover" alt="Ulike" loading="lazy">
+            </div>
+    <h3 class="text-dark text-xs font-semibold m-0 line-clamp-2">Ulike</h3>
+    <div class="text-xs text-gray flex items-center justify-center gap-0.5 mt-0.5">
+        <span>4.5</span>
+        <svg class="w-3 h-3 text-orange" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+    </div>
+</a>
+            </div>
+        </div>
+    </section>
+    
+        <section class="similar-section pb-5">
+        <div class="max-w-gp mx-auto px-4 lg:px-6">
+            <div class="section-title flex items-center justify-start gap-2 mb-3">
+                <svg class="w-5 h-5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+
+                <h3 class="text-lg font-semibold">
+                    Similar CapCut                </h3>
+
+                <a class="text-primary text-sm" href="https://liteapks.com/apps/video-players-editors">
+                    <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M381-480 192-669l51-51 240 240-240 240-51-51 189-189Zm285 0L477-669l51-51 240 240-240 240-51-51 189-189Z"></path></svg>
+                </a>
+            </div>
+            <div class="similar-scroll">
+                <a href="https://liteapks.com/vllo.html" class="hover:-translate-y-1 duration-200 shrink-0 w-[96px] text-center no-underline text-dark block snap-start" title="VLLO">
+    <div class="w-16 h-16 rounded-2xl overflow-hidden mx-auto mb-2 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2022/06/vllo-intuitive-video-editor-150x150.png" class="w-full h-full object-cover" alt="VLLO" loading="lazy">
+            </div>
+    <h3 class="text-dark text-xs font-semibold m-0 line-clamp-2">VLLO</h3>
+    <div class="text-xs text-gray flex items-center justify-center gap-0.5 mt-0.5">
+        <span>3.8</span>
+        <svg class="w-3 h-3 text-orange" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+    </div>
+</a>
+<a href="https://liteapks.com/funimate.html" class="hover:-translate-y-1 duration-200 shrink-0 w-[96px] text-center no-underline text-dark block snap-start" title="Funimate (Dexter)">
+    <div class="w-16 h-16 rounded-2xl overflow-hidden mx-auto mb-2 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2022/09/funimate-video-editor-maker-150x150.jpg" class="w-full h-full object-cover" alt="Funimate (Dexter)" loading="lazy">
+            </div>
+    <h3 class="text-dark text-xs font-semibold m-0 line-clamp-2">Funimate (Dexter)</h3>
+    <div class="text-xs text-gray flex items-center justify-center gap-0.5 mt-0.5">
+        <span>4</span>
+        <svg class="w-3 h-3 text-orange" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+    </div>
+</a>
+<a href="https://liteapks.com/lock-appshide-photos-videos-gallery-vault.html" class="hover:-translate-y-1 duration-200 shrink-0 w-[96px] text-center no-underline text-dark block snap-start" title="Lock Apps:Hide photos &amp; videos (Gallery Vault)">
+    <div class="w-16 h-16 rounded-2xl overflow-hidden mx-auto mb-2 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2025/07/lock-appshide-photos-videos-150x150.webp" class="w-full h-full object-cover" alt="Lock Apps:Hide photos &amp; videos (Gallery Vault)" loading="lazy">
+            </div>
+    <h3 class="text-dark text-xs font-semibold m-0 line-clamp-2">Lock Apps:Hide photos &amp; videos (Gallery Vault)</h3>
+    <div class="text-xs text-gray flex items-center justify-center gap-0.5 mt-0.5">
+        <span>3.9</span>
+        <svg class="w-3 h-3 text-orange" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+    </div>
+</a>
+<a href="https://liteapks.com/mvideo.html" class="hover:-translate-y-1 duration-200 shrink-0 w-[96px] text-center no-underline text-dark block snap-start" title="MVideo">
+    <div class="w-16 h-16 rounded-2xl overflow-hidden mx-auto mb-2 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2024/08/mvideo-music-video-maker-150x150.webp" class="w-full h-full object-cover" alt="MVideo" loading="lazy">
+            </div>
+    <h3 class="text-dark text-xs font-semibold m-0 line-clamp-2">MVideo</h3>
+    <div class="text-xs text-gray flex items-center justify-center gap-0.5 mt-0.5">
+        <span>4</span>
+        <svg class="w-3 h-3 text-orange" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+    </div>
+</a>
+<a href="https://liteapks.com/beat-ly.html" class="hover:-translate-y-1 duration-200 shrink-0 w-[96px] text-center no-underline text-dark block snap-start" title="Beat.ly">
+    <div class="w-16 h-16 rounded-2xl overflow-hidden mx-auto mb-2 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2022/05/beat-ly-music-video-maker-150x150.png" class="w-full h-full object-cover" alt="Beat.ly" loading="lazy">
+            </div>
+    <h3 class="text-dark text-xs font-semibold m-0 line-clamp-2">Beat.ly</h3>
+    <div class="text-xs text-gray flex items-center justify-center gap-0.5 mt-0.5">
+        <span>4</span>
+        <svg class="w-3 h-3 text-orange" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+    </div>
+</a>
+<a href="https://liteapks.com/pornhub.html" class="hover:-translate-y-1 duration-200 shrink-0 w-[96px] text-center no-underline text-dark block snap-start" title="PornHub">
+    <div class="w-16 h-16 rounded-2xl overflow-hidden mx-auto mb-2 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2022/05/pornhub-apk-mod-150x150.jpg" class="w-full h-full object-cover" alt="PornHub" loading="lazy">
+            </div>
+    <h3 class="text-dark text-xs font-semibold m-0 line-clamp-2">PornHub</h3>
+    <div class="text-xs text-gray flex items-center justify-center gap-0.5 mt-0.5">
+        <span>3.7</span>
+        <svg class="w-3 h-3 text-orange" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+    </div>
+</a>
+<a href="https://liteapks.com/easycut.html" class="hover:-translate-y-1 duration-200 shrink-0 w-[96px] text-center no-underline text-dark block snap-start" title="EasyCut">
+    <div class="w-16 h-16 rounded-2xl overflow-hidden mx-auto mb-2 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2022/06/easycut-video-editor-maker-150x150.png" class="w-full h-full object-cover" alt="EasyCut" loading="lazy">
+            </div>
+    <h3 class="text-dark text-xs font-semibold m-0 line-clamp-2">EasyCut</h3>
+    <div class="text-xs text-gray flex items-center justify-center gap-0.5 mt-0.5">
+        <span>4.3</span>
+        <svg class="w-3 h-3 text-orange" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+    </div>
+</a>
+<a href="https://liteapks.com/insaver-video-story-saver.html" class="hover:-translate-y-1 duration-200 shrink-0 w-[96px] text-center no-underline text-dark block snap-start" title="InSaver: Video &amp; Story Saver">
+    <div class="w-16 h-16 rounded-2xl overflow-hidden mx-auto mb-2 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2025/12/insaver-video-story-saver-150x150.webp" class="w-full h-full object-cover" alt="InSaver: Video &amp; Story Saver" loading="lazy">
+            </div>
+    <h3 class="text-dark text-xs font-semibold m-0 line-clamp-2">InSaver: Video &amp; Story Saver</h3>
+    <div class="text-xs text-gray flex items-center justify-center gap-0.5 mt-0.5">
+        <span>4.4</span>
+        <svg class="w-3 h-3 text-orange" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+    </div>
+</a>
+<a href="https://liteapks.com/video-downloader-all-socials.html" class="hover:-translate-y-1 duration-200 shrink-0 w-[96px] text-center no-underline text-dark block snap-start" title="Video Downloader: All Socials">
+    <div class="w-16 h-16 rounded-2xl overflow-hidden mx-auto mb-2 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2025/09/unnamed-12-150x150.webp" class="w-full h-full object-cover" alt="Video Downloader: All Socials" loading="lazy">
+            </div>
+    <h3 class="text-dark text-xs font-semibold m-0 line-clamp-2">Video Downloader: All Socials</h3>
+    <div class="text-xs text-gray flex items-center justify-center gap-0.5 mt-0.5">
+        <span>4.2</span>
+        <svg class="w-3 h-3 text-orange" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+    </div>
+</a>
+<a href="https://liteapks.com/mivi-music-video-maker.html" class="hover:-translate-y-1 duration-200 shrink-0 w-[96px] text-center no-underline text-dark block snap-start" title="Mivi: Music Video Maker">
+    <div class="w-16 h-16 rounded-2xl overflow-hidden mx-auto mb-2 bg-gray-100 shadow-sm">
+                    <img src="https://liteapks.com/wp-content/uploads/2022/07/mivi-music-beat-video-maker-150x150.jpg" class="w-full h-full object-cover" alt="Mivi: Music Video Maker" loading="lazy">
+            </div>
+    <h3 class="text-dark text-xs font-semibold m-0 line-clamp-2">Mivi: Music Video Maker</h3>
+    <div class="text-xs text-gray flex items-center justify-center gap-0.5 mt-0.5">
+        <span>3.8</span>
+        <svg class="w-3 h-3 text-orange" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+    </div>
+</a>
+            </div>
+        </div>
+    </section>
+    
+</main>
