@@ -200,11 +200,11 @@ function aspv5_apk_extractor_page() {
  * where it can be previewed or used to create a post.
  */
 function appstorepro_ajax_scrape_playstore() {
-	check_ajax_referer( 'aspv5_apk_extractor', 'nonce' );
-
 	if ( ! current_user_can( 'edit_posts' ) ) {
 		wp_send_json_error( [ 'message' => __( 'Permission denied.', 'aspv5' ) ] );
 	}
+
+	check_ajax_referer( 'aspv5_apk_extractor', 'nonce' );
 
     // Sanitize the URL using esc_url_raw (sanitize_url is deprecated in newer WP versions).
     $url = isset( $_POST['url'] ) ? esc_url_raw( wp_unslash( $_POST['url'] ) ) : '';
@@ -239,11 +239,11 @@ add_action( 'wp_ajax_appstorepro_scrape_playstore', 'appstorepro_ajax_scrape_pla
 
 // ── AJAX: Create app post from scraped data ──────────────────────────────────
 function appstorepro_ajax_create_app_post() {
-	check_ajax_referer( 'aspv5_apk_extractor', 'nonce' );
-
 	if ( ! current_user_can( 'edit_posts' ) ) {
 		wp_send_json_error( [ 'message' => __( 'Permission denied.', 'aspv5' ) ] );
 	}
+
+	check_ajax_referer( 'aspv5_apk_extractor', 'nonce' );
 
 	$raw = isset( $_POST['app_data'] ) ? wp_unslash( $_POST['app_data'] ) : '';
 	$app = json_decode( $raw, true );
@@ -782,7 +782,7 @@ function appstorepro_fetch_generic_data( $url ) {
 		'redirection'        => 5,
 		'httpversion'        => '1.0',
 		'user-agent'         => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-		'sslverify'          => apply_filters( 'https_local_over_ssl', false ),
+		'sslverify'          => true,
 	] );
 
 	if ( is_wp_error( $response ) ) {

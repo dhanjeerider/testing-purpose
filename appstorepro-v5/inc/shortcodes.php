@@ -240,6 +240,7 @@ function aspv5_shortcode_browse( $atts ) {
 			function aspv5_load_browse_results() {
 				var data = {
 					action: 'aspv5_browse_results',
+					security: aspv5.nonce,
 					search: $('#browse-search').val(),
 					category: $('#browse-category').val(),
 					type: $('#browse-type').val(),

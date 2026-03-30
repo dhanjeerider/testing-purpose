@@ -29,7 +29,7 @@ function aspv5_enqueue_scripts() {
 		true
 	);
 
-	wp_localize_script( 'aspv5-main', 'AspV5', [
+	wp_localize_script( 'aspv5-main', 'aspv5', [
 		'homeUrl'        => esc_url( home_url( '/' ) ),
 		'ajaxUrl'        => esc_url( admin_url( 'admin-ajax.php' ) ),
 		'isRtl'          => is_rtl() ? 'true' : 'false',

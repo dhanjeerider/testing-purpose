@@ -96,7 +96,7 @@ function aspv5_customize_register( $wp_customize ) {
 		'title' => __( 'Homepage Settings', 'aspv5' ),
 		'panel' => 'aspv5_theme_settings',
 	] );
-	$wp_customize->add_setting( 'aspv5_hero_title', [ 'default' => 'Premium Mods,', 'sanitize_callback' => 'sanitize_text_field' ] );
+	$wp_customize->add_setting( 'aspv5_hero_title', [ 'default' => 'Premium Mods', 'sanitize_callback' => 'sanitize_text_field' ] );
 	$wp_customize->add_control( 'aspv5_hero_title', [
 		'label'   => __( 'Hero Title', 'aspv5' ),
 		'section' => 'aspv5_homepage',

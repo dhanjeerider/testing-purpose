@@ -96,7 +96,7 @@
 
 	function getStoredLayout() {
 		return localStorage.getItem( LAYOUT_KEY ) ||
-			( typeof AspV5 !== 'undefined' ? AspV5.defaultLayout : 'grid' );
+			( typeof aspv5 !== 'undefined' ? aspv5.defaultLayout : 'grid' );
 	}
 
 	function applyLayout( layout ) {

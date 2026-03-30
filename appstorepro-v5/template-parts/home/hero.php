@@ -1,6 +1,6 @@
 <?php
 // template-parts/home/hero.php — AppStore Pro V5
-$hero_title    = get_theme_mod( 'aspv5_hero_title', 'Premium Mods,' );
+$hero_title    = get_theme_mod( 'aspv5_hero_title', 'Premium Mods' );
 $hero_subtitle = get_theme_mod( 'aspv5_hero_subtitle', 'Ad-free apps, unlocked games & unlimited resources for Android.' );
 $hero_badge    = get_theme_mod( 'aspv5_hero_badge', '★ TRUSTED MOD STORE' );
 ?>
