@@ -1,0 +1,231 @@
+/* AppStore Pro V5 — base.css
+   Minimal CSS for things that Tailwind CDN cannot handle directly.
+   All layout/component styles use Tailwind utility classes in the templates.
+*/
+
+/* ── CSS Custom Properties (color theming) ──────────────────────────────── */
+:root {
+  --asp-primary:       #FF6A00;
+  --asp-primary-light: #FF8C38;
+  --asp-primary-bg:    #FFF4EC;
+  --asp-primary-rgb:   255, 106, 0;
+}
+
+/* ── Scroll Progress Bar ────────────────────────────────────────────────── */
+#aspv5-scroll-bar {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--asp-primary), var(--asp-primary-light));
+  z-index: 1100;
+  transition: width 0.1s linear;
+  border-radius: 0 3px 3px 0;
+  pointer-events: none;
+}
+
+/* ── Body base ──────────────────────────────────────────────────────────── */
+html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
+body { overflow-x: hidden; }
+
+/* ── Particle canvas (decorative) ──────────────────────────────────────── */
+#aspv5-particles {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+}
+
+/* ── Custom primary color via CSS var ───────────────────────────────────── */
+.text-primary  { color: var(--asp-primary) !important; }
+.bg-primary    { background-color: var(--asp-primary) !important; }
+.border-primary{ border-color: var(--asp-primary) !important; }
+.ring-primary  { --tw-ring-color: var(--asp-primary) !important; }
+
+/* ── App icon placeholder ───────────────────────────────────────────────── */
+.app-icon-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, var(--asp-primary), var(--asp-primary-light));
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-radius: inherit;
+}
+
+/* ── Horizontal scroll (screenshots, featured slider) ───────────────────── */
+.aspv5-hscroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+.aspv5-hscroll::-webkit-scrollbar { display: none; }
+.aspv5-hscroll > * { scroll-snap-align: start; flex-shrink: 0; }
+
+/* ── App card hover lift ────────────────────────────────────────────────── */
+.aspv5-card-lift {
+  transition: transform 0.22s cubic-bezier(.4,0,.2,1), box-shadow 0.22s cubic-bezier(.4,0,.2,1);
+}
+.aspv5-card-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(var(--asp-primary-rgb), 0.2);
+}
+
+/* ── Badge styles ───────────────────────────────────────────────────────── */
+.badge-mod {
+  background: var(--asp-primary);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 100px;
+  letter-spacing: 0.5px;
+}
+.badge-hot {
+  background: #ef4444;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 100px;
+}
+
+/* ── Star rating ────────────────────────────────────────────────────────── */
+.star { color: #facc15; }
+.star-empty { color: #d1d5db; }
+
+/* ── Layout switcher active state ───────────────────────────────────────── */
+.aspv5-layout-btn.active {
+  background-color: var(--asp-primary);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(var(--asp-primary-rgb), 0.4);
+}
+
+/* ── Slide-in menu overlay ──────────────────────────────────────────────── */
+#aspv5-slide-menu {
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+}
+#aspv5-slide-menu.open {
+  transform: translateX(0);
+}
+
+/* ── Backdrop poster card image zoom ────────────────────────────────────── */
+.aspv5-backdrop-card img {
+  transition: transform 0.5s cubic-bezier(.4,0,.2,1);
+}
+.aspv5-backdrop-card:hover img {
+  transform: scale(1.07);
+}
+
+/* ── Screenshot carousel dots ──────────────────────────────────────────── */
+.sa-sc-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #d1d5db;
+  transition: background 0.2s, width 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.sa-sc-dot.active {
+  background: var(--asp-primary);
+  width: 18px;
+  border-radius: 3px;
+}
+
+/* ── Reveal animation ───────────────────────────────────────────────────── */
+.aspv5-reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.aspv5-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Header search dropdown ─────────────────────────────────────────────── */
+.aspv5-search-dropdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.aspv5-search-dropdown.open {
+  max-height: 80px;
+}
+
+/* ── APK Extractor card ─────────────────────────────────────────────────── */
+.apk-extractor-wrap { font-family: inherit; }
+
+/* ── Pagination ─────────────────────────────────────────────────────────── */
+.aspv5-pagination .page-numbers {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px; height: 36px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  background: #f3f4f6;
+  margin: 0 2px;
+  transition: background 0.18s, color 0.18s;
+}
+.aspv5-pagination .page-numbers.current,
+.aspv5-pagination .page-numbers:hover {
+  background: var(--asp-primary);
+  color: #fff;
+}
+.dark .aspv5-pagination .page-numbers {
+  background: #1f2937;
+  color: #d1d5db;
+}
+.dark .aspv5-pagination .page-numbers.current,
+.dark .aspv5-pagination .page-numbers:hover {
+  background: var(--asp-primary);
+  color: #fff;
+}
+
+/* ── Single app sticky bar ──────────────────────────────────────────────── */
+.sa-sticky {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 90;
+  transform: translateY(100%);
+  transition: transform 0.28s ease;
+}
+.sa-sticky.visible {
+  transform: translateY(0);
+}
+
+/* ── Content (WordPress editor) ─────────────────────────────────────────── */
+.entry-content h2, .entry-content h3 { font-weight: 700; margin: 1.25em 0 0.5em; }
+.entry-content p  { margin-bottom: 1em; line-height: 1.75; }
+.entry-content ul { list-style: disc; padding-left: 1.5em; margin-bottom: 1em; }
+.entry-content ol { list-style: decimal; padding-left: 1.5em; margin-bottom: 1em; }
+.entry-content a  { color: var(--asp-primary); text-decoration: underline; }
+
+/* ── Collapsed content ──────────────────────────────────────────────────── */
+#sa-entry-content.collapsed {
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+#sa-entry-content.collapsed::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, white);
+}
+.dark #sa-entry-content.collapsed::after {
+  background: linear-gradient(to bottom, transparent, #111827);
+}
