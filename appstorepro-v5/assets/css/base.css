@@ -103,10 +103,18 @@ body { overflow-x: hidden; }
 .star-empty { color: #d1d5db; }
 
 /* ── Layout switcher active state ───────────────────────────────────────── */
+.aspv5-layout-btn {
+  transition: background-color 0.18s, color 0.18s, box-shadow 0.18s, transform 0.12s;
+}
+.aspv5-layout-btn:hover {
+  background-color: rgba(var(--asp-primary-rgb), 0.12);
+  color: var(--asp-primary);
+}
 .aspv5-layout-btn.active {
   background-color: var(--asp-primary);
   color: #fff;
-  box-shadow: 0 2px 8px rgba(var(--asp-primary-rgb), 0.4);
+  box-shadow: 0 3px 10px rgba(var(--asp-primary-rgb), 0.45);
+  transform: scale(1.05);
 }
 
 /* ── Slide-in menu overlay ──────────────────────────────────────────────── */
@@ -166,32 +174,63 @@ body { overflow-x: hidden; }
 .apk-extractor-wrap { font-family: inherit; }
 
 /* ── Pagination ─────────────────────────────────────────────────────────── */
+.aspv5-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
 .aspv5-pagination .page-numbers {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 36px; height: 36px;
-  border-radius: 8px;
+  min-width: 40px; height: 40px;
+  border-radius: 10px;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #374151;
-  background: #f3f4f6;
-  margin: 0 2px;
-  transition: background 0.18s, color 0.18s;
+  background: #ffffff;
+  border: 1.5px solid #e5e7eb;
+  margin: 0;
+  transition: background 0.18s, color 0.18s, border-color 0.18s, box-shadow 0.18s, transform 0.12s;
+  text-decoration: none !important;
 }
-.aspv5-pagination .page-numbers.current,
 .aspv5-pagination .page-numbers:hover {
   background: var(--asp-primary);
   color: #fff;
+  border-color: var(--asp-primary);
+  box-shadow: 0 4px 12px rgba(var(--asp-primary-rgb), 0.35);
+  transform: translateY(-1px);
+}
+.aspv5-pagination .page-numbers.current {
+  background: var(--asp-primary);
+  color: #fff;
+  border-color: var(--asp-primary);
+  box-shadow: 0 4px 12px rgba(var(--asp-primary-rgb), 0.35);
+}
+.aspv5-pagination .page-numbers.dots {
+  background: transparent;
+  border-color: transparent;
+  cursor: default;
+  color: #9ca3af;
+  transform: none !important;
+  box-shadow: none !important;
 }
 .dark .aspv5-pagination .page-numbers {
   background: #1f2937;
+  border-color: #374151;
   color: #d1d5db;
 }
 .dark .aspv5-pagination .page-numbers.current,
 .dark .aspv5-pagination .page-numbers:hover {
   background: var(--asp-primary);
+  border-color: var(--asp-primary);
   color: #fff;
+}
+.dark .aspv5-pagination .page-numbers.dots {
+  background: transparent;
+  border-color: transparent;
+  color: #6b7280;
 }
 
 /* ── Single app sticky bar ──────────────────────────────────────────────── */
@@ -229,3 +268,235 @@ body { overflow-x: hidden; }
 .dark #sa-entry-content.collapsed::after {
   background: linear-gradient(to bottom, transparent, #111827);
 }
+
+/* ── Header active nav link ─────────────────────────────────────────────── */
+.site-header.scrolled {
+  box-shadow: 0 2px 20px rgba(0,0,0,.08);
+}
+.site-header nav a.current-menu-item,
+.site-header nav a[aria-current="page"] {
+  color: var(--asp-primary) !important;
+  background: rgba(var(--asp-primary-rgb), 0.08) !important;
+}
+
+/* ── Nav menu items from wp_nav_menu ────────────────────────────────────── */
+.site-header nav .menu-item a {
+  display: block;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 8px;
+  color: #4b5563;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s;
+}
+.dark .site-header nav .menu-item a { color: #d1d5db; }
+.site-header nav .menu-item a:hover {
+  background: #f3f4f6;
+  color: var(--asp-primary);
+}
+.dark .site-header nav .menu-item a:hover {
+  background: #1f2937;
+}
+.site-header nav .current-menu-item > a,
+.site-header nav .current_page_item > a {
+  color: var(--asp-primary) !important;
+  background: rgba(var(--asp-primary-rgb), 0.08) !important;
+}
+
+/* ── Slide menu nav items ───────────────────────────────────────────────── */
+#aspv5-slide-menu .menu-item a {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 12px;
+  color: #374151;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s;
+  margin-bottom: 2px;
+}
+.dark #aspv5-slide-menu .menu-item a { color: #d1d5db; }
+#aspv5-slide-menu .menu-item a:hover {
+  background: #f3f4f6;
+  color: var(--asp-primary);
+}
+.dark #aspv5-slide-menu .menu-item a:hover {
+  background: #1f2937;
+}
+#aspv5-slide-menu .current-menu-item > a,
+#aspv5-slide-menu .current_page_item > a {
+  color: var(--asp-primary) !important;
+  background: rgba(var(--asp-primary-rgb), 0.1) !important;
+}
+
+/* ── Color dot active indicator ─────────────────────────────────────────── */
+.aspv5-color-dot.active {
+  border-color: #fff !important;
+  box-shadow: 0 0 0 2.5px var(--asp-primary), 0 2px 8px rgba(0,0,0,.25);
+  transform: scale(1.18);
+}
+
+/* ── App card grid enhancements ─────────────────────────────────────────── */
+.aspv5-app-card a {
+  position: relative;
+}
+.aspv5-app-card a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  background: linear-gradient(135deg, rgba(var(--asp-primary-rgb), 0.04), transparent);
+  transition: opacity 0.22s;
+  pointer-events: none;
+}
+.aspv5-app-card a:hover::after {
+  opacity: 1;
+}
+
+/* ── Banner card width in scroll row ────────────────────────────────────── */
+.aspv5-hscroll .aspv5-app-banner {
+  width: 160px;
+}
+@media (min-width: 640px) {
+  .aspv5-hscroll .aspv5-app-banner {
+    width: 180px;
+  }
+}
+
+/* ── Widget card area styling ───────────────────────────────────────────── */
+.aspv5-home-widgets .widget {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 1px 6px rgba(0,0,0,.05);
+}
+.dark .aspv5-home-widgets .widget {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+/* ── Trending badge pulse ────────────────────────────────────────────────── */
+@keyframes aspv5-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+.badge-trending {
+  background: #8b5cf6;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 100px;
+  animation: aspv5-pulse 2s infinite;
+}
+
+/* ── Featured app large card ─────────────────────────────────────────────── */
+.aspv5-featured-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  background: #1f2937;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+.aspv5-featured-card img.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(.4,0,.2,1);
+}
+.aspv5-featured-card:hover img.hero-bg {
+  transform: scale(1.04);
+}
+.aspv5-featured-card .card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.3) 50%, transparent 100%);
+}
+.aspv5-featured-card .card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+}
+
+/* ── Section title accent bar ────────────────────────────────────────────── */
+.aspv5-section-title-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.aspv5-section-title-bar::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: var(--asp-primary);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ── Search widget input ─────────────────────────────────────────────────── */
+.aspv5-search-widget form {
+  display: flex;
+  gap: 0;
+}
+.aspv5-search-widget input[type=search] {
+  flex: 1;
+  border: 1.5px solid #e5e7eb;
+  border-right: none;
+  border-radius: 12px 0 0 12px;
+  padding: 9px 14px;
+  font-size: 0.875rem;
+  outline: none;
+  background: #f9fafb;
+  color: #111827;
+  transition: border-color 0.2s;
+}
+.dark .aspv5-search-widget input[type=search] {
+  background: #111827;
+  color: #f9fafb;
+  border-color: #374151;
+}
+.aspv5-search-widget input[type=search]:focus {
+  border-color: var(--asp-primary);
+}
+.aspv5-search-widget button[type=submit] {
+  padding: 0 16px;
+  background: var(--asp-primary);
+  color: #fff;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+  transition: opacity 0.18s;
+}
+.aspv5-search-widget button[type=submit]:hover { opacity: 0.88; }
+
+/* ── Stats widget ────────────────────────────────────────────────────────── */
+.aspv5-stats-widget .stat-item {
+  text-align: center;
+  padding: 12px 8px;
+  border-radius: 12px;
+  background: rgba(var(--asp-primary-rgb), 0.06);
+}
+.aspv5-stats-widget .stat-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--asp-primary);
+  line-height: 1.2;
+}
+.aspv5-stats-widget .stat-label {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin-top: 2px;
+}
+.dark .aspv5-stats-widget .stat-label { color: #9ca3af; }

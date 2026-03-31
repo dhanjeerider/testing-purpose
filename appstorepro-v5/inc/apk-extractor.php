@@ -28,7 +28,7 @@ add_action( 'admin_menu', 'aspv5_apk_extractor_menu' );
 
 // ── Enqueue admin assets ─────────────────────────────────────────────────────
 function aspv5_apk_extractor_assets( $hook ) {
-	if ( 'app_page_aspv5-apk-extractor' !== $hook ) {
+	if ( ! in_array( $hook, [ 'app_page_aspv5-apk-extractor', 'game_page_aspv5-apk-extractor' ], true ) ) {
 		return;
 	}
 	$ver = wp_get_theme()->get( 'Version' );

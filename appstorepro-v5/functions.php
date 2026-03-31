@@ -42,6 +42,15 @@ function aspv5_widgets_init() {
 		'before_title'  => '<h3 class="widget-title text-sm font-bold mb-3 text-gray-700 dark:text-gray-300 uppercase tracking-wider">',
 		'after_title'   => '</h3>',
 	] );
+	register_sidebar( [
+		'name'          => __( 'Home Page — Widget Row', 'aspv5' ),
+		'id'            => 'home-widgets',
+		'description'   => __( 'Widgets displayed on the home page in a responsive grid below the featured section.', 'aspv5' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h3 class="aspv5-section-title-bar text-base font-bold mb-4 text-gray-900 dark:text-white">',
+		'after_title'   => '</h3>',
+	] );
 }
 add_action( 'widgets_init', 'aspv5_widgets_init' );
 

@@ -82,9 +82,9 @@ $grid_classes = [
 			</div>
 
 			<?php the_posts_pagination( [
-				'class'     => 'aspv5-pagination flex justify-center gap-1 mt-10',
-				'prev_text' => '&larr;',
-				'next_text' => '&rarr;',
+				'class'     => 'aspv5-pagination flex flex-wrap justify-center gap-1.5 mt-10',
+				'prev_text' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" class="w-4 h-4"><polyline points="15 18 9 12 15 6"/></svg>',
+				'next_text' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" class="w-4 h-4"><polyline points="9 18 15 12 9 6"/></svg>',
 			] ); ?>
 
 		<?php else : ?>

@@ -29,22 +29,36 @@ $color_themes = aspv5_get_color_themes();
 
 	<!-- Menu Content -->
 	<div class="flex-1 overflow-y-auto px-4 py-4 space-y-1">
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary transition-colors">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary transition-colors <?php echo is_front_page() ? 'bg-primary/10 text-primary' : ''; ?>">
 			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="w-5 h-5 flex-shrink-0"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
 			<span class="font-medium text-sm"><?php esc_html_e( 'Home', 'aspv5' ); ?></span>
 		</a>
-		<a href="<?php echo esc_url( get_post_type_archive_link( 'app' ) ); ?>" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary transition-colors">
+		<a href="<?php echo esc_url( get_post_type_archive_link( 'app' ) ); ?>" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary transition-colors <?php echo is_post_type_archive( 'app' ) ? 'bg-primary/10 text-primary' : ''; ?>">
 			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="w-5 h-5 flex-shrink-0"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
 			<span class="font-medium text-sm"><?php esc_html_e( 'All Apps', 'aspv5' ); ?></span>
 		</a>
-		<a href="<?php echo esc_url( get_post_type_archive_link( 'game' ) ); ?>" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary transition-colors">
+		<a href="<?php echo esc_url( get_post_type_archive_link( 'game' ) ); ?>" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary transition-colors <?php echo is_post_type_archive( 'game' ) ? 'bg-primary/10 text-primary' : ''; ?>">
 			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="w-5 h-5 flex-shrink-0"><rect x="2" y="7" width="20" height="13" rx="3"/><path d="M8 11h4m-2-2v4"/><circle cx="17" cy="13" r=".5" fill="currentColor"/><circle cx="15" cy="11" r=".5" fill="currentColor"/></svg>
 			<span class="font-medium text-sm"><?php esc_html_e( 'Games', 'aspv5' ); ?></span>
 		</a>
-		<a href="<?php echo esc_url( home_url( '/app-category/' ) ); ?>" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary transition-colors">
+		<a href="<?php echo esc_url( home_url( '/app-category/' ) ); ?>" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary transition-colors <?php echo is_tax( 'app-category' ) ? 'bg-primary/10 text-primary' : ''; ?>">
 			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="w-5 h-5 flex-shrink-0"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
 			<span class="font-medium text-sm"><?php esc_html_e( 'Categories', 'aspv5' ); ?></span>
 		</a>
+
+		<?php if ( has_nav_menu( 'slide-menu' ) ) : ?>
+		<!-- Divider -->
+		<div class="border-t border-gray-100 dark:border-gray-800 my-2"></div>
+		<?php
+		wp_nav_menu( [
+			'theme_location' => 'slide-menu',
+			'menu_class'     => 'space-y-0.5',
+			'fallback_cb'    => false,
+			'depth'          => 1,
+			'container'      => false,
+		] );
+		?>
+		<?php endif; ?>
 
 		<!-- Divider -->
 		<div class="border-t border-gray-100 dark:border-gray-800 my-2"></div>
