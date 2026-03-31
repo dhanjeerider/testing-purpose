@@ -99,7 +99,7 @@ elseif ( 'list' === $layout ) :
 ?>
 <article class="aspv5-reveal" id="post-<?php the_ID(); ?>" <?php post_class( 'aspv5-app-row' ); ?>>
 	<a href="<?php echo esc_url( get_the_permalink() ); ?>"
-	   class="flex items-center gap-3 p-3 rounded-2xl bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-750 border border-gray-100 dark:border-gray-700/60 transition-colors group"
+	   class="flex items-center gap-3 p-3 rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary/5 dark:hover:bg-primary/10 border border-gray-100 dark:border-gray-700/60 hover:border-primary/20 dark:hover:border-primary/30 transition-all group"
 	   aria-label="<?php echo esc_attr( get_the_title() ); ?>">
 
 		<!-- App icon -->
@@ -137,15 +137,18 @@ elseif ( 'list' === $layout ) :
 					<span class="text-[10px] text-gray-400"><?php echo esc_html( $size ); ?></span>
 				<?php endif; ?>
 				<?php if ( $downloads ) : ?>
-					<span class="text-[10px] text-gray-400"><i class="bx bx-download"></i> <?php echo esc_html( $downloads ); ?></span>
+					<span class="text-[10px] text-gray-400"><?php echo esc_html( $downloads ); ?></span>
 				<?php endif; ?>
 			</div>
 		</div>
 
-		<!-- Chevron -->
-		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gray-300 dark:text-gray-600 flex-shrink-0">
-			<polyline points="9 18 15 12 9 6"/>
-		</svg>
+		<!-- Download arrow -->
+		<div class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-xl bg-gray-100 dark:bg-gray-700 group-hover:bg-primary transition-colors">
+			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+			     class="w-3.5 h-3.5 text-gray-400 group-hover:text-white transition-colors">
+				<path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+			</svg>
+		</div>
 
 	</a>
 </article>
@@ -193,7 +196,7 @@ else :
 ?>
 <article class="aspv5-reveal aspv5-card-lift" id="post-<?php the_ID(); ?>" <?php post_class( 'aspv5-app-card' ); ?>>
 	<a href="<?php echo esc_url( get_the_permalink() ); ?>"
-	   class="flex flex-col gap-3 p-3.5 rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700/60 hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-md transition-all group"
+	   class="flex flex-col gap-2.5 p-3.5 rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700/60 hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-lg transition-all group h-full"
 	   aria-label="<?php echo esc_attr( get_the_title() ); ?>">
 
 		<!-- Icon row with badges -->
@@ -219,31 +222,36 @@ else :
 				<h3 class="text-sm font-bold text-gray-900 dark:text-gray-100 line-clamp-2 leading-tight group-hover:text-primary transition-colors">
 					<?php echo esc_html( get_the_title() ); ?>
 				</h3>
+				<!-- Category / Developer -->
+				<?php if ( $cat_name ) : ?>
+					<div class="text-[11px] text-gray-400 dark:text-gray-500 truncate mt-0.5"><?php echo esc_html( $cat_name ); ?></div>
+				<?php elseif ( $developer ) : ?>
+					<div class="text-[11px] text-gray-400 dark:text-gray-500 truncate mt-0.5"><?php echo esc_html( $developer ); ?></div>
+				<?php endif; ?>
 			</div>
 		</div>
 
-		<!-- Category / Developer -->
-		<?php if ( $cat_name && $cat_link ) : ?>
-			<div class="text-xs text-gray-400 dark:text-gray-500 truncate -mt-1"><?php echo esc_html( $cat_name ); ?></div>
-		<?php elseif ( $developer ) : ?>
-			<div class="text-xs text-gray-400 dark:text-gray-500 truncate -mt-1"><?php echo esc_html( $developer ); ?></div>
-		<?php endif; ?>
-
 		<!-- Meta pills -->
-		<div class="flex items-center gap-2 flex-wrap mt-auto">
-			<?php if ( $rating ) : ?>
-				<span class="inline-flex items-center gap-0.5 text-xs font-semibold text-yellow-500">
-					<span>★</span><span><?php echo esc_html( $rating ); ?></span>
-				</span>
-			<?php endif; ?>
-			<?php if ( $size ) : ?>
-				<span class="text-[10px] text-gray-400 dark:text-gray-500"><?php echo esc_html( $size ); ?></span>
-			<?php endif; ?>
-			<?php if ( $downloads ) : ?>
-				<span class="text-[10px] text-gray-400 dark:text-gray-500 flex items-center gap-0.5">
-					<i class="bx bx-download text-xs"></i><?php echo esc_html( $downloads ); ?>
-				</span>
-			<?php endif; ?>
+		<div class="flex items-center justify-between mt-auto pt-1 border-t border-gray-50 dark:border-gray-700/40">
+			<div class="flex items-center gap-2 flex-wrap">
+				<?php if ( $rating ) : ?>
+					<span class="inline-flex items-center gap-0.5 text-xs font-semibold text-yellow-500">
+						<span>★</span><span><?php echo esc_html( $rating ); ?></span>
+					</span>
+				<?php endif; ?>
+				<?php if ( $size ) : ?>
+					<span class="text-[10px] text-gray-400 dark:text-gray-500"><?php echo esc_html( $size ); ?></span>
+				<?php endif; ?>
+				<?php if ( $downloads ) : ?>
+					<span class="text-[10px] text-gray-400 dark:text-gray-500"><?php echo esc_html( $downloads ); ?></span>
+				<?php endif; ?>
+			</div>
+			<span class="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-xl bg-primary/10 group-hover:bg-primary transition-colors">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+				     class="w-3.5 h-3.5 text-primary group-hover:text-white transition-colors">
+					<path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+				</svg>
+			</span>
 		</div>
 
 	</a>

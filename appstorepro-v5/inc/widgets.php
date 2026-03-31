@@ -290,5 +290,357 @@ class ASPV5_Apps_Widget extends WP_Widget {
 // Register widget
 function aspv5_register_widgets() {
 	register_widget( 'ASPV5_Apps_Widget' );
+	register_widget( 'ASPV5_Search_Widget' );
+	register_widget( 'ASPV5_Stats_Widget' );
+	register_widget( 'ASPV5_Popular_Categories_Widget' );
+	register_widget( 'ASPV5_Recent_Apps_Ticker_Widget' );
 }
 add_action( 'widgets_init', 'aspv5_register_widgets' );
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// WIDGET: Search Box
+// ═══════════════════════════════════════════════════════════════════════════════
+class ASPV5_Search_Widget extends WP_Widget {
+
+	public function __construct() {
+		parent::__construct(
+			'aspv5_search_widget',
+			__( 'AppStore V5: Search Box', 'aspv5' ),
+			[
+				'description' => __( 'A stylish search box for apps and games.', 'aspv5' ),
+				'classname'   => 'aspv5-search-widget',
+			]
+		);
+	}
+
+	public function widget( $args, $instance ) {
+		$title       = ! empty( $instance['title'] ) ? $instance['title'] : '';
+		$placeholder = ! empty( $instance['placeholder'] ) ? $instance['placeholder'] : __( 'Search apps & games…', 'aspv5' );
+
+		echo wp_kses_post( $args['before_widget'] );
+		if ( $title ) {
+			echo wp_kses_post( $args['before_title'] ) . esc_html( apply_filters( 'widget_title', $title ) ) . wp_kses_post( $args['after_title'] );
+		}
+		?>
+		<form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" class="aspv5-search-widget-form flex gap-0">
+			<input
+				type="search"
+				name="s"
+				value="<?php echo esc_attr( get_search_query() ); ?>"
+				placeholder="<?php echo esc_attr( $placeholder ); ?>"
+				class="flex-1 border-[1.5px] border-gray-200 dark:border-gray-700 border-r-0 rounded-l-xl px-4 py-2.5 text-sm outline-none bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:border-primary transition-colors"
+				autocomplete="off">
+			<button type="submit"
+			        class="px-4 py-2.5 bg-primary text-white rounded-r-xl hover:opacity-90 transition-opacity flex items-center gap-1.5 text-sm font-semibold flex-shrink-0">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" class="w-4 h-4"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+			</button>
+		</form>
+		<?php
+		echo wp_kses_post( $args['after_widget'] );
+	}
+
+	public function form( $instance ) {
+		$title       = $instance['title']       ?? __( 'Search', 'aspv5' );
+		$placeholder = $instance['placeholder'] ?? '';
+		?>
+		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title:', 'aspv5' ); ?></label>
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
+			       name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>"
+			       type="text" value="<?php echo esc_attr( $title ); ?>">
+		</p>
+		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'placeholder' ) ); ?>"><?php esc_html_e( 'Placeholder text:', 'aspv5' ); ?></label>
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'placeholder' ) ); ?>"
+			       name="<?php echo esc_attr( $this->get_field_name( 'placeholder' ) ); ?>"
+			       type="text" value="<?php echo esc_attr( $placeholder ); ?>">
+		</p>
+		<?php
+	}
+
+	public function update( $new_instance, $old_instance ) {
+		$instance                = [];
+		$instance['title']       = sanitize_text_field( $new_instance['title'] );
+		$instance['placeholder'] = sanitize_text_field( $new_instance['placeholder'] );
+		return $instance;
+	}
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// WIDGET: Stats Counter
+// ═══════════════════════════════════════════════════════════════════════════════
+class ASPV5_Stats_Widget extends WP_Widget {
+
+	public function __construct() {
+		parent::__construct(
+			'aspv5_stats_widget',
+			__( 'AppStore V5: Stats Counter', 'aspv5' ),
+			[
+				'description' => __( 'Displays total apps, games, and categories count.', 'aspv5' ),
+				'classname'   => 'aspv5-stats-widget',
+			]
+		);
+	}
+
+	public function widget( $args, $instance ) {
+		$title = ! empty( $instance['title'] ) ? $instance['title'] : '';
+
+		$app_count  = wp_count_posts( 'app' )->publish;
+		$game_count = wp_count_posts( 'game' )->publish;
+		$cat_count  = wp_count_terms( [ 'taxonomy' => 'app-category' ] );
+		$cat_count  = is_int( $cat_count ) ? $cat_count : 0;
+
+		echo wp_kses_post( $args['before_widget'] );
+		if ( $title ) {
+			echo wp_kses_post( $args['before_title'] ) . esc_html( apply_filters( 'widget_title', $title ) ) . wp_kses_post( $args['after_title'] );
+		}
+		?>
+		<div class="grid grid-cols-3 gap-3">
+			<div class="stat-item text-center p-3 rounded-xl bg-[color:var(--asp-primary)]/8 dark:bg-[color:var(--asp-primary)]/10">
+				<div class="stat-number text-2xl font-extrabold text-[color:var(--asp-primary)]"><?php echo esc_html( number_format_i18n( $app_count ) ); ?>+</div>
+				<div class="stat-label text-xs text-gray-500 dark:text-gray-400 font-medium mt-0.5"><?php esc_html_e( 'Apps', 'aspv5' ); ?></div>
+			</div>
+			<div class="stat-item text-center p-3 rounded-xl bg-[color:var(--asp-primary)]/8 dark:bg-[color:var(--asp-primary)]/10">
+				<div class="stat-number text-2xl font-extrabold text-[color:var(--asp-primary)]"><?php echo esc_html( number_format_i18n( $game_count ) ); ?>+</div>
+				<div class="stat-label text-xs text-gray-500 dark:text-gray-400 font-medium mt-0.5"><?php esc_html_e( 'Games', 'aspv5' ); ?></div>
+			</div>
+			<div class="stat-item text-center p-3 rounded-xl bg-[color:var(--asp-primary)]/8 dark:bg-[color:var(--asp-primary)]/10">
+				<div class="stat-number text-2xl font-extrabold text-[color:var(--asp-primary)]"><?php echo esc_html( number_format_i18n( $cat_count ) ); ?>+</div>
+				<div class="stat-label text-xs text-gray-500 dark:text-gray-400 font-medium mt-0.5"><?php esc_html_e( 'Categories', 'aspv5' ); ?></div>
+			</div>
+		</div>
+		<?php
+		echo wp_kses_post( $args['after_widget'] );
+	}
+
+	public function form( $instance ) {
+		$title = $instance['title'] ?? __( 'Our Library', 'aspv5' );
+		?>
+		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title:', 'aspv5' ); ?></label>
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
+			       name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>"
+			       type="text" value="<?php echo esc_attr( $title ); ?>">
+		</p>
+		<?php
+	}
+
+	public function update( $new_instance, $old_instance ) {
+		$instance          = [];
+		$instance['title'] = sanitize_text_field( $new_instance['title'] );
+		return $instance;
+	}
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// WIDGET: Popular Categories
+// ═══════════════════════════════════════════════════════════════════════════════
+class ASPV5_Popular_Categories_Widget extends WP_Widget {
+
+	public function __construct() {
+		parent::__construct(
+			'aspv5_popular_categories_widget',
+			__( 'AppStore V5: Popular Categories', 'aspv5' ),
+			[
+				'description' => __( 'Shows top categories with app count as styled chips.', 'aspv5' ),
+				'classname'   => 'aspv5-popular-cats-widget',
+			]
+		);
+	}
+
+	public function widget( $args, $instance ) {
+		$title = ! empty( $instance['title'] ) ? $instance['title'] : '';
+		$count = ! empty( $instance['count'] ) ? absint( $instance['count'] ) : 10;
+
+		$terms = get_terms( [
+			'taxonomy'   => 'app-category',
+			'hide_empty' => true,
+			'number'     => $count,
+			'orderby'    => 'count',
+			'order'      => 'DESC',
+		] );
+
+		if ( empty( $terms ) || is_wp_error( $terms ) ) {
+			return;
+		}
+
+		echo wp_kses_post( $args['before_widget'] );
+		if ( $title ) {
+			echo wp_kses_post( $args['before_title'] ) . esc_html( apply_filters( 'widget_title', $title ) ) . wp_kses_post( $args['after_title'] );
+		}
+		?>
+		<div class="flex flex-wrap gap-2">
+			<?php foreach ( $terms as $term ) :
+				$link = get_term_link( $term );
+				if ( is_wp_error( $link ) ) continue;
+				?>
+				<a href="<?php echo esc_url( $link ); ?>"
+				   class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-[color:var(--asp-primary)] hover:text-white transition-colors border border-gray-200 dark:border-gray-700 hover:border-transparent">
+					<?php echo esc_html( $term->name ); ?>
+					<span class="opacity-60 text-[10px]"><?php echo esc_html( number_format_i18n( $term->count ) ); ?></span>
+				</a>
+			<?php endforeach; ?>
+		</div>
+		<?php
+		echo wp_kses_post( $args['after_widget'] );
+	}
+
+	public function form( $instance ) {
+		$title = $instance['title'] ?? __( 'Popular Categories', 'aspv5' );
+		$count = $instance['count'] ?? 10;
+		?>
+		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title:', 'aspv5' ); ?></label>
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
+			       name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>"
+			       type="text" value="<?php echo esc_attr( $title ); ?>">
+		</p>
+		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'count' ) ); ?>"><?php esc_html_e( 'Max categories:', 'aspv5' ); ?></label>
+			<input class="tiny-text" id="<?php echo esc_attr( $this->get_field_id( 'count' ) ); ?>"
+			       name="<?php echo esc_attr( $this->get_field_name( 'count' ) ); ?>"
+			       type="number" step="1" min="1" max="30" value="<?php echo esc_attr( $count ); ?>" size="3">
+		</p>
+		<?php
+	}
+
+	public function update( $new_instance, $old_instance ) {
+		$instance          = [];
+		$instance['title'] = sanitize_text_field( $new_instance['title'] );
+		$instance['count'] = absint( $new_instance['count'] );
+		return $instance;
+	}
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// WIDGET: Recent Apps Ticker
+// ═══════════════════════════════════════════════════════════════════════════════
+class ASPV5_Recent_Apps_Ticker_Widget extends WP_Widget {
+
+	public function __construct() {
+		parent::__construct(
+			'aspv5_recent_apps_ticker',
+			__( 'AppStore V5: Recent Apps Ticker', 'aspv5' ),
+			[
+				'description' => __( 'Compact numbered list of the most recently added apps or games.', 'aspv5' ),
+				'classname'   => 'aspv5-ticker-widget',
+			]
+		);
+	}
+
+	public function widget( $args, $instance ) {
+		$title     = ! empty( $instance['title'] )     ? $instance['title']                 : '';
+		$count     = ! empty( $instance['count'] )     ? absint( $instance['count'] )        : 5;
+		$post_type = ! empty( $instance['post_type'] ) ? $instance['post_type']              : 'app';
+		$orderby   = ! empty( $instance['orderby'] )   ? $instance['orderby']                : 'date';
+
+		$query = new WP_Query( [
+			'post_type'      => $post_type,
+			'posts_per_page' => $count,
+			'post_status'    => 'publish',
+			'orderby'        => $orderby,
+			'order'          => 'DESC',
+			'no_found_rows'  => true,
+		] );
+
+		if ( ! $query->have_posts() ) return;
+
+		echo wp_kses_post( $args['before_widget'] );
+		if ( $title ) {
+			echo wp_kses_post( $args['before_title'] ) . esc_html( apply_filters( 'widget_title', $title ) ) . wp_kses_post( $args['after_title'] );
+		}
+
+		$counter = 1;
+		echo '<ol class="aspv5-ticker-list space-y-2">';
+		while ( $query->have_posts() ) {
+			$query->the_post();
+			$post_id  = get_the_ID();
+			$icon_url = aspv5_get_app_meta( $post_id, '_app_icon_url' );
+			$rating   = aspv5_get_app_meta( $post_id, '_app_rating' );
+			$rating   = $rating ? number_format( (float) $rating, 1 ) : '';
+			$is_mod   = aspv5_get_app_meta( $post_id, '_app_is_mod' );
+			?>
+			<li class="flex items-center gap-3">
+				<span class="flex-shrink-0 w-6 text-center text-xs font-extrabold <?php echo $counter <= 3 ? 'text-[color:var(--asp-primary)]' : 'text-gray-400 dark:text-gray-600'; ?>"><?php echo esc_html( $counter ); ?></span>
+				<div class="w-10 h-10 rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-700 flex-shrink-0">
+					<?php if ( $icon_url ) : ?>
+						<img src="<?php echo esc_url( $icon_url ); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>" class="w-full h-full object-cover" loading="lazy">
+					<?php elseif ( has_post_thumbnail() ) : ?>
+						<?php the_post_thumbnail( 'app-icon', [ 'class' => 'w-full h-full object-cover', 'alt' => get_the_title(), 'loading' => 'lazy' ] ); ?>
+					<?php else : ?>
+						<div class="app-icon-placeholder"><span><?php echo esc_html( mb_substr( get_the_title(), 0, 1 ) ); ?></span></div>
+					<?php endif; ?>
+				</div>
+				<div class="flex-1 min-w-0">
+					<a href="<?php echo esc_url( get_the_permalink() ); ?>"
+					   class="block text-sm font-semibold text-gray-900 dark:text-gray-100 truncate hover:text-[color:var(--asp-primary)] transition-colors">
+						<?php echo esc_html( get_the_title() ); ?>
+					</a>
+					<div class="flex items-center gap-1.5 mt-0.5">
+						<?php if ( $is_mod ) : ?>
+							<span class="badge-mod px-1.5 py-0.5 rounded-full text-[8px] font-bold text-white"><?php esc_html_e( 'MOD', 'aspv5' ); ?></span>
+						<?php endif; ?>
+						<?php if ( $rating ) : ?>
+							<span class="text-[10px] text-yellow-500 font-medium">★ <?php echo esc_html( $rating ); ?></span>
+						<?php endif; ?>
+					</div>
+				</div>
+			</li>
+			<?php
+			$counter++;
+		}
+		echo '</ol>';
+		wp_reset_postdata();
+
+		echo wp_kses_post( $args['after_widget'] );
+	}
+
+	public function form( $instance ) {
+		$title     = $instance['title']     ?? __( 'Recently Added', 'aspv5' );
+		$count     = $instance['count']     ?? 5;
+		$post_type = $instance['post_type'] ?? 'app';
+		$orderby   = $instance['orderby']   ?? 'date';
+		?>
+		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title:', 'aspv5' ); ?></label>
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
+			       name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>"
+			       type="text" value="<?php echo esc_attr( $title ); ?>">
+		</p>
+		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'post_type' ) ); ?>"><?php esc_html_e( 'Post Type:', 'aspv5' ); ?></label>
+			<select class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'post_type' ) ); ?>"
+			        name="<?php echo esc_attr( $this->get_field_name( 'post_type' ) ); ?>">
+				<option value="app"  <?php selected( $post_type, 'app' ); ?>><?php esc_html_e( 'Apps', 'aspv5' ); ?></option>
+				<option value="game" <?php selected( $post_type, 'game' ); ?>><?php esc_html_e( 'Games', 'aspv5' ); ?></option>
+			</select>
+		</p>
+		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'count' ) ); ?>"><?php esc_html_e( 'Number of items:', 'aspv5' ); ?></label>
+			<input class="tiny-text" id="<?php echo esc_attr( $this->get_field_id( 'count' ) ); ?>"
+			       name="<?php echo esc_attr( $this->get_field_name( 'count' ) ); ?>"
+			       type="number" step="1" min="1" max="20" value="<?php echo esc_attr( $count ); ?>" size="3">
+		</p>
+		<p>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'orderby' ) ); ?>"><?php esc_html_e( 'Order by:', 'aspv5' ); ?></label>
+			<select class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'orderby' ) ); ?>"
+			        name="<?php echo esc_attr( $this->get_field_name( 'orderby' ) ); ?>">
+				<option value="date"     <?php selected( $orderby, 'date' ); ?>><?php esc_html_e( 'Latest', 'aspv5' ); ?></option>
+				<option value="modified" <?php selected( $orderby, 'modified' ); ?>><?php esc_html_e( 'Recently Updated', 'aspv5' ); ?></option>
+				<option value="rand"     <?php selected( $orderby, 'rand' ); ?>><?php esc_html_e( 'Random', 'aspv5' ); ?></option>
+				<option value="comment_count" <?php selected( $orderby, 'comment_count' ); ?>><?php esc_html_e( 'Most Commented', 'aspv5' ); ?></option>
+			</select>
+		</p>
+		<?php
+	}
+
+	public function update( $new_instance, $old_instance ) {
+		$instance              = [];
+		$instance['title']     = sanitize_text_field( $new_instance['title'] );
+		$instance['count']     = absint( $new_instance['count'] );
+		$instance['post_type'] = in_array( $new_instance['post_type'], [ 'app', 'game' ], true ) ? $new_instance['post_type'] : 'app';
+		$instance['orderby']   = in_array( $new_instance['orderby'], [ 'date', 'modified', 'rand', 'comment_count' ], true ) ? $new_instance['orderby'] : 'date';
+		return $instance;
+	}
+}
+
