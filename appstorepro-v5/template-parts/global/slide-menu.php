@@ -56,7 +56,6 @@ $color_themes = aspv5_get_color_themes();
 			'fallback_cb'    => false,
 			'depth'          => 1,
 			'container'      => false,
-			'items_wrap'     => '%3$s',
 		] );
 		?>
 		<?php endif; ?>

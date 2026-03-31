@@ -388,7 +388,7 @@ class ASPV5_Stats_Widget extends WP_Widget {
 		$app_count  = wp_count_posts( 'app' )->publish;
 		$game_count = wp_count_posts( 'game' )->publish;
 		$cat_count  = wp_count_terms( [ 'taxonomy' => 'app-category' ] );
-		$cat_count  = is_int( $cat_count ) ? $cat_count : 0;
+		$cat_count  = ( ! is_wp_error( $cat_count ) && is_int( $cat_count ) ) ? $cat_count : 0;
 
 		echo wp_kses_post( $args['before_widget'] );
 		if ( $title ) {
