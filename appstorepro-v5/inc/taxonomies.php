@@ -99,21 +99,6 @@ function aspv5_save_category_image( $term_id ) {
 add_action( 'edited_app-category', 'aspv5_save_category_image' );
 add_action( 'create_app-category', 'aspv5_save_category_image' );
 
-// ── Enqueue media uploader for category page ──────────────────────────────────
-function aspv5_enqueue_category_media() {
-	$screen = get_current_screen();
-	if ( $screen && 'edit-app-category' === $screen->id ) {
-		wp_enqueue_media();
-		wp_enqueue_script( 'appstorepro-category-image', 
-			get_template_directory_uri() . '/assets/js/category-image.js', 
-			[ 'jquery', 'media-upload', 'media-views' ], 
-			wp_get_theme()->get( 'Version' ), 
-			true 
-		);
-	}
-}
-add_action( 'admin_enqueue_scripts', 'aspv5_enqueue_category_media' );
-
 // ── Get category image ────────────────────────────────────────────────────────
 function aspv5_get_category_image( $term_id, $size = 'thumbnail' ) {
 	$image_id = get_term_meta( $term_id, '_aspv5_category_image', true );

@@ -2,6 +2,8 @@
 // functions.php — AppStore Pro V5
 
 function aspv5_setup() {
+	load_theme_textdomain( 'aspv5', get_template_directory() . '/languages' );
+
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'custom-logo' );
@@ -19,8 +21,6 @@ function aspv5_setup() {
 		'legal-menu' => __( 'Legal Menu', 'aspv5' ),
 		'footer-nav' => __( 'Footer Navigation', 'aspv5' ),
 	] );
-
-	load_theme_textdomain( 'aspv5', get_template_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'aspv5_setup' );
 
